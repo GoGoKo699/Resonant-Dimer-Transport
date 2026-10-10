@@ -3,13 +3,15 @@
 > Source-resolved transport at a two-particle binding resonance in a fractional-hopping chain.
 
 ## Scientific reading
+- [Joint observation time](research/OBSERVATION_TIME.md): uniform integrated continuum decay and sufficient time–detuning regime; not an optimal exponent or a certified numerical waiting time.
+- [Finite-time certificate](research/FINITE_TIME_CERTIFICATE.md): sharp deterministic-time event error in static spectral budgets.
 - [Detuning crossover](research/DETUNING_CROSSOVER.md): global inverse-detuning cutoff, maximizing momentum scale, and unconditional probability crossover.
 - [Author account](research/AUTHOR_ACCOUNT.md): background, definitions, central claims, and closest predecessors.
 - [Threshold endpoint](research/THRESHOLD_ENDPOINT.md): exact lattice-edge scaling; correction to the endpoint proof prose.
 - [Theorem](research/THEOREM.md): local preparation, unconditional coincidences, velocity law, preparation-size profile.
 - [Proof map](research/PROOF_MAP.md): full spectral and transport dependencies.
 - [Contribution assessment](research/CONTRIBUTION.md): inherited framework and remaining physical synthesis.
-- [Reproducibility](REPRODUCIBILITY.md): fifteen preserved, three endpoint, and five detuning groups; source/report integrity.
+- [Reproducibility](REPRODUCIBILITY.md): thirty-three scientific groups, including finite-time and joint-regime regressions; source/report integrity.
 - [Current work](CURRENT.md): continue in this Chat; no workspace required.
 - [Agent instructions](AGENTS.md): scope, source preservation, and guarded repository changes.
 

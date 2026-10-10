@@ -2,7 +2,7 @@
 
 ## Identity and first reading
 
-Work only in `GoGoKo699/Resonant-Dimer-Transport`. Verify the live repository and branch before any remote write. Read `README.md`, `CURRENT.md`, `research/THEOREM.md`, `research/PROOF_MAP.md`, `research/CONTRIBUTION.md`, `research/AUTHOR_ACCOUNT.md`, `research/THRESHOLD_ENDPOINT.md`, `research/DETUNING_CROSSOVER.md`, and `REPRODUCIBILITY.md`. This project continues in Chat; a workspace is not required.
+Work only in `GoGoKo699/Resonant-Dimer-Transport`. Verify the live repository and branch before any remote write. Read `README.md`, `CURRENT.md`, `research/THEOREM.md`, `research/PROOF_MAP.md`, `research/CONTRIBUTION.md`, `research/AUTHOR_ACCOUNT.md`, `research/THRESHOLD_ENDPOINT.md`, `research/DETUNING_CROSSOVER.md`, `research/FINITE_TIME_CERTIFICATE.md`, `research/OBSERVATION_TIME.md`, and `REPRODUCIBILITY.md`. This project continues in Chat; a workspace is not required.
 
 ## Preserve the evidence
 
@@ -12,9 +12,9 @@ The generated research pages are defined by `tools/build_reading.py`. Modify the
 
 ## Keep the scientific distinctions
 
-Preserve the declared exponent window, microscopic fractional-Laplacian kernel, unconditional event normalization, two overlap factors, and order of limits. Relative binding, same-site detection, total bound-sector population, fixed-support overlap, and a feasible loading protocol are different claims. Unbounded limiting velocity support is not a finite-weight superballistic front or a finite-time rare-tail guarantee.
+Preserve the declared exponent window, microscopic fractional-Laplacian kernel, unconditional event normalization, two overlap factors, and order of limits. Relative binding, same-site detection, total bound-sector population, fixed-support overlap, and a feasible loading protocol are different claims. Unbounded limiting velocity support alone is not a finite-weight superballistic front or a finite-time rare-tail guarantee. The separate observation-time theorem gives a sufficient joint asymptotic regime, not an optimal waiting-time exponent or an interval-certified numerical operating window.
 
-Credit the supplied finite-momentum contact scattering framework and other predecessors. Local checks are not external peer review or priority clearance. Do not silently extend a continuity bound or weak limit to unbounded moments or a uniform high-velocity observation time.
+Credit the supplied finite-momentum contact scattering framework and other predecessors. Local checks are not external peer review or priority clearance. Do not silently extend a continuity bound or weak limit to unbounded moments or a uniform high-velocity observation time. The finite-time certificate has static spectral budgets; its conditional arithmetic is not an evaluated detuning-only waiting-time law or a validated numerical enclosure.
 
 ## Verification and publication
 

@@ -66,6 +66,32 @@ global maximum, its momentum scale, and the full probability crossover.
 Long time is taken at each fixed detuning first; this is not a finite-time
 visibility guarantee.
 
+## Finite-time accuracy
+
+The [finite-time certificate](research/FINITE_TIME_CERTIFICATE.md) bounds the
+error of the same sharp coincidence event at a deterministic observation time.
+It combines static spectral variation, band-derivative norms, and a narrow
+velocity-shell mass. An event with limiting probability $q$ requires continuum
+amplitude error small relative to $\sqrt q$, rather than $q$. A sufficient
+time is explicit in these static quantities.
+
+The [joint observation-time theorem](research/OBSERVATION_TIME.md) bounds the
+full continuum contact amplitude by $C/(Jt)$ uniformly near resonance after
+integration over total momentum. Together with sharper band norms, it gives
+a sufficient simultaneous time–detuning regime. At $z=3/4$,
+
+$$
+Jt\delta^7/\sqrt{\log(2/\delta)}\longrightarrow\infty
+\quad\Longrightarrow\quad
+p_{\delta,t}\sim C_{3/4,\theta}\delta^8,
+$$
+
+where $p_{\delta,t}$ is the actual coincidence probability beyond
+$\theta v_{\max}(U_\delta)t$, for a fixed $0<\theta<1$. The general
+fixed-$z$ statement is in that theorem. This is a sufficient upper-bound
+regime, not a necessary or optimal time scale. Its prefactor has not been
+interval-evaluated, so no numerical experimental observation window is asserted.
+
 ## Reading route
 
 | Document | Purpose |
@@ -75,10 +101,12 @@ visibility guarantee.
 | [Proof map](research/PROOF_MAP.md) | Dependencies and complete spectral and transport proofs. |
 | [Spectral foundation](research/SPECTRAL_PROOF.md) | Rest threshold, moving pole, differentiated velocity, and residue. |
 | [Detuning crossover](research/DETUNING_CROSSOVER.md) | Global inverse-detuning velocity cutoff and its source-weighted probability law. |
+| [Finite-time certificate](research/FINITE_TIME_CERTIFICATE.md) | Deterministic-time relative-error bound and its static spectral budgets. |
+| [Joint observation time](research/OBSERVATION_TIME.md) | Uniform integrated continuum decay and a sufficient simultaneous time–detuning regime. |
 | [Threshold endpoint](research/THRESHOLD_ENDPOINT.md) | Correct lattice-edge scaling and the domain of the continuum approximation. |
 | [Transport proof](research/TRANSPORT_PROOF.md) | Continuum separation, two overlap factors, and unconditional measurement law. |
 | [Contribution assessment](research/CONTRIBUTION.md) | Closest predecessors and the precise claim remaining after attribution. |
-| [Reproducibility](REPRODUCIBILITY.md) | Fifteen preserved groups, three endpoint and five detuning groups, source integrity, and report comparisons. |
+| [Reproducibility](REPRODUCIBILITY.md) | Thirty-three scientific groups, source integrity, and report comparisons. |
 
 The finite-momentum scattering framework, motion-induced lattice binding, fractional lattice operator, nearby-pair detection, and spectral pushforward methods have explicit predecessors. The assessed contribution is their microscopic, source-resolved resonance contrast, not a new scattering mechanism or general optimization principle.
 

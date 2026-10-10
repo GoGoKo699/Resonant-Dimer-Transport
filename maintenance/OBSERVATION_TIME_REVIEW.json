@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-10",
+  "formatting_repair": {
+    "change": "Replace form-feed followed by rac by a literal LaTeX backslash-frac in F7 and F9. The previous package and baseline evidence remain preserved externally.",
+    "occurrences": 2,
+    "path": "research/FINITE_TIME_CERTIFICATE.md",
+    "physical_equations_revised": false
+  },
+  "input_reverification": {
+    "canonical_reports_byte_identical": true,
+    "infrastructure_tests": 8,
+    "scientific_groups": 28,
+    "status": "PASS"
+  },
+  "literature": {
+    "external_proof_review": false,
+    "primary_two_body_source": "Sun, Feng and Zhang, Communications Physics 9,146 (2026), published Eq.(6), doi:10.1038/s42005-026-02580-0",
+    "priority_clearance": false,
+    "role": "The finite-momentum contact loop and continuum scattering framework are inherited. Uniform spectral estimates and their source-weighted deterministic-time consequences are the present additions."
+  },
+  "new_proofs": [
+    "Momentum-integrated contact-continuum variation is uniformly bounded for U in a fixed compact interval beginning at Uc, although fiber variation may grow as |P|^(z-1).",
+    "Exact derivative-envelope estimates give sharper L2 band norms; the norm thresholds are properties of the sufficient bound, not physical transitions.",
+    "A sufficient joint time-detuning regime recovers the unconditional fractional-cutoff coincidence probability at deterministic time."
+  ],
+  "new_regressions": {
+    "first_run": "PASS",
+    "groups": 5,
+    "original_checker_assertions_or_tolerances_changed": false,
+    "script": "tools/check_observation_time.py"
+  },
+  "next_task": "Claims-first manuscript compression and focused stress review of the uniform spectral estimate, not automatic Hamiltonian expansion or optimization of every sufficient bound.",
+  "not_claimed": [
+    "Optimal or necessary waiting-time exponent",
+    "Interval-certified numerical prefactor or feasible apparatus window",
+    "Uniform variation in every momentum fiber",
+    "Extra bound-state atom from the continuous spectral peak",
+    "Exponential decay of the full amplitude inferred solely from a linewidth",
+    "Independent invention of the finite-momentum contact loop"
+  ],
+  "pending_finite_time_source_tree": "6de81165bee1cefe017b7ad1641804fdd97c4957",
+  "pending_package_sha256": "cdcb2a0d243a610741de14cc886fcb58ae18f141a83366a18a22f09a5eae2c4f",
+  "preservation": {
+    "archived_files_changed": false,
+    "canonical_reports_changed": false,
+    "generated_foundation_pages_changed": false,
+    "license_changed": false
+  },
+  "remote_base_commit": "fb7a71486081b3485b4b2e498e528ab7ee19b12c",
+  "remote_base_tree": "8b88fb22147db86875b89a24be89e2ea953b73bc",
+  "repository": "GoGoKo699/Resonant-Dimer-Transport"
+}
