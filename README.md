@@ -96,6 +96,7 @@ interval-evaluated, so no numerical experimental observation window is asserted.
 
 | Document | Purpose |
 |---|---|
+| [Results index](research/RESULTS.md) | All established results, their proof locations, and interpretation boundaries. |
 | [Author account](research/AUTHOR_ACCOUNT.md) | Background, precise claims, physical interpretation, and closest predecessors. |
 | [Theorem](research/THEOREM.md) | Model, local observation, limiting velocity law, and preparation-size result. |
 | [Proof map](research/PROOF_MAP.md) | Dependencies and complete spectral and transport proofs. |

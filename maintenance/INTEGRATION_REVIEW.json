@@ -1,0 +1,37 @@
+{
+  "canonical_paths": {
+    "results_index": "research/RESULTS.md",
+    "static_finite_time_certificate": "research/FINITE_TIME_CERTIFICATE.md",
+    "uniform_time_result": "research/OBSERVATION_TIME.md"
+  },
+  "changes": [
+    "Retain the existing integration branch rather than duplicate or roll back its scientific update.",
+    "Update CURRENT.md to the requested repository-maintenance scope.",
+    "Link all established results, assumptions, and proof dependencies in one scientific index.",
+    "Remove editorial planning from the generated contribution text through the source-preserving generator; retain its physical-significance and attribution discussion.",
+    "Retain the exact tracked source snapshot in passing hosted verification artifacts."
+  ],
+  "existing_integration_head": "673cd2d95723ccfb015d63e1b5ec3282d3db10f5",
+  "existing_integration_pr": 6,
+  "existing_integration_tree": "4a1483706bd43fd81611fd6686d60b10e17c4292",
+  "initial_pr_head_evidence": {
+    "artifact": 11676270486,
+    "canonical_reports_byte_identical": true,
+    "infrastructure_tests": 8,
+    "run": 38067571277,
+    "scientific_groups": 33,
+    "source_unchanged": true
+  },
+  "presentation_policy": "The archival sources remain unchanged; only active reading transformations and navigation are updated.",
+  "preservation": {
+    "archive_modified": false,
+    "canonical_reports_replaced": false,
+    "existing_scientific_checkers_or_tolerances_modified": false,
+    "scientific_equations_modified_in_this_completion": false
+  },
+  "published_base": "fb7a71486081b3485b4b2e498e528ab7ee19b12c",
+  "recovered_local_patch_sha256": "e5f83d3bf85e0f3d73c7286489b4f19a2df9f3245980ccdf9054f3f5d30e00f3",
+  "repository": "GoGoKo699/Resonant-Dimer-Transport",
+  "scope": "Repository-only integration and maintenance. No manuscript drafting or new scientific model.",
+  "verification_policy": "New proposed-head and merged-main verification are required. Initial-head success is not a claim that those subsequent runs have completed."
+}
