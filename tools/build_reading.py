@@ -13,7 +13,7 @@ PAGES=[
 ]
 REPLACEMENTS={
  'THEOREM.md': [('## 4. New corollary: the whole relative wavefunction has a controlled size scaling','## 4. Scaled relative wavefunction and preparation size')],
- 'REVIEW.md': [],'prior/FOLLOWUP.md':[],'prior/prior/PILOT.md':[],
+ 'REVIEW.md': [],'prior/FOLLOWUP.md':[],'prior/prior/PILOT.md':[('At e=1 the same argument holds after isolating the two moving cusps and dominating them by |x-1/2|^(-z) and |x+1/2|^(-z).', 'At the endpoint use the exact lattice energy $E=E_{\\rm th}(P)=\\epsilon_z(P)$, not $E=J|P|^z$. The latter is above the lattice edge, so Eq. (8) cannot be extended by substituting e=1. The [exact-threshold lemma](THRESHOLD_ENDPOINT.md) proves the endpoint expansion with coefficient F_z(1), using uniform cusp domination and the same tail splitting.')],
 }
 def sha(data):return hashlib.sha256(data).hexdigest()
 def equations(text):
@@ -43,6 +43,7 @@ def expected():
   ledger['pages'].append({'source':source,'destination':dest,'source_sha256':sha(raw.encode()),'start':start,'stop':stop,
    'append_sources':source=='prior/prior/PILOT.md','remove_repository_allocation':source=='REVIEW.md',
    'omit_historical_allocation_tail':source=='prior/FOLLOWUP.md',
+   'scientific_correction':('research/THRESHOLD_ENDPOINT.md' if source=='prior/prior/PILOT.md' else None),
    'literal_replacements':REPLACEMENTS[source],'display_equations':len(equations(selected)),
    'equations_sha256':sha(json.dumps(equations(selected)).encode()),'output_sha256':sha(data),
    'formatting':'Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.'})

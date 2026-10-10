@@ -52,12 +52,14 @@ This is optimal wavefunction support, not a loading protocol. The fastest bound 
 
 | Document | Purpose |
 |---|---|
+| [Author account](research/AUTHOR_ACCOUNT.md) | Background, precise claims, physical interpretation, and closest predecessors. |
 | [Theorem](research/THEOREM.md) | Model, local observation, limiting velocity law, and preparation-size result. |
 | [Proof map](research/PROOF_MAP.md) | Dependencies and complete spectral and transport proofs. |
 | [Spectral foundation](research/SPECTRAL_PROOF.md) | Rest threshold, moving pole, differentiated velocity, and residue. |
+| [Threshold endpoint](research/THRESHOLD_ENDPOINT.md) | Correct lattice-edge scaling and the domain of the continuum approximation. |
 | [Transport proof](research/TRANSPORT_PROOF.md) | Continuum separation, two overlap factors, and unconditional measurement law. |
 | [Contribution assessment](research/CONTRIBUTION.md) | Closest predecessors and the precise claim remaining after attribution. |
-| [Reproducibility](REPRODUCIBILITY.md) | All fifteen scientific check groups, source integrity, and report comparisons. |
+| [Reproducibility](REPRODUCIBILITY.md) | Fifteen preserved groups, three endpoint regressions, source integrity, and report comparisons. |
 
 The finite-momentum scattering framework, motion-induced lattice binding, fractional lattice operator, nearby-pair detection, and spectral pushforward methods have explicit predecessors. The assessed contribution is their microscopic, source-resolved resonance contrast, not a new scattering mechanism or general optimization principle.
 

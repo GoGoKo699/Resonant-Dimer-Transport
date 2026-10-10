@@ -16,6 +16,7 @@
       "omit_historical_allocation_tail": false,
       "output_sha256": "776261b0af6a918e96792d09fd6b9eeec0c85e6432f92d5c09b3e8efad76f209",
       "remove_repository_allocation": false,
+      "scientific_correction": null,
       "source": "THEOREM.md",
       "source_sha256": "6d83a1bcc7990ee777f08f90ac29777fb3903eda754a120651bdd4af126d7651",
       "start": "## 1. Fixed physical task",
@@ -31,6 +32,7 @@
       "omit_historical_allocation_tail": true,
       "output_sha256": "0dd06925cc4b81ceec9e2b069bd343c331ef4278cdff025d12731a068681eec4",
       "remove_repository_allocation": false,
+      "scientific_correction": null,
       "source": "prior/FOLLOWUP.md",
       "source_sha256": "da990119f215ee675f8fb14a4d9c9efb379bbf16dd3342ad42a40939f0d81736",
       "start": "## 1. Same model; specified source and detector",
@@ -42,10 +44,16 @@
       "display_equations": 30,
       "equations_sha256": "49dfb83d1a52bd14f71b5910a65d537e14cf5238fd51d8fe8c8bf4f043284759",
       "formatting": "Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.",
-      "literal_replacements": [],
+      "literal_replacements": [
+        [
+          "At e=1 the same argument holds after isolating the two moving cusps and dominating them by |x-1/2|^(-z) and |x+1/2|^(-z).",
+          "At the endpoint use the exact lattice energy $E=E_{\\rm th}(P)=\\epsilon_z(P)$, not $E=J|P|^z$. The latter is above the lattice edge, so Eq. (8) cannot be extended by substituting e=1. The [exact-threshold lemma](THRESHOLD_ENDPOINT.md) proves the endpoint expansion with coefficient F_z(1), using uniform cusp domination and the same tail splitting."
+        ]
+      ],
       "omit_historical_allocation_tail": false,
-      "output_sha256": "1095f22413d7fd4879d55660a836d20eefc28486ec5629dfbb20bb2e1a3a5ffb",
+      "output_sha256": "9d477818280068f612baefd36187d3b9eda79071b19a76157970755c4a4babb1",
       "remove_repository_allocation": false,
+      "scientific_correction": "research/THRESHOLD_ENDPOINT.md",
       "source": "prior/prior/PILOT.md",
       "source_sha256": "93fcdd48f5e0a98e5294a3dba5c372fbdcdb4a437270e2b6137614b7c5c18d0e",
       "start": "## 1. A fully specified microscopic model",
@@ -61,6 +69,7 @@
       "omit_historical_allocation_tail": false,
       "output_sha256": "a075a28db9161bd08ea28ee0e4b6e8ced87518f22232881767d079a390a350b2",
       "remove_repository_allocation": true,
+      "scientific_correction": null,
       "source": "REVIEW.md",
       "source_sha256": "be4492a4eec8527cdd84d615cb7f274c894b9a9d11ba197e5a594f45baec9cbf",
       "start": "## Review outcome",
