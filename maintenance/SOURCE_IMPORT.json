@@ -1,0 +1,17 @@
+{
+  "archive": "archive/review-2026-10-10",
+  "archive_files": 77,
+  "archive_manifests": 3,
+  "base_commit": "cdd8bd4735fb33e04a66f43f2feebc99af388877",
+  "base_tree": "c7176e9665c93cc61566ddbee04de40ca25c8666",
+  "continuation": "Existing Chat; no workspace required.",
+  "excluded": "All unrelated attachments, source papers, and protected projects.",
+  "license_git_blob": "e17a781bf47c4aadf18b68fc593846a1193b86c1",
+  "license_sha256": "a92600540b1ab7a18301e2632a29334b3df227ad836e88df9967d69e3c86db66",
+  "manifest_sha256": "d2c5ecf83e50b1f21e51aa6b4883659240944fc385257368b003811fe7a7b201",
+  "package_name": "moving_dimer_review_2026-10-10.zip",
+  "package_sha256": "fc1b5f2a9d4b28602ac43bc2f7c0b7ece7b4b53d28156fda36ae2c860e511e4f",
+  "repository": "GoGoKo699/Resonant-Dimer-Transport",
+  "scientific_groups": 15,
+  "source_changes": "None. The complete provided package is imported byte-for-byte. Generated reading pages have audited presentation-only transformations."
+}

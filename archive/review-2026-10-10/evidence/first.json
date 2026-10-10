@@ -1,0 +1,110 @@
+{
+  "dynamics_controls": {
+    "hilbert_dimension": 100,
+    "odd_source_contact_vanishes": true,
+    "records": [
+      {
+        "deltaU": 0.01,
+        "duhamel_upper_bound": 0.003,
+        "event_probability_difference": 4.2283405547945027e-10,
+        "state_norm_difference": 0.0029708685853624905,
+        "t": 0.3
+      },
+      {
+        "deltaU": -0.04,
+        "duhamel_upper_bound": 0.012,
+        "event_probability_difference": 1.7030135903634813e-09,
+        "state_norm_difference": 0.011883391577629222,
+        "t": 0.3
+      },
+      {
+        "deltaU": 0.01,
+        "duhamel_upper_bound": 0.01,
+        "event_probability_difference": 4.553141753568541e-07,
+        "state_norm_difference": 0.009039939577099233,
+        "t": 1.0
+      },
+      {
+        "deltaU": -0.04,
+        "duhamel_upper_bound": 0.04,
+        "event_probability_difference": 1.8467979514086253e-06,
+        "state_norm_difference": 0.036151513297266756,
+        "t": 1.0
+      },
+      {
+        "deltaU": 0.01,
+        "duhamel_upper_bound": 0.03,
+        "event_probability_difference": 6.173588850369449e-05,
+        "state_norm_difference": 0.019432152823375078,
+        "t": 3.0
+      },
+      {
+        "deltaU": -0.04,
+        "duhamel_upper_bound": 0.12,
+        "event_probability_difference": 0.0002718152247916522,
+        "state_norm_difference": 0.0771714469366245,
+        "t": 3.0
+      }
+    ],
+    "scope": "Exact finite identity checks; infinite-lattice detuning bound uses the norm-one contact projection. This is a sufficient continuity bound, not an optimal tuning requirement."
+  },
+  "prior_python_modules_imported": false,
+  "status": "FAIL",
+  "support": {
+    "largest_fourier_vector": 16384,
+    "records": [
+      {
+        "P": 0.2,
+        "max_grid_refinement": 2.198026543376308e-05,
+        "versions": [
+          {
+            "fourier_grid": 8192,
+            "window_mass": [
+              0.48670181021227676,
+              0.8115830234819648,
+              0.9722554856643076
+            ]
+          },
+          {
+            "fourier_grid": 16384,
+            "window_mass": [
+              0.486684230484855,
+              0.8115612129473887,
+              0.9722335053988739
+            ]
+          }
+        ]
+      },
+      {
+        "P": 0.05,
+        "max_grid_refinement": 0.00027918064082588234,
+        "versions": [
+          {
+            "fourier_grid": 8192,
+            "window_mass": [
+              0.4741053116217531,
+              0.7989635409657384,
+              0.9737764919119051
+            ]
+          },
+          {
+            "fourier_grid": 16384,
+            "window_mass": [
+              0.47388131788106413,
+              0.7986843603249125,
+              0.973500586098145
+            ]
+          }
+        ]
+      }
+    ],
+    "scaled_halfwidths": [
+      0.25,
+      1.0,
+      4.0
+    ],
+    "scope": "FFT of a sampled normalized eigenfunction, not a 16384-dimensional many-body time propagation or a certified interval. Best-support overlap is elementary projection geometry, not an implemented state-loading protocol."
+  },
+  "test_groups": 5,
+  "unrelated_project_files_used": false
+}

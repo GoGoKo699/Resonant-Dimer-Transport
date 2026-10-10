@@ -1,0 +1,14 @@
+# Resonant-Dimer-Transport
+
+> Source-resolved transport at a two-particle binding resonance in a fractional-hopping chain.
+
+## Scientific reading
+- [Theorem](research/THEOREM.md): local preparation, unconditional coincidences, velocity law, preparation-size profile.
+- [Proof map](research/PROOF_MAP.md): full spectral and transport dependencies.
+- [Contribution assessment](research/CONTRIBUTION.md): inherited framework and remaining physical synthesis.
+- [Reproducibility](REPRODUCIBILITY.md): fifteen preserved scientific check groups and source/report integrity.
+- [Current work](CURRENT.md): continue in this Chat; no workspace required.
+- [Agent instructions](AGENTS.md): scope, source preservation, and guarded repository changes.
+
+## Purpose and contact
+This repository serves as a record of the work and a guide for the author's self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).

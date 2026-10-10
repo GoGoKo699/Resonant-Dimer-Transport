@@ -1,0 +1,81 @@
+test_01_resolvent_geometry_and_source_readout (__main__.Checks.test_01_resolvent_geometry_and_source_readout) ... FAIL
+test_02_strong_scaled_wavefunction (__main__.Checks.test_02_strong_scaled_wavefunction) ... ERROR
+test_03_growing_support_and_best_overlap (__main__.Checks.test_03_growing_support_and_best_overlap) ... ok
+test_04_complete_dynamics_and_detuning_continuity (__main__.Checks.test_04_complete_dynamics_and_detuning_continuity) ... ok
+test_05_tail_rule_and_small_support_coefficient (__main__.Checks.test_05_tail_rule_and_small_support_coefficient) ... ERROR
+
+======================================================================
+ERROR: test_02_strong_scaled_wavefunction (__main__.Checks.test_02_strong_scaled_wavefunction)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 103, in test_02_strong_scaled_wavefunction
+    z=.75;c=root(z);F=continuum(c,z,True)
+            ~~~~^^^
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 48, in root
+    def root(z):return brentq(lambda e:continuum(e,z),0,.99999999,xtol=2e-13,rtol=1e-13)
+                       ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/scipy/optimize/_zeros_py.py", line 846, in brentq
+    r = _zeros._brentq(f, a, b, xtol, rtol, maxiter, args, full_output, disp)
+  File "/opt/pyvenv/lib/python3.13/site-packages/scipy/optimize/_zeros_py.py", line 94, in f_raise
+    fx = f(x, *args)
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 48, in <lambda>
+    def root(z):return brentq(lambda e:continuum(e,z),0,.99999999,xtol=2e-13,rtol=1e-13)
+                                       ~~~~~~~~~^^^^^
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 33, in continuum
+    low=sum(quad(lambda x:1/(bfun(x,z)-e)**p,a,b,epsabs=2e-11,epsrel=2e-11,limit=180)[0]
+            for a,b in ((0,.5),(.5,2)))
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 33, in <genexpr>
+    low=sum(quad(lambda x:1/(bfun(x,z)-e)**p,a,b,epsabs=2e-11,epsrel=2e-11,limit=180)[0]
+            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/scipy/integrate/_quadpack_py.py", line 564, in quad
+    warnings.warn(msg, IntegrationWarning, stacklevel=2)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scipy.integrate._quadpack_py.IntegrationWarning: The algorithm does not converge.  Roundoff error is detected
+  in the extrapolation table.  It is assumed that the requested tolerance
+  cannot be achieved, and that the returned result (if full_output = 1) is 
+  the best which can be obtained.
+
+======================================================================
+ERROR: test_05_tail_rule_and_small_support_coefficient (__main__.Checks.test_05_tail_rule_and_small_support_coefficient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 176, in test_05_tail_rule_and_small_support_coefficient
+    zn=.75;c=root(zn);F=continuum(c,zn,True)
+             ~~~~^^^^
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 48, in root
+    def root(z):return brentq(lambda e:continuum(e,z),0,.99999999,xtol=2e-13,rtol=1e-13)
+                       ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/scipy/optimize/_zeros_py.py", line 846, in brentq
+    r = _zeros._brentq(f, a, b, xtol, rtol, maxiter, args, full_output, disp)
+  File "/opt/pyvenv/lib/python3.13/site-packages/scipy/optimize/_zeros_py.py", line 94, in f_raise
+    fx = f(x, *args)
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 48, in <lambda>
+    def root(z):return brentq(lambda e:continuum(e,z),0,.99999999,xtol=2e-13,rtol=1e-13)
+                                       ~~~~~~~~~^^^^^
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 33, in continuum
+    low=sum(quad(lambda x:1/(bfun(x,z)-e)**p,a,b,epsabs=2e-11,epsrel=2e-11,limit=180)[0]
+            for a,b in ((0,.5),(.5,2)))
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 33, in <genexpr>
+    low=sum(quad(lambda x:1/(bfun(x,z)-e)**p,a,b,epsabs=2e-11,epsrel=2e-11,limit=180)[0]
+            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/scipy/integrate/_quadpack_py.py", line 564, in quad
+    warnings.warn(msg, IntegrationWarning, stacklevel=2)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scipy.integrate._quadpack_py.IntegrationWarning: The algorithm does not converge.  Roundoff error is detected
+  in the extrapolation table.  It is assumed that the requested tolerance
+  cannot be achieved, and that the returned result (if full_output = 1) is 
+  the best which can be obtained.
+
+======================================================================
+FAIL: test_01_resolvent_geometry_and_source_readout (__main__.Checks.test_01_resolvent_geometry_and_source_readout)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/moving_dimer_review_2026-10-10/check_review.py", line 76, in test_01_resolvent_geometry_and_source_readout
+    self.assertEqual(int(np.sum(lam<A.min())),1)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.498s
+
+FAILED (failures=1, errors=2)

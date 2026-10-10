@@ -1,0 +1,43 @@
+{
+  "all_final_reports_match_respective_canonical_bytes": true,
+  "date": "2026-10-10",
+  "decision": "GO for bounded project record and author-facing contribution assessment; no strong PRL forecast or repository creation.",
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "exploratory_profile_reuses_candidate_scalar_module": true,
+  "external_proof_or_priority_review_claimed": false,
+  "first_run_status": "FAIL; numerical classification/bracketing diagnostics; preserved in evidence/first.json and evidence/first.log",
+  "formal_new_checker_imports_prior_python": false,
+  "full_wrapper_groups": 15,
+  "incoming_zip_sha256": "68fdc455f0ac9e697e544bb8107acb815f8409e024e50b0f252387b9c652d618",
+  "largest_new_realspace_hilbert_dimension": 100,
+  "largest_new_sampled_wavefunction_fourier_vector": 16384,
+  "new_check_groups": 5,
+  "new_final_passing_runs": 3,
+  "numerical_interval_certificates_claimed": false,
+  "numerical_repairs": [
+    {
+      "issue": "A finite-grid degeneracy at the continuum edge was counted as a second strictly below-band eigenvalue because of floating-point rounding.",
+      "repair": "Use eigenpair backward-error radii for separation from the edge and separately check source-dark weight of ambiguous threshold levels. The physical one-bound-state claim is unchanged; the original strict floating comparison is retained in the failed source.",
+      "source": "development/check_before_numeric_repairs.py"
+    },
+    {
+      "issue": "The independent continuum root routine evaluated an unnecessarily near-edge initial bracket and raised IntegrationWarning.",
+      "repair": "Find a sign bracket progressively inside the continuum edge before Brent solving. Integral equation, solver tolerances and target root are unchanged.",
+      "source": "development/check_before_numeric_repairs.py"
+    }
+  ],
+  "old_check_groups": 10,
+  "old_complete_runs_each": 2,
+  "original_scientific_equations_assertions_and_tolerances_changed": false,
+  "preserved_files": 40,
+  "preserved_manifests": 2,
+  "repository_accessed_or_modified": false,
+  "scope": "Same resonant fractional-dimer candidate; proof/contribution review and an eigenstate-support corollary.",
+  "unrelated_project_code_or_sources_used": false
+}

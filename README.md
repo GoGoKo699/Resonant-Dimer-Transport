@@ -1,1 +1,68 @@
 # Resonant-Dimer-Transport
+
+**What does a local source actually detect when a bound pair has a singular velocity?**
+
+Two distinguishable particles hop on a one-dimensional lattice with a fractional kinetic energy and attract on the same site. At the rest-binding threshold, the persistent same-site coincidence signal has an algebraically unbounded velocity distribution. At any fixed stronger attraction, the same measurement has bounded limiting velocity support.
+
+The result includes the probability cost of local creation and detection, the scattering continuum, and the spatial extent needed to prepare fast dimers with fixed overlap. It is not a claim of efficient superballistic transport.
+
+## Physical task
+
+The single-particle dispersion is
+
+$$
+\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \tfrac12<z<1.
+$$
+
+The interaction is $-U\delta_{x_a,x_b}$. Prepare $|0,0\rangle$, evolve, and measure both positions. The unconditional same-site probability is
+
+$$
+C_j(t)=|\langle j,j|e^{-itH}|0,0\rangle|^2.
+$$
+
+Trials with unequal final positions remain part of the normalization. No initial projection onto a bound band or final energy filtering is supplied.
+
+## Main result
+
+Let $E_d(P)$ be the below-continuum dimer energy and $Z(P)$ its onsite overlap probability. For every bounded continuous test function $f$,
+
+$$
+\lim_{t\to\infty}\sum_j f(j/t)C_j(t)
+=\int_{-\pi}^{\pi}\frac{dP}{2\pi}\,Z(P)^2 f(E'_d(P)).
+$$
+
+At resonance, $E'_d(P)$ diverges near zero momentum while $Z(P)$ vanishes. Both source and detector overlaps matter. The resulting high-velocity coincidence tail is
+
+$$
+Q(v)\sim\frac{B_z^2}{\pi(4z-1)}
+\left(\frac{zc_zJ}{v}\right)^{(4z-1)/(1-z)}.
+$$
+
+For $z=3/4$ it is proportional to $(J/v)^8$: the tail persists but is rare. The limit takes the infinite lattice first, then long time at fixed velocity, and finally high velocity. It is not a fixed-time arrival guarantee or a strict light cone.
+
+A fixed capture probability in a selected fast eigenstate requires relative source radius of order
+
+$$
+R_{\min}(v)=\Theta\!\left((v/J)^{1/(1-z)}\right).
+$$
+
+This is optimal wavefunction support, not a loading protocol. The fastest bound states are spatially large rather than compact molecules.
+
+## Reading route
+
+| Document | Purpose |
+|---|---|
+| [Theorem](research/THEOREM.md) | Model, local observation, limiting velocity law, and preparation-size result. |
+| [Proof map](research/PROOF_MAP.md) | Dependencies and complete spectral and transport proofs. |
+| [Spectral foundation](research/SPECTRAL_PROOF.md) | Rest threshold, moving pole, differentiated velocity, and residue. |
+| [Transport proof](research/TRANSPORT_PROOF.md) | Continuum separation, two overlap factors, and unconditional measurement law. |
+| [Contribution assessment](research/CONTRIBUTION.md) | Closest predecessors and the precise claim remaining after attribution. |
+| [Reproducibility](REPRODUCIBILITY.md) | All fifteen scientific check groups, source integrity, and report comparisons. |
+
+The finite-momentum scattering framework, motion-induced lattice binding, fractional lattice operator, nearby-pair detection, and spectral pushforward methods have explicit predecessors. The assessed contribution is their microscopic, source-resolved resonance contrast, not a new scattering mechanism or general optimization principle.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author's self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
+[MIT license](LICENSE).

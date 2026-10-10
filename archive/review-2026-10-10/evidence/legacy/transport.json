@@ -1,0 +1,244 @@
+{
+  "independent_real_space": {
+    "cases": [
+      {
+        "coincidence_probability": 0.9359713711365523,
+        "contact_amplitude_vector_error": 2.4237875535430263e-15,
+        "finite_ring_bound_coincidence_mass": 0.49375841414723365,
+        "time": 0.37
+      },
+      {
+        "coincidence_probability": 0.36980960507193267,
+        "contact_amplitude_vector_error": 4.9704372466072616e-15,
+        "finite_ring_bound_coincidence_mass": 0.493758414147234,
+        "time": 2.0
+      },
+      {
+        "coincidence_probability": 0.6103009285305252,
+        "contact_amplitude_vector_error": 1.1611837394483661e-14,
+        "finite_ring_bound_coincidence_mass": 0.49375841414723376,
+        "time": 7.0
+      }
+    ],
+    "cells": 14,
+    "dimension": 196,
+    "scope": "Finite ring verifies normalization and exact decompositions, not late-time continuum loss; its P=0 eigenstate is not the infinite-line resonance.",
+    "z": 0.75
+  },
+  "prior_candidate_module_used": "prior/dimer.py; bytes preserved",
+  "propagation": {
+    "cases": [
+      {
+        "coincidence_characteristic": 0.5427313991989516,
+        "difference_from_cutoff_limit": 0.00018741604783401034,
+        "time": 8.0
+      },
+      {
+        "coincidence_characteristic": 0.5429044282142602,
+        "difference_from_cutoff_limit": 1.4387032525431387e-05,
+        "time": 32.0
+      },
+      {
+        "coincidence_characteristic": 0.5429181442070634,
+        "difference_from_cutoff_limit": 6.710397222331466e-07,
+        "time": 128.0
+      }
+    ],
+    "characteristic_frequency": 0.4,
+    "omitted_region_mass_upper_bound": 6.620910805964282e-07,
+    "ray_measure_integral_excluding_tiny_region": 0.5429188152467856,
+    "scope": "Characteristic convergence checks an integrated velocity law, not a fitted front or an assertion of finite-time zero tails.",
+    "stronger_attraction": {
+      "U": 1.4757228112812393,
+      "cases": [
+        {
+          "E": -0.03817122509785885,
+          "P": 0.001,
+          "Z": 0.26684665088460297,
+          "velocity": 0.15227463088389911
+        },
+        {
+          "E": -0.035009010937988104,
+          "P": 0.01,
+          "Z": 0.28421246609661643,
+          "velocity": 0.44626068852065753
+        },
+        {
+          "E": 0.012627514348878741,
+          "P": 0.1,
+          "Z": 0.39425483708046066,
+          "velocity": 0.532814452093945
+        },
+        {
+          "E": 0.40656769566461115,
+          "P": 1.0,
+          "Z": 0.7415571499388093,
+          "velocity": 0.36067851706942955
+        },
+        {
+          "E": 0.6874357888285754,
+          "P": 2.0,
+          "Z": 0.9025572997762523,
+          "velocity": 0.19902550310064157
+        },
+        {
+          "E": 0.8020367177679906,
+          "P": 3.141592653589793,
+          "Z": 0.96254333101364,
+          "velocity": 7.407816699043926e-17
+        }
+      ]
+    }
+  },
+  "scattering_diagnostic": {
+    "cases": [
+      {
+        "P": 0.3,
+        "amplitude_after_subtracting_infinite_line_pole": [
+          0.041112934528391855,
+          0.004382225537449924,
+          0.0009506748752050087
+        ],
+        "exact_grid_contact_amplitudes_imag": [
+          -0.29523110397984914,
+          -0.3024892904103333,
+          -0.2513528524517915
+        ],
+        "exact_grid_contact_amplitudes_real": [
+          -0.14709029990590478,
+          -0.19847580209229723,
+          -0.2594826895026312
+        ],
+        "grid_refinement_max_change": 0.0011472653453806414,
+        "times": [
+          8.0,
+          32.0,
+          128.0
+        ]
+      },
+      {
+        "P": 1.0,
+        "amplitude_after_subtracting_infinite_line_pole": [
+          0.012532273389663033,
+          0.0029357803195363117,
+          0.0001916352331858918
+        ],
+        "exact_grid_contact_amplitudes_imag": [
+          0.5846681470610231,
+          -0.6328217640535541,
+          -0.3399623619660284
+        ],
+        "exact_grid_contact_amplitudes_real": [
+          0.2762203182984777,
+          -0.09182595859792804,
+          0.5393465965284268
+        ],
+        "grid_refinement_max_change": 0.0006159468808298227,
+        "times": [
+          8.0,
+          32.0,
+          128.0
+        ]
+      }
+    ],
+    "max_fiber_grid_dimension": 4096,
+    "scope": "Complete fiber dynamics, not a projected-band propagation. Finite sampling supports, but does not prove, the continuum Riemann-Lebesgue limit."
+  },
+  "source_size": {
+    "cases": [
+      {
+        "P": 0.01,
+        "P_times_rms_size": 2.7295254306862957,
+        "local": [
+          {
+            "R": 0,
+            "limiting_ratio": 1.0,
+            "localmass": 0.06775207119307601,
+            "localmass_over_Z": 1.0000000000000007
+          },
+          {
+            "R": 1,
+            "limiting_ratio": 1.72,
+            "localmass": 0.11602763954143493,
+            "localmass_over_Z": 1.7125327314464824
+          },
+          {
+            "R": 3,
+            "limiting_ratio": 2.6574906412269046,
+            "localmass": 0.17805417966552936,
+            "localmass_over_Z": 2.6280256312478
+          }
+        ],
+        "residue": 0.06775207119307597,
+        "residue_over_power": 0.6775207119307597,
+        "velocity": 1.5185916577143628
+      },
+      {
+        "P": 0.001,
+        "P_times_rms_size": 2.703221580610412,
+        "local": [
+          {
+            "R": 0,
+            "limiting_ratio": 1.0,
+            "localmass": 0.021515491331240297,
+            "localmass_over_Z": 1.0000000000033293
+          },
+          {
+            "R": 1,
+            "limiting_ratio": 1.72,
+            "localmass": 0.0369783733373323,
+            "localmass_over_Z": 1.7186859815635793
+          },
+          {
+            "R": 3,
+            "limiting_ratio": 2.6574906412269046,
+            "localmass": 0.057065895510220656,
+            "localmass_over_Z": 2.652316632321172
+          }
+        ],
+        "residue": 0.021515491331168667,
+        "residue_over_power": 0.680379575841011,
+        "velocity": 2.6826003845768627
+      }
+    ],
+    "residue_coefficient": 0.6816851253745778,
+    "scope": "The finite-relative-support preparation bound and its attaining projection are exact; asymptotic conclusions use the proof, not these points.",
+    "universal_relative_size": 2.691124348466135,
+    "z": 0.75
+  },
+  "status": "PASS",
+  "tail": {
+    "asymptotic_coefficient": 0.00019347109014358535,
+    "bound_sector_mass": 0.7067744299603413,
+    "cases": [
+      {
+        "large_velocity_leading_term": 0.00019347109014358535,
+        "limiting_unconditioned_contact_tail": 0.00022546710613329142,
+        "near_zero_momentum_cutoff": 0.055864015725685265,
+        "tail_over_leading_term": 1.1653787962116722,
+        "velocity_in_J_units": 1.0
+      },
+      {
+        "large_velocity_leading_term": 7.557464458733803e-07,
+        "limiting_unconditioned_contact_tail": 7.860883635640765e-07,
+        "near_zero_momentum_cutoff": 0.003269258343462991,
+        "tail_over_leading_term": 1.040148277052936,
+        "velocity_in_J_units": 2.0
+      },
+      {
+        "large_velocity_leading_term": 2.9488049099769144e-08,
+        "limiting_unconditioned_contact_tail": 3.0007475914494715e-08,
+        "near_zero_momentum_cutoff": 0.000637751872722525,
+        "tail_over_leading_term": 1.017614824669077,
+        "velocity_in_J_units": 3.0
+      }
+    ],
+    "eventual_contact_mass": 0.5466750044323028,
+    "exponent": 8.0,
+    "maximum_adjacent_velocity_increment_on_sampled_grid": -0.00995168154600845,
+    "numerical_caution": "Tail quadratures are not outward intervals. The asymptotic support/tail theorem does not assume global velocity monotonicity.",
+    "z": 0.75
+  },
+  "test_groups": 5,
+  "unrelated_project_modules_used": false
+}

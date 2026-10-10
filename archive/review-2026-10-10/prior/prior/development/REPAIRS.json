@@ -1,0 +1,5 @@
+{
+  "formal_tests": "No failures occurred in either formal five-group run. No scientific assertion or tolerance was relaxed.",
+  "momentum_domain": "A preliminary run with P=0.01 rejected the upper bracket after unnecessarily wrapping an already valid P changed its floating-point value. The guarded resolvent now accepts the declared [-pi,pi] representative without modifying it. Pre-fix dimer.py is preserved in development/.",
+  "preliminary_quadrature": "The first exploratory integration emitted convergence warnings for selected near-threshold cases. Later integration uses explicit substitutions removing cusp and tail weights. The initial exploration log is retained."
+}
