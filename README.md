@@ -63,8 +63,34 @@ $\theta v_{\max}(U)$ is of order $\delta^{(4z-1)/(1-z)}$. At $z=3/4$, better
 tuning raises the cutoff as $\delta^{-1}$ while its near-cutoff weight falls
 as $\delta^8$. The [detuning theorem](research/DETUNING_CROSSOVER.md) proves the
 global maximum, its momentum scale, and the full probability crossover.
-Long time is taken at each fixed detuning first; this is not a finite-time
-visibility guarantee.
+That theorem takes long time at each fixed detuning first. The finite-time
+extension below gives a separate sufficient joint-limit condition, not an
+experimental visibility guarantee.
+
+## Finite-time resolution
+
+A conservative joint-limit theorem now controls the original sharp coincidence
+event at deterministic finite times. For fixed $0<\theta<1$, define
+
+$$
+p_\delta(t;\theta)=\Pr_U(x_a=x_b,\ |X|>\theta v_{\max}(U)t).
+$$
+
+The [finite-time proof](research/FINITE_TIME.md) shows that
+
+$$
+Jt_\delta\,\delta^{M_z}\to\infty
+\quad\Longrightarrow\quad
+\frac{p_\delta(t_\delta;\theta)}{Q_U(\theta v_{\max}(U))}\to1,
+\qquad M_z=\frac{(4z-1)(10-z)}{4(1-z)(2z-1)}.
+$$
+
+At $z=3/4$, $M_z=37$. This is a **sufficient, nonoptimized bound**, not a
+necessary waiting time, a physical relaxation exponent, or an experimentally
+useful operating window. It follows from a uniform continuum estimate and a
+sharp-event Fourier bound; no time averaging or change of source/detector is
+introduced. The result controls error relative to the shrinking probability,
+while retaining the infinite-lattice assumption.
 
 ## Reading route
 
@@ -74,11 +100,12 @@ visibility guarantee.
 | [Theorem](research/THEOREM.md) | Model, local observation, limiting velocity law, and preparation-size result. |
 | [Proof map](research/PROOF_MAP.md) | Dependencies and complete spectral and transport proofs. |
 | [Spectral foundation](research/SPECTRAL_PROOF.md) | Rest threshold, moving pole, differentiated velocity, and residue. |
+| [Finite-time resolution](research/FINITE_TIME.md) | Deterministic relative-error joint limit and explicit conservative error bounds. |
 | [Detuning crossover](research/DETUNING_CROSSOVER.md) | Global inverse-detuning velocity cutoff and its source-weighted probability law. |
 | [Threshold endpoint](research/THRESHOLD_ENDPOINT.md) | Correct lattice-edge scaling and the domain of the continuum approximation. |
 | [Transport proof](research/TRANSPORT_PROOF.md) | Continuum separation, two overlap factors, and unconditional measurement law. |
 | [Contribution assessment](research/CONTRIBUTION.md) | Closest predecessors and the precise claim remaining after attribution. |
-| [Reproducibility](REPRODUCIBILITY.md) | Fifteen preserved groups, three endpoint and five detuning groups, source integrity, and report comparisons. |
+| [Reproducibility](REPRODUCIBILITY.md) | Twenty-nine scientific groups, source integrity, and preserved-report comparisons. |
 
 The finite-momentum scattering framework, motion-induced lattice binding, fractional lattice operator, nearby-pair detection, and spectral pushforward methods have explicit predecessors. The assessed contribution is their microscopic, source-resolved resonance contrast, not a new scattering mechanism or general optimization principle.
 

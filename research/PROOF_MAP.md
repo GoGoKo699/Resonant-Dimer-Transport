@@ -12,6 +12,9 @@ The reading order follows the logical dependencies of the local-source transport
 | Exact-threshold scaling and the endpoint domain | [Endpoint lemma](THRESHOLD_ENDPOINT.md) |
 | Detuning profile, global velocity cutoff, and maximizing momentum scale | [Detuning theorem, Sections 2–5](DETUNING_CROSSOVER.md) |
 | Unconditional probability crossover and its resonance matching | [Detuning theorem, Section 6](DETUNING_CROSSOVER.md) |
+| Uniform contact-continuum decay, including merging critical energies | [Finite-time proof, Sections 2–3](FINITE_TIME.md) |
+| Exact minimum gap, gapped band regularity, and sharp-event error bound | [Finite-time proof, Sections 4–5](FINITE_TIME.md) |
+| Deterministic relative-error joint time–detuning limit | [Finite-time proof, Sections 1 and 6](FINITE_TIME.md) |
 | Fixed stronger binding and finite effective mass | [Spectral foundation, Section 5](SPECTRAL_PROOF.md) |
 | Contact spectral density, continuum separation, two overlap factors | [Transport proof, Section 2](TRANSPORT_PROOF.md) and [theorem, Sections 2–3](THEOREM.md) |
 | Limiting coincidence-velocity measure and high-speed tail | [Transport proof, Sections 3–4](TRANSPORT_PROOF.md) |

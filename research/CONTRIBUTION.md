@@ -6,7 +6,7 @@ No blocking mathematical defect was identified in the scoped infinite-lattice co
 
 A corollary completes the size interpretation already present in the same eigenstate: the scaled normalized relative wavefunction converges in L2, hence the best overlap with a relative source of radius R has a limiting profile in PR. Fixed capture probability requires R of order 1/P, or order (v/J)^(1/(1-z)). This does not construct a physical loading protocol or grant momentum selection to the original local quench.
 
-The finite-time perturbation estimate |delta probability| <= t|delta U| is another elementary corollary. It does not provide the missing uniform-in-velocity continuum-convergence rate or an optimal tuning requirement.
+The finite-time perturbation estimate |delta probability| <= t|delta U| is an elementary corollary, not a continuum-decay estimate. The [finite-time extension](FINITE_TIME.md) separately proves uniform continuum decay and deterministic relative-error control in a joint time-detuning limit. Its deliberately coarse sufficient time is not optimal or necessary and does not establish experimental feasibility. The extension quantifies the same local measurement rather than introducing another physical mechanism.
 
 ## Strongest predecessor reconstruction
 
@@ -43,7 +43,7 @@ Targeted searches using bound pairs, fractional dispersion, resonance, and long-
 
 ## Contribution judgment
 
-The positive case is the failure of finite-velocity regularization by binding at a resonance, demonstrated in a local observation rather than only a pole plot. The skeptical case is substantial: the two-body framework is already available, the central exponent is ordinary residue/velocity power counting, the strict distinction requires resonance tuning and iterated limits, and the high-speed events are rare. The available result is not a demonstration of efficient superballistic transport. Familiar tools and rare events do not automatically make a theorem insignificant, but neither does proving a sharp asymptotic formula establish PRL-level broad interest.
+The positive case is the failure of finite-velocity regularization by binding at a resonance, demonstrated in a local observation rather than only a pole plot. The skeptical case is substantial: the two-body framework is already available, the central exponent is ordinary residue/velocity power counting, the exact support distinction is asymptotic and resonance-tuned, while the available finite-time relative-error theorem uses a conservative sufficient bound and the high-speed events remain rare. The available result is not a demonstration of efficient superballistic transport. Familiar tools and rare events do not automatically make a theorem insignificant, but neither does proving a sharp asymptotic formula establish PRL-level broad interest.
 
 Keep the central claim as the source-resolved resonance contrast. Do not create separate novelty headlines from the scaling profile, gamma-function coefficients, generic pushforward exponent, or elementary Duhamel continuity bound. No many-body, disordered, lossy, or alternate-device expansion is needed merely to make this bounded result assessable.
 

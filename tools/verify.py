@@ -98,6 +98,12 @@ def main():
  detuning_path=out/'detuning.json'
  detuning_report=json.loads(detuning_path.read_text()) if detuning_path.exists() else {}
  detuning_ok=detuning.returncode==0 and detuning_report.get('status')=='PASS' and detuning_report.get('test_groups')==5
+ with (out/'finite_time.log').open('xb') as log:
+  finite_time=subprocess.run([sys.executable,str(ROOT/'tools/check_finite_time.py'),'--output',str(out/'finite_time.json')],
+    cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT,timeout=180)
+ finite_time_path=out/'finite_time.json'
+ finite_time_report=json.loads(finite_time_path.read_text()) if finite_time_path.exists() else {}
+ finite_time_ok=finite_time.returncode==0 and finite_time_report.get('status')=='PASS' and finite_time_report.get('test_groups')==6
  path=out/'scientific/receipt.json';receipt=json.loads(path.read_text()) if path.exists() else {}
  comparisons=[]
  for name,reference,generated in [('review','evidence/final.json','review.json'),('transport','prior/evidence/final3.json','preserved/transport.json'),('pilot','prior/prior/evidence/first.json','preserved/pilot.json')]:
@@ -108,7 +114,7 @@ def main():
  identical=all(c['byte_identical'] for c in comparisons)
  numeric=bool(all_diff) and all(d.get('kind')=='numeric' for d in all_diff)
  preserved_assertions=receipt.get('all_assertions_pass') is True and receipt.get('scientific_groups')==15
- assertions=preserved_assertions and endpoint_ok and detuning_ok
+ assertions=preserved_assertions and endpoint_ok and detuning_ok and finite_time_ok
  unchanged=before==inventory() and receipt.get('source_unchanged') is True
  report_ok=identical or (args.allow_numeric_report_differences and numeric)
  passed=infra.returncode==0 and assertions and unchanged and report_ok
@@ -116,11 +122,13 @@ def main():
   'repository':'GoGoKo699/Resonant-Dimer-Transport','commit':git('rev-parse','HEAD'),'index_tree':git('write-tree'),
   'static_checks':static,'infrastructure_tests':json.loads((out/'infrastructure.json').read_text()).get('tests_run'),
   'infrastructure_returncode':infra.returncode,
-  'scientific_groups':receipt.get('scientific_groups',0)+endpoint_report.get('test_groups',0)+detuning_report.get('test_groups',0),
+  'scientific_groups':receipt.get('scientific_groups',0)+endpoint_report.get('test_groups',0)+detuning_report.get('test_groups',0)+finite_time_report.get('test_groups',0),
   'preserved_scientific_groups':receipt.get('scientific_groups'),'preserved_assertions_pass':preserved_assertions,
   'endpoint_scientific_groups':endpoint_report.get('test_groups'),'endpoint_assertions_pass':endpoint_ok,
   'detuning_scientific_groups':detuning_report.get('test_groups'),'detuning_assertions_pass':detuning_ok,
   'detuning_returncode':detuning.returncode,
+  'finite_time_scientific_groups':finite_time_report.get('test_groups'),'finite_time_assertions_pass':finite_time_ok,
+  'finite_time_returncode':finite_time.returncode,
   'scientific_assertions_pass':assertions,'original_wrapper_returncode':science.returncode,
   'all_canonical_reports_byte_identical':identical,'report_comparisons':comparisons,
   'numeric_report_review_required':not identical,'allow_numeric_report_differences':args.allow_numeric_report_differences,

@@ -225,9 +225,10 @@ probabilities per prepared pair, without conditioning on a final coincidence:
 | 3 | $3.0007475914\times10^{-8}$ |
 
 These are the preserved model diagnostics, not experimentally established
-rates or certified numerical intervals. Equation (4) currently supplies no
-uniform observation time that resolves these rare events with small relative
-error.
+rates or certified numerical intervals. Equation (4) alone supplies no
+observation time. The finite-time extension below supplies a conservative
+sufficient joint-limit condition, not a useful finite-parameter experimental
+waiting time.
 
 For a relative source restricted to $|r|\le R$, the exact best squared overlap
 with a selected bound eigenstate is
@@ -267,6 +268,48 @@ only the center-of-mass envelope does not remove the internal size requirement.
 The limiting velocity measure is tight. For every $L(t)/t\to\infty$,
 $\sum_{|j|>L(t)}C_j(t)\to0$. Thus unbounded velocity support does not mean a
 nonvanishing superballistic coincidence fraction.
+
+## Deterministic finite-time resolution
+
+The [finite-time theorem](FINITE_TIME.md) controls the original sharp event,
+not a smoothed substitute. Let $p_\delta(t;\theta)$ be the unconditional
+probability of a same-site coincidence outside
+$|X|\le\theta v_{\max}(U)t$, for a fixed $0<\theta<1$. If
+
+$$
+Jt_\delta\,\delta^{M_z}\to\infty,\qquad
+M_z=\frac{(4z-1)(10-z)}{4(1-z)(2z-1)},
+$$
+
+then
+
+$$
+\frac{p_\delta(t_\delta;\theta)}{\delta^{\alpha_z}}
+\to\left(\frac J{U_c}\right)^4\mathcal H_z(\theta K_z)>0,
+\qquad \alpha_z=\frac{4z-1}{1-z}.
+$$
+
+This is a simultaneous time-detuning limit for deterministic finite times,
+with error small relative to the rare-event probability. No time average,
+favorable subsequence of oscillations, or prior dimer preparation is required.
+The infinite lattice remains a model assumption.
+
+The proof bounds the continuous contact amplitude uniformly in momentum and
+detuning by $\mathcal C_z(Jt)^{-\gamma_z}$, with
+$\gamma_z=(4z-2)/(10-z)$. It uses the exact spectral density, removes small
+energy neighborhoods of all three critical values (including the internal
+maximum), and controls the principal-value derivative on the remainder.
+A Fourier sandwich then bounds the original sharp position event. The
+interference error uses the pole norm on that event, rather than its much
+larger total norm.
+
+At $z=3/4$, this gives $M_z=37$. **This is not a new physical critical
+exponent or a necessary waiting time.** It is the sufficient exponent of a
+coarse proof with large explicit constants. The result closes a mathematical
+order-of-limits gap but does not establish practical detectability. Neither
+an optimal relaxation time nor a finite laboratory size follows. The exact
+nonasymptotic error formula identifies what must be bounded more sharply to
+obtain a useful finite-parameter estimate.
 
 ## Relationship to established work
 
