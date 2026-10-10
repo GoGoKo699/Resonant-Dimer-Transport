@@ -1,0 +1,49 @@
+{
+  "all_source_hashes_match_tested_local_tree": true,
+  "artifact_file_sha256": "1e7009d0573b3fb359c7d86e6501c03a15fa22680c15386cd6c0877823f51bc5",
+  "artifact_id": 11670290555,
+  "classification": "All 89 finite numeric differences inspected. They are consistent with floating-point numerical stack differences; the largest arise from subtracting close energies and dividing by small powers or steps. No single library/hardware cause is experimentally isolated. All original scientific assertions pass unchanged.",
+  "decision": "Accept this recorded hosted run as scientific reproducibility evidence with numeric-report qualification, not as canonical byte identity. Future hosted runs require inspection of their full receipts. Default local verification remains byte-strict. No archived source, canonical report, assertion or tolerance changes.",
+  "infrastructure_tests_passed": 8,
+  "numeric_differences": 89,
+  "report_structure_or_type_changes": 0,
+  "reviewed_head": "4782d788a6daf29861b4ad4db644784d5e946a99",
+  "reviewed_tree": "1cd03c0c868565f803bcd0f15602921093e52f50",
+  "scientific_groups_passed": 15,
+  "suites": [
+    {
+      "largest_difference": {
+        "absolute_difference": 2.0469737016526324e-15,
+        "kind": "numeric",
+        "path": "/dynamics_controls/records/5/event_probability_difference",
+        "reference": 0.0002718152247916522,
+        "run": 0.0002718152247936992
+      },
+      "numeric_differences": 24,
+      "suite": "review"
+    },
+    {
+      "largest_difference": {
+        "absolute_difference": 2.382538610845586e-13,
+        "kind": "numeric",
+        "path": "/scattering_diagnostic/cases/1/exact_grid_contact_amplitudes_real/2",
+        "reference": 0.5393465965284268,
+        "run": 0.539346596528665
+      },
+      "numeric_differences": 43,
+      "suite": "transport"
+    },
+    {
+      "largest_difference": {
+        "absolute_difference": 1.6653345369377348e-10,
+        "kind": "numeric",
+        "path": "/observable_scaling/fixed_stronger_attraction/cases/2/energy_difference_over_P2",
+        "reference": 2.4583881144679687,
+        "run": 2.4583881143014352
+      },
+      "numeric_differences": 22,
+      "suite": "pilot"
+    }
+  ],
+  "workflow_run": 38052348544
+}
