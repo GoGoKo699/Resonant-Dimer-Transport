@@ -1,0 +1,58 @@
+{
+  "base_commit": "fb7a71486081b3485b4b2e498e528ab7ee19b12c",
+  "base_tree": "8b88fb22147db86875b89a24be89e2ea953b73bc",
+  "checks": {
+    "first_checker_sha256": "1c940eac825fb63231fcfd33052e59d0e76e50d387ee8671cd5b192314535c6b",
+    "first_formal_run": "PASS",
+    "first_helper_sha256": "27eb8e091c89ff320ebfcbd6aaafb61d2aced3bfdd065187d3a4ce10ace42b95",
+    "first_report_sha256": "3fb56e4a376b1d48ef7c0e8bc6a996a7ffa950ca0b9d4b6be0ee12839d6c7265",
+    "interval_certification": false,
+    "large_time_infinite_lattice_simulation": false,
+    "largest_new_fourier_sample_count": 8192,
+    "largest_new_realspace_dimension": 100,
+    "new_groups": 6,
+    "preserved_scalar_solver_reused": "Only by the new checker, for gapped energies.",
+    "smooth_band_fixture": "Regression for a general Fourier inequality, not a different proposed dimer model.",
+    "source_of_truth": "Analytical estimates; numerical checks do not prove infinite-volume or uniform limits."
+  },
+  "date": "2026-10-10",
+  "new_results": [
+    "Uniform pointwise contact-continuum bound with gamma_z=(4z-2)/(10-z), including merging critical energies.",
+    "Exact global minimum gap equals the rest binding energy, by a subadditivity/variational argument.",
+    "Nonasymptotic sharp-event error bound retaining the event-specific pole norm in the interference term.",
+    "Relative-error joint limit under J t_delta delta^M_z -> infinity, M_z=(4z-1)(10-z)/(4(1-z)(2z-1))."
+  ],
+  "note": "Publication and final tested-head receipts are recorded separately in the PR and conversation evidence, not inferred from this source ledger.",
+  "preservation": {
+    "archive_files_unchanged": 77,
+    "canonical_reports_changed": false,
+    "display_equation_contents_changed": false,
+    "generated_page_updates": [
+      "research/THEOREM.md",
+      "research/CONTRIBUTION.md"
+    ],
+    "old_assertions_or_tolerances_changed": false,
+    "transforms": "Recorded literal proof-scope updates linking the new extension; immutable source notes unchanged."
+  },
+  "repository": "GoGoKo699/Resonant-Dimer-Transport",
+  "scientific_failures_in_new_formal_run": 0,
+  "scope": "Same Hamiltonian, onsite preparation, unconditional sharp coincidence event, deterministic finite times; infinite lattice retained.",
+  "source_review": {
+    "Egorova_Kopylova_Teschl": "Primary author page and publisher abstract inspected; methodological precedent only.",
+    "Frymark_Liaw": "Primary abstract checked; prior foundational full-text attribution retained. Fresh HTML body was unavailable.",
+    "Pelinovsky_Stefanov": "Primary abstract states nearest-neighbor operator and dispersive results; those exponents are not invoked for this model.",
+    "Sun_Feng_Zhang": "Published primary two-body Eqs. (6)-(8) and detuned-pole discussion read; framework inherited.",
+    "external_peer_review": false,
+    "figure_values_extracted": false,
+    "search_scope": "Targeted fractional/discrete dispersive estimates, bound-pair resonance and finite-time transport; not exhaustive priority clearance.",
+    "unrelated_attached_papers_used": false
+  },
+  "time_bound": {
+    "boundary_mass": "A static velocity-boundary integral; convergence proved, no independent rate claimed.",
+    "constants": "Explicit and deliberately large; not estimated from a decay fit.",
+    "finite_experimental_window_claimed": false,
+    "optimal_or_necessary": false,
+    "physical_relaxation_exponent": false,
+    "z_three_quarters_sufficient_exponent": 37
+  }
+}

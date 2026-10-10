@@ -29,6 +29,10 @@ jobs:
         run: python -m pip install -r requirements.txt
       - name: Verify sources and all scientific assertions
         run: python tools/verify.py --output-dir "$RUNNER_TEMP/dimer-verification" --allow-numeric-report-differences
+      - name: Reproduce the preserved alternative estimate
+        run: python tools/verify_alternative_time.py --output-dir "$RUNNER_TEMP/dimer-verification/alternative"
+      - name: Attach the exact tracked sources to passing evidence
+        run: git archive --format=tar --output="$RUNNER_TEMP/dimer-verification/source.tar" HEAD
       - name: Preserve complete evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

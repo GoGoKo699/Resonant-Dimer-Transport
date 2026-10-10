@@ -157,7 +157,8 @@ The pole profile and dimensional prediction follow from the same inherited
 finite-momentum scattering framework [1]. The additional work is control of
 the lattice derivative, global rather than local maximization, and the two
 source/detector weights. Long time is taken at fixed detuning before approaching
-resonance. These results do not supply an observation time for rare events.
+resonance. The detuning result alone does not supply an observation time;
+the separate joint time–detuning estimate below addresses deterministic readout.
 
 ## Why the local measurement matters
 
@@ -225,9 +226,9 @@ probabilities per prepared pair, without conditioning on a final coincidence:
 | 3 | $3.0007475914\times10^{-8}$ |
 
 These are the preserved model diagnostics, not experimentally established
-rates or certified numerical intervals. Equation (4) currently supplies no
-uniform observation time that resolves these rare events with small relative
-error.
+rates or certified numerical intervals. Equation (4) alone supplies no
+uniform observation time. The separate finite-time and joint-regime estimates
+below control relative error without assigning a certified numerical waiting time.
 
 For a relative source restricted to $|r|\le R$, the exact best squared overlap
 with a selected bound eigenstate is
@@ -267,6 +268,58 @@ only the center-of-mass envelope does not remove the internal size requirement.
 The limiting velocity measure is tight. For every $L(t)/t\to\infty$,
 $\sum_{|j|>L(t)}C_j(t)\to0$. Thus unbounded velocity support does not mean a
 nonvanishing superballistic coincidence fraction.
+
+## Finite-time error control and a joint observation regime
+
+The sharp event can also be bounded at a deterministic time. Put
+$a=\delta/J$, $p_t(s)=\Pr(x_a=x_b,|aX/t|>s)$, and let $q(s)$ denote
+its limiting probability. If $d_t$ bounds the band-to-velocity event error
+and $e_t$ bounds the continuum contact-amplitude norm, then
+
+$$
+|p_t(s)-q(s)|\le d_t+2\sqrt{q(s)+d_t}\,e_t+e_t^2.
+$$
+
+The [finite-time certificate](FINITE_TIME_CERTIFICATE.md) gives
+$d_t=S(s,h)+A(h)/t$ in terms of a narrow velocity-shell mass and explicit
+band-derivative norms. Its smoothing is confined to the proof; neither the
+actual sharp detector nor the local preparation is changed. For a rare
+probability $q$, continuum amplitude error small relative to $\sqrt q$
+suffices, provided $d_t=o(q)$.
+
+The [joint observation-time theorem](OBSERVATION_TIME.md) establishes
+
+$$
+\eta_U(t)\le\frac{C}{Jt}
+$$
+
+uniformly for couplings in a fixed interval $U_c\le U\le U_1$. The uniformity
+holds after the total-momentum integral. Individual-fiber spectral variation
+can diverge like $|P|^{z-1}$; its square remains integrable for $z>1/2$.
+The proof treats the lower cusp, a narrow continuum resonance above an
+internal local maximum, and the coalescing upper maxima separately.
+
+Together with cusp-safe estimates for $Z'$ and $E''Z$, this yields a
+sufficient joint limit for the unchanged event
+$p_{\delta,t}=\Pr(x_a=x_b,|X|>\theta v_{\max}(U_\delta)t)$.
+For any fixed $0<\theta<1$, at $z=3/4$,
+
+$$
+\boxed{Jt\delta^7/\sqrt{\log(2/\delta)}\to\infty
+\quad\Longrightarrow\quad
+p_{\delta,t}=C_{3/4,\theta}\delta^8[1+o(1)].}
+$$
+
+For other fixed $z$, the explicit sufficient exponent is given in Eq. (O1)
+of that theorem. For each fixed relative accuracy, the corresponding bound
+holds at every sufficiently late deterministic time, with constants
+independent of small detuning.
+
+This is a sufficient waiting-time regime, not a necessary time, a sharp
+dynamical exponent, or an interval-certified numerical observation window.
+The logarithm at $z=3/4$ comes from the norms used in the estimate, not a new
+physical phase. No claim is made that waiting this long is experimentally
+feasible, nor that the much shorter dimensional spectral time is insufficient.
 
 ## Relationship to established work
 

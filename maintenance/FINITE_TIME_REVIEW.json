@@ -1,0 +1,45 @@
+{
+  "base_commit": "fb7a71486081b3485b4b2e498e528ab7ee19b12c",
+  "base_tree": "8b88fb22147db86875b89a24be89e2ea953b73bc",
+  "checks": {
+    "density_samples_are_not_variation_enclosures": true,
+    "new_groups": 5,
+    "preserved_scalar_code_reused": true,
+    "smooth_band_is_a_separate_mathematical_control": true
+  },
+  "date": "2026-10-10",
+  "local_process": {
+    "base_snapshot_tree_matched_live_main": true,
+    "completed_baseline": "baseline2/verification.json: strict PASS, 23 scientific groups and 8 infrastructure tests.",
+    "first_baseline_invocation": "Interrupted by a one-second container timeout; not counted as verification.",
+    "new_suite": "First five-group run passed; the final version also includes dimer boundary-density samples. No failed assertion or tolerance repair."
+  },
+  "mathematical_addition": [
+    "Event-local amplitude-to-probability bound with square-root rare-probability tolerance.",
+    "Fourier sandwich and explicit band error coefficient from first residue and second band derivatives.",
+    "Cusp-safe second resolvent derivative and global below-band gap lower bound -E(0).",
+    "Finite continuum energy variation on compact momentum intervals away from coalescences.",
+    "Nonasymptotic relative-error certificate and sufficient time conditional on static spectral quantities."
+  ],
+  "not_established": [
+    "Optimal or detuning-only observation-time exponent.",
+    "Interval-certified values of the continuum variation integral or a physical waiting time.",
+    "Uniform variation estimate with the auxiliary momentum margin removed.",
+    "Efficient superballistic transport or implementation advantage."
+  ],
+  "preservation": {
+    "archive_files": 77,
+    "archived_bytes_changed": false,
+    "canonical_reports_changed": false,
+    "generated_foundational_pages_changed": false,
+    "original_assertions_or_tolerances_changed": false
+  },
+  "repository": "GoGoKo699/Resonant-Dimer-Transport",
+  "scope": "Same infinite lattice, U>Uc, local preparation, unconditional sharp coincidence event at deterministic time.",
+  "source_review": {
+    "Cheng_Huang_Zheng": "Primary abstract inspected. Ordinary continuum Laplacian and spectral assumptions differ; no decay exponent imported.",
+    "Frymark_Liaw": "Primary record reread; rank-one formula already attributed and derived in the transport proof.",
+    "Sun_Feng_Zhang": "Published primary two-magnon account retained as the inherited scattering framework.",
+    "priority_clearance_claimed": false
+  }
+}

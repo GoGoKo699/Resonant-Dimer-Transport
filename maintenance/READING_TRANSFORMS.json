@@ -13,6 +13,7 @@
           "## 4. Scaled relative wavefunction and preparation size"
         ]
       ],
+      "omit_editorial_planning_sentence": false,
       "omit_historical_allocation_tail": false,
       "output_sha256": "776261b0af6a918e96792d09fd6b9eeec0c85e6432f92d5c09b3e8efad76f209",
       "remove_repository_allocation": false,
@@ -29,6 +30,7 @@
       "equations_sha256": "0eb7b719a98040ec034abc9cf236b697d8eb57873c24f76bbbcc3a1e08d4066e",
       "formatting": "Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.",
       "literal_replacements": [],
+      "omit_editorial_planning_sentence": false,
       "omit_historical_allocation_tail": true,
       "output_sha256": "0dd06925cc4b81ceec9e2b069bd343c331ef4278cdff025d12731a068681eec4",
       "remove_repository_allocation": false,
@@ -50,6 +52,7 @@
           "At the endpoint use the exact lattice energy $E=E_{\\rm th}(P)=\\epsilon_z(P)$, not $E=J|P|^z$. The latter is above the lattice edge, so Eq. (8) cannot be extended by substituting e=1. The [exact-threshold lemma](THRESHOLD_ENDPOINT.md) proves the endpoint expansion with coefficient F_z(1), using uniform cusp domination and the same tail splitting."
         ]
       ],
+      "omit_editorial_planning_sentence": false,
       "omit_historical_allocation_tail": false,
       "output_sha256": "9d477818280068f612baefd36187d3b9eda79071b19a76157970755c4a4babb1",
       "remove_repository_allocation": false,
@@ -65,9 +68,15 @@
       "display_equations": 0,
       "equations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "formatting": "Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.",
-      "literal_replacements": [],
+      "literal_replacements": [
+        [
+          "It does not provide the missing uniform-in-velocity continuum-convergence rate or an optimal tuning requirement.",
+          "It is not itself a continuum-decay estimate or an optimal tuning requirement. Deterministic event accuracy and the sufficient joint regime are proved separately in the [finite-time certificate](FINITE_TIME_CERTIFICATE.md) and [observation-time theorem](OBSERVATION_TIME.md)."
+        ]
+      ],
+      "omit_editorial_planning_sentence": true,
       "omit_historical_allocation_tail": false,
-      "output_sha256": "a075a28db9161bd08ea28ee0e4b6e8ced87518f22232881767d079a390a350b2",
+      "output_sha256": "f4f5358dc6a03f8b22cc33d4ea5411fc824f2279db6294f550b70d2650b16739",
       "remove_repository_allocation": true,
       "scientific_correction": null,
       "source": "REVIEW.md",
