@@ -10,6 +10,8 @@ The reading order follows the logical dependencies of the local-source transport
 | Moving bound state at the rest threshold | [Spectral foundation, Section 3](SPECTRAL_PROOF.md) |
 | Fractional dispersion, separately differentiated velocity, residue | [Spectral foundation, Sections 4–6](SPECTRAL_PROOF.md) |
 | Exact-threshold scaling and the endpoint domain | [Endpoint lemma](THRESHOLD_ENDPOINT.md) |
+| Detuning profile, global velocity cutoff, and maximizing momentum scale | [Detuning theorem, Sections 2–5](DETUNING_CROSSOVER.md) |
+| Unconditional probability crossover and its resonance matching | [Detuning theorem, Section 6](DETUNING_CROSSOVER.md) |
 | Fixed stronger binding and finite effective mass | [Spectral foundation, Section 5](SPECTRAL_PROOF.md) |
 | Contact spectral density, continuum separation, two overlap factors | [Transport proof, Section 2](TRANSPORT_PROOF.md) and [theorem, Sections 2–3](THEOREM.md) |
 | Limiting coincidence-velocity measure and high-speed tail | [Transport proof, Sections 3–4](TRANSPORT_PROOF.md) |

@@ -117,6 +117,48 @@ $$
 Equation (3) concerns the limiting measure only. Long-range hopping still
 permits finite-time spatial tails.
 
+## How the finite cutoff approaches resonance
+
+The [detuning crossover theorem](DETUNING_CROSSOVER.md) makes the contrast
+quantitative without changing the model or detector. Define
+$\delta=J(U_c^{-1}-U^{-1})>0$ and $\rho=\delta^{1/(1-z)}$. A dimensionless
+continuum pole profile $e_z(k)$ is fixed by
+
+$$
+\int_{\mathbb R}\frac{dx}{2\pi}
+\left[\frac1{|x+k/2|^z+|x-k/2|^z-e_z(k)}-\frac1{2|x|^z}\right]=-1.
+$$
+
+Uniform microscopic scaling, together with estimates excluding very small
+and very large scaled momentum, proves
+
+$$
+v_{\max}(U)=\frac{J}{\delta}[K_z+o(1)],\qquad
+K_z=\max_{k\ge0}|e_z'(k)|>0,\qquad |P_{\max}(U)|=\Theta(\rho).
+$$
+
+Thus the maximum velocity diverges inversely with $U-U_c$ for every fixed
+$z$ in the model's window. The exponent is independent of $z$; the coefficient
+and the maximizing momentum scale are not. Uniqueness of the maximizing
+momentum is unnecessary. The local-source probability in the same scaling
+window has a controlled crossover, giving for any fixed $0<\theta<1$
+
+$$
+Q_U(\theta v_{\max}(U))=\Theta(\delta^{(4z-1)/(1-z)}).
+$$
+
+For $z=3/4$, numerical profile evaluation gives $K_z\simeq0.1051707$.
+The cutoff therefore rises as $\delta^{-1}$, while the probability above a
+fixed fraction of it falls as $\delta^8$. This is a changing, increasingly
+fast event, not the total coincidence probability. The full crossover matches
+the resonant tail in its own subsequent small-scaled-velocity limit.
+
+The pole profile and dimensional prediction follow from the same inherited
+finite-momentum scattering framework [1]. The additional work is control of
+the lattice derivative, global rather than local maximization, and the two
+source/detector weights. Long time is taken at fixed detuning before approaching
+resonance. These results do not supply an observation time for rare events.
+
 ## Why the local measurement matters
 
 The normalized source in each total-momentum fiber is the constant relative-
