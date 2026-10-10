@@ -1,4 +1,11 @@
 {
+  "alternative_source_record": {
+    "active_comparison": "research/ALTERNATIVE_TIME_BOUND.md",
+    "role": "Preserve the independent conservative proof and six unchanged regression groups without replacing current helpers or the sharper main result.",
+    "snapshot": "archive/coarse-time-2026-10-10",
+    "source_commit": "aa27c02fdb694fa8effbac3b670be50ee8b323fd",
+    "source_pr": 5
+  },
   "canonical_paths": {
     "results_index": "research/RESULTS.md",
     "static_finite_time_certificate": "research/FINITE_TIME_CERTIFICATE.md",
@@ -9,8 +16,18 @@
     "Update CURRENT.md to the requested repository-maintenance scope.",
     "Link all established results, assumptions, and proof dependencies in one scientific index.",
     "Remove editorial planning from the generated contribution text through the source-preserving generator; retain its physical-significance and attribution discussion.",
-    "Retain the exact tracked source snapshot in passing hosted verification artifacts."
+    "Retain the exact tracked source snapshot in passing hosted verification artifacts.",
+    "Preserve the parallel conservative proof and its original six-group checker as a separately reproduced supplement."
   ],
+  "completion_regression": {
+    "artifact": 11678299982,
+    "head": "dfde822488ea15113260c4c764fcfcb7268da727",
+    "infrastructure_issue": "A required scope sentence was absent from the rewritten CURRENT.md. Restore that precise warning with the distinction between the detuning theorem alone and the subsequent finite-time result; do not weaken the infrastructure assertion.",
+    "numerical_review": "Numeric-only drift; compare each field against the pre-existing numerical review record before publication.",
+    "preserved_canonical_drift_fields": 89,
+    "run": 38075817008,
+    "scientific_assertions_pass": true
+  },
   "existing_integration_head": "673cd2d95723ccfb015d63e1b5ec3282d3db10f5",
   "existing_integration_pr": 6,
   "existing_integration_tree": "4a1483706bd43fd81611fd6686d60b10e17c4292",

@@ -32,6 +32,16 @@ a simulation of the joint time limit, interval bounds on its prefactor, or a
 proof of optimality. The analytical estimates are in
 [the joint theorem](research/OBSERVATION_TIME.md).
 
+## Alternative proof checks
+
+The [alternative conservative time estimate](research/ALTERNATIVE_TIME_BOUND.md) has six additional scientific regression groups from a parallel proof route. Run them without replacing any current module:
+
+```bash
+python tools/verify_alternative_time.py --output-dir /absolute/new/alternative/results
+```
+
+This runner checks the four exact imported source blobs, copies the original helper and checker into an isolated temporary layout, and executes their unchanged assertions using the preserved spectral solver. Its raw `legacy.json`, `legacy.log`, and `verification.json` remain in the requested new output directory. Hosted verification requires the main 33 scientific groups and these six supplemental groups, for 39 scientific groups in total, as well as the eight infrastructure checks. The two receipts keep their source and report claims separate; the alternative proof is not silently substituted for the sharper main theorem.
+
 ## Three separate conclusions
 
 **Scientific assertions.** Every original test runs unchanged. A passing finite calculation supports a stated identity or diagnostic; it does not replace the infinite-lattice proof or constitute external peer review.
@@ -42,7 +52,7 @@ proof of optimality. The analytical estimates are in
 
 Hosted verification checks the actual PR head. A PR-head run is not a merged-main run: verify the merged revision separately and compare its exact source tree. The workflow is read-only and preserves evidence even when verification fails.
 
-Successful hosted runs also attach `source.tar`, created by `git archive HEAD` after verification. It contains only the tracked source files of the tested commit, without Git history, credentials, or runner-local files. After safe extraction, compare every file against `source_sha256` in `verification.json` before reproducing the checks. Logs and receipts remain available when verification fails; a source snapshot is attached only after a passing verification step. The initial PR-head run and earlier workflow artifacts predate this addition.
+Successful hosted runs also attach `source.tar`, created by `git archive HEAD` after verification. It contains only the tracked source files of the tested commit, without Git history, credentials, or runner-local files. After safe extraction, compare every file against `source_sha256` in `verification.json` before reproducing the checks. Logs and receipts remain available when verification fails; a source snapshot is attached only after both scientific-suite steps pass. The initial PR-head run and earlier workflow artifacts predate this addition.
 
 ## Generated scientific reading pages
 
