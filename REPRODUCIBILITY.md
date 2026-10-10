@@ -10,9 +10,9 @@ python tools/build_reading.py --check
 python tools/verify.py --output-dir /absolute/new/path/outside/repository
 ```
 
-The output directory must not exist and must lie outside the source tree. The wrapper runs eight infrastructure checks and the original wrapper's fifteen scientific check groups: five each for the spectral pilot, local-source transport, and preparation-size/proof review. It does not modify an original assertion or tolerance.
+The output directory must not exist and must lie outside the source tree. The wrapper runs eight infrastructure checks and eighteen scientific check groups: the fifteen preserved groups (five each for the spectral pilot, local-source transport, and preparation-size/proof review) plus three exact-threshold regressions in `tools/check_endpoint.py`. It does not modify an original assertion or tolerance.
 
-`verification.json` records the tested source hashes, Git revision/index tree when available, assertions, preserved source checks, and all canonical-report comparisons. `scientific/receipt.json` and `scientific/preserved/receipt.json` are the original wrappers' unchanged receipts. All generated reports and logs accompany them.
+`verification.json` records the tested source hashes, Git revision/index tree when available, assertions, preserved source checks, and all canonical-report comparisons. `scientific/receipt.json` and `scientific/preserved/receipt.json` are the original wrappers' unchanged receipts. All generated reports and logs accompany them. `endpoint.json` and `endpoint.log` record the three additional groups. Canonical byte comparisons concern the three preserved reports; the new endpoint report is governed by its explicit regression assertions, not an invented historical canonical file.
 
 ## Three separate conclusions
 
@@ -26,7 +26,7 @@ Hosted verification checks the actual PR head. A PR-head run is not a merged-mai
 
 ## Generated scientific reading pages
 
-`tools/build_reading.py` selects the declared scientific sections from the immutable archive, converts math delimiters for GitHub display, and records source hashes, output hashes, selections, and literal substitutions in `maintenance/READING_TRANSFORMS.json`. It verifies unchanged display-equation content. Edit the generator rather than a generated page, then regenerate and rerun the checks.
+`tools/build_reading.py` selects the declared scientific sections from the immutable archive, converts math delimiters for GitHub display, and records source hashes, output hashes, selections, and literal substitutions in `maintenance/READING_TRANSFORMS.json`. It verifies unchanged display-equation content. The ledger also classifies the endpoint proof-prose correction and links its proof. The [endpoint lemma](research/THRESHOLD_ENDPOINT.md) explains why the continuum energy approximation must not be substituted at the lattice edge. Edit the generator rather than a generated page, then regenerate and rerun the checks. The author account and endpoint lemma are not generated from the archive.
 
 The original chronological notes, numerical repairs, failed runs, and pre-initialization handoff remain in [the archive](archive/review-2026-10-10/README.md). The live continuation instruction is [CURRENT.md](CURRENT.md): continue in Chat, without requiring a workspace.
 

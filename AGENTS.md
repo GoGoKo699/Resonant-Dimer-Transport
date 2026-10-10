@@ -2,13 +2,13 @@
 
 ## Identity and first reading
 
-Work only in `GoGoKo699/Resonant-Dimer-Transport`. Verify the live repository and branch before any remote write. Read `README.md`, `CURRENT.md`, `research/THEOREM.md`, `research/PROOF_MAP.md`, `research/CONTRIBUTION.md`, and `REPRODUCIBILITY.md`. This project continues in Chat; a workspace is not required.
+Work only in `GoGoKo699/Resonant-Dimer-Transport`. Verify the live repository and branch before any remote write. Read `README.md`, `CURRENT.md`, `research/THEOREM.md`, `research/PROOF_MAP.md`, `research/CONTRIBUTION.md`, `research/AUTHOR_ACCOUNT.md`, `research/THRESHOLD_ENDPOINT.md`, and `REPRODUCIBILITY.md`. This project continues in Chat; a workspace is not required.
 
 ## Preserve the evidence
 
 `archive/review-2026-10-10/` is the exact 77-file imported package, including three nested manifests, original scientific modules and checks, canonical reports, failed versions, and historical handoffs. Do not change or remove those bytes, normalize their line endings, overwrite reference reports, or weaken their assertions/tolerances. The original license is unchanged. New corrections belong outside the archive with their claim impact explained.
 
-The generated research pages are defined by `tools/build_reading.py`. Modify the generator for presentation changes, regenerate, and verify the transform ledger. Do not edit those generated pages independently. Generation selects source sections, converts mathematical display delimiters, and makes explicitly recorded presentation substitutions only; equations are preserved.
+The generated research pages are defined by `tools/build_reading.py`. Modify the generator for presentation changes, regenerate, and verify the transform ledger. Do not edit those generated pages independently. Generation selects source sections, converts mathematical display delimiters, and records all literal substitutions. The endpoint proof-prose correction is explicitly classified as scientific and proved in `research/THRESHOLD_ENDPOINT.md`; the displayed equations and archived sources are preserved. Further scientific corrections require an explicit proof and claim-impact account outside the archive, not a silent presentation change.
 
 ## Keep the scientific distinctions
 

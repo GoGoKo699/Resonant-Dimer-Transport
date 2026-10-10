@@ -141,7 +141,7 @@ $$
 \frac C J\left(|P|^z|q|^{-2z}+P^2|q|^{-z-2}\right).
 $$
 
-After division by |P|^(1-z)/J, its integral is bounded by C[M^(1-2z)+M^(-1-z)]. The part |q|>=q0 is O(|P|^z+P^2) before division and vanishes because 2z>1. First take P to zero at fixed M, then M to infinity. Constants may depend on z and the compact e interval. At e=1 the same argument holds after isolating the two moving cusps and dominating them by |x-1/2|^(-z) and |x+1/2|^(-z).
+After division by |P|^(1-z)/J, its integral is bounded by C[M^(1-2z)+M^(-1-z)]. The part |q|>=q0 is O(|P|^z+P^2) before division and vanishes because 2z>1. First take P to zero at fixed M, then M to infinity. Constants may depend on z and the compact e interval. At the endpoint use the exact lattice energy $E=E_{\rm th}(P)=\epsilon_z(P)$, not $E=J|P|^z$. The latter is above the lattice edge, so Eq. (8) cannot be extended by substituting e=1. The [exact-threshold lemma](THRESHOLD_ENDPOINT.md) proves the endpoint expansion with coefficient F_z(1), using uniform cusp domination and the same tail splitting.
 
 Monotonicity and two fixed energies bracketing c_z transfer (8) to the exact eigenvalue:
 

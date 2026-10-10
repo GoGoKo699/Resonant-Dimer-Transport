@@ -86,6 +86,12 @@ def main():
  with (out/'scientific.log').open('xb') as log:
   science=subprocess.run([sys.executable,str(ARCHIVE/'verify.py'),'--output-dir',str(out/'scientific')],
     cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT,timeout=900)
+ with (out/'endpoint.log').open('xb') as log:
+  endpoint=subprocess.run([sys.executable,str(ROOT/'tools/check_endpoint.py'),'--output',str(out/'endpoint.json')],
+    cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT,timeout=120)
+ endpoint_path=out/'endpoint.json'
+ endpoint_report=json.loads(endpoint_path.read_text()) if endpoint_path.exists() else {}
+ endpoint_ok=endpoint.returncode==0 and endpoint_report.get('status')=='PASS' and endpoint_report.get('test_groups')==3
  path=out/'scientific/receipt.json';receipt=json.loads(path.read_text()) if path.exists() else {}
  comparisons=[]
  for name,reference,generated in [('review','evidence/final.json','review.json'),('transport','prior/evidence/final3.json','preserved/transport.json'),('pilot','prior/prior/evidence/first.json','preserved/pilot.json')]:
@@ -95,14 +101,18 @@ def main():
  all_diff=[d for c in comparisons for d in c['differences']]
  identical=all(c['byte_identical'] for c in comparisons)
  numeric=bool(all_diff) and all(d.get('kind')=='numeric' for d in all_diff)
- assertions=receipt.get('all_assertions_pass') is True and receipt.get('scientific_groups')==15
+ preserved_assertions=receipt.get('all_assertions_pass') is True and receipt.get('scientific_groups')==15
+ assertions=preserved_assertions and endpoint_ok
  unchanged=before==inventory() and receipt.get('source_unchanged') is True
  report_ok=identical or (args.allow_numeric_report_differences and numeric)
  passed=infra.returncode==0 and assertions and unchanged and report_ok
  report={'status':('PASS' if identical else 'PASS_REQUIRES_NUMERIC_REVIEW') if passed else 'FAIL',
   'repository':'GoGoKo699/Resonant-Dimer-Transport','commit':git('rev-parse','HEAD'),'index_tree':git('write-tree'),
   'static_checks':static,'infrastructure_tests':json.loads((out/'infrastructure.json').read_text()).get('tests_run'),
-  'infrastructure_returncode':infra.returncode,'scientific_groups':receipt.get('scientific_groups'),
+  'infrastructure_returncode':infra.returncode,
+  'scientific_groups':receipt.get('scientific_groups',0)+endpoint_report.get('test_groups',0),
+  'preserved_scientific_groups':receipt.get('scientific_groups'),'preserved_assertions_pass':preserved_assertions,
+  'endpoint_scientific_groups':endpoint_report.get('test_groups'),'endpoint_assertions_pass':endpoint_ok,
   'scientific_assertions_pass':assertions,'original_wrapper_returncode':science.returncode,
   'all_canonical_reports_byte_identical':identical,'report_comparisons':comparisons,
   'numeric_report_review_required':not identical,'allow_numeric_report_differences':args.allow_numeric_report_differences,

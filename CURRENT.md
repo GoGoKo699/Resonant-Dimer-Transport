@@ -4,11 +4,11 @@ This project continues in the existing Chat. A separate workspace is not require
 
 ## Scientific account and next bounded task
 
-Read `README.md`, `research/THEOREM.md`, `research/PROOF_MAP.md`, and `research/CONTRIBUTION.md`. The immutable source package contains the complete spectral, transport, and preparation-size derivations and all original verification records.
+Read `research/AUTHOR_ACCOUNT.md` for the claims-first account, then `research/PROOF_MAP.md` and `research/THRESHOLD_ENDPOINT.md`. The endpoint correction uses the exact lattice threshold rather than the continuum energy approximation. It does not change the resonant pole, velocity tail, or preparation-size claims. `maintenance/CONTINUATION_REVIEW.json` records its scope and the source comparison. The available theorem is not a finite-time rare-event detection guarantee or efficient superballistic transport.
 
-The next task after initialization is a claims-first author account and focused contribution assessment of the existing source-resolved resonance contrast. Keep the unconditional position-event normalization, the two source/detector overlap factors, the preparation-size restriction, and the infinite-lattice/long-time/high-velocity order of limits explicit. The available theorem is not a finite-time rare-event detection guarantee or efficient superballistic transport.
+The next bounded scientific question is how the finite limiting velocity cutoff at U>Uc approaches the unbounded-support resonance as U decreases to Uc. Keep the existing Hamiltonian, local source, and unconditional coincidence detector. Derive any detuning law from controlled lattice resolvent and differentiated estimates, including the momentum region attaining the maximum; power counting alone is not a proof of a global maximum-velocity law. This is a quantitative test of the resonance-tuning objection, not a finite-time detection or implementation claim.
 
-Credit the finite-momentum contact scattering framework and other established ingredients. A named proof objection or directly covering source may change the account. Do not automatically add finite-density particles, disorder, loss, external forces, alternate hopping, or a device implementation.
+Keep the two source/detector overlap factors, preparation-size restriction, and infinite-lattice/long-time/high-velocity order explicit. Credit the finite-momentum contact scattering framework and other established ingredients. Do not automatically add finite-density particles, disorder, loss, external forces, alternate hopping, or a device implementation.
 
 ## Authority and preservation
 
