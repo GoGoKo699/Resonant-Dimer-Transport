@@ -1,0 +1,40 @@
+{
+  "attribution": "Sun-Feng-Zhang finite-momentum T-matrix and detuned rest pole already provide the continuum framework and dimensional prediction. New account proves microscopic derivative and global-momentum control and the unconditional observable crossover.",
+  "base_commit": "3dcdfc29ac46b07a11a362f4372ab4e6c781df98",
+  "base_tree": "98a088da9a26ba8eb1a3ad15a3d0ab8299d93781",
+  "limits": "Infinite lattice, long time at each fixed detuning, then detuning to zero. No finite-time visibility law.",
+  "literature": {
+    "coverage": "Targeted fractional/long-range dimer, velocity, resonance, and detuning searches; no exhaustive priority clearance.",
+    "date": "2026-10-10",
+    "figures_digitized": false,
+    "primary_equations_read": "Published Sun-Feng-Zhang two-magnon Eqs. (6)-(8), checked against readable v1 Eqs. (5)-(7).",
+    "urls": [
+      "https://www.nature.com/articles/s42005-026-02580-0",
+      "https://arxiv.org/html/2502.20759v1"
+    ]
+  },
+  "numerical_repair": {
+    "evidence_location": "Preserved in the conversation detuning evidence package; production CI retains complete verification artifacts.",
+    "first_log_sha256": "37be3e3853cd967dfe128edf2d8cf22d5f4424e7fd9b2867cb2aeb70bb889788",
+    "first_report_sha256": "fd9ffccd64385213d43047fd5c6823762437b052963ff69ba1fec5b8b305703b",
+    "issue": "The first detuning run promoted an IntegrationWarning from the preserved unsplit rest normalization quadrature at a small binding energy. All four other new groups passed.",
+    "pre_repair_module_sha256": "56c75b9e3aab3b56a417cd853afa0c6f94dbbdc013657d9d8eb9dd759e0a0036",
+    "repair": "In the new module only, scale by the rest binding momentum and split the same positive normalization integral geometrically. No test assertion or tolerance was relaxed.",
+    "repaired_report_sha256": "91c7495f7d49a80a82f31907ad11c4e88e647b1511d770fffaa064e34887ae59"
+  },
+  "numerical_scope": "Existing scalar solvers are reused explicitly. Direct continuum derivative quadrature is additional. Numerical optimizer/scans are not proofs of global maximality, uniqueness, or interval-certified constants.",
+  "preservation": {
+    "archive_files_changed": 0,
+    "canonical_reports_replaced": false,
+    "generated_foundational_pages_changed": false,
+    "original_scientific_assertions_or_tolerances_changed": false
+  },
+  "proof": "research/DETUNING_CROSSOVER.md",
+  "repository": "GoGoKo699/Resonant-Dimer-Transport",
+  "results": [
+    "Uniform energy, derivative and contact-residue crossover on compact scaled momenta.",
+    "Global inverse-detuning velocity cutoff and compactness of all maximizing scaled momenta.",
+    "Source/detector-weighted probability crossover and its matching to the resonant tail."
+  ],
+  "scope": "Same Hamiltonian, local source, and unconditional coincidence detector; stronger-binding approach to resonance."
+}

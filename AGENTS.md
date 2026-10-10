@@ -2,7 +2,7 @@
 
 ## Identity and first reading
 
-Work only in `GoGoKo699/Resonant-Dimer-Transport`. Verify the live repository and branch before any remote write. Read `README.md`, `CURRENT.md`, `research/THEOREM.md`, `research/PROOF_MAP.md`, `research/CONTRIBUTION.md`, `research/AUTHOR_ACCOUNT.md`, `research/THRESHOLD_ENDPOINT.md`, and `REPRODUCIBILITY.md`. This project continues in Chat; a workspace is not required.
+Work only in `GoGoKo699/Resonant-Dimer-Transport`. Verify the live repository and branch before any remote write. Read `README.md`, `CURRENT.md`, `research/THEOREM.md`, `research/PROOF_MAP.md`, `research/CONTRIBUTION.md`, `research/AUTHOR_ACCOUNT.md`, `research/THRESHOLD_ENDPOINT.md`, `research/DETUNING_CROSSOVER.md`, and `REPRODUCIBILITY.md`. This project continues in Chat; a workspace is not required.
 
 ## Preserve the evidence
 
