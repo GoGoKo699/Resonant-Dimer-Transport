@@ -256,7 +256,32 @@ near zero momentum.
 Only the coalescence $m_P\uparrow M_P$ still needs a uniform estimate.
 The two curvatures remain bounded above and below by nonzero constants,
 and the cusp threshold stays a fixed distance below them. Let
-$d=M_P-m_P\downarrow0$. Between the maxima, write
+$d=M_P-m_P\downarrow0$. Choose disjoint neighborhoods of the two maxima,
+with a fixed symmetric radius in their Morse coordinates. In each one,
+$A_P(q)=M_\sigma-t^2$, where $M_-=m_P$ and $M_+=M_P$.
+The even part of the coordinate Jacobian is analytic in $t^2$, uniformly
+in $P$ near $\pi$. Dividing that analytic function by $t^2+\zeta$ before
+integrating gives the exact local decomposition
+
+$$
+I_P(\omega+i0)=R_P(\omega)
+-\sum_{\sigma\in\{-,+\}}
+\frac{H_{P,\sigma}(\omega-M_\sigma)}
+     {\sqrt{\omega-M_\sigma+i0}}.
+$$
+
+Here the square root has its cut on the negative real axis and is positive
+above the maximum. The functions $H_{P,\sigma}$ are real analytic, satisfy
+$c\le H_{P,\sigma}\le C$, and have uniformly bounded first derivatives on
+one fixed interval around zero. The remaining function $R_P$ is real with
+uniformly bounded value and first derivative in this energy neighborhood.
+Indeed the finite Morse-coordinate endpoint terms are analytic after the
+displayed singularity is subtracted, and the rest of the momentum circle
+has energy a fixed distance below both maxima. This decomposition retains
+the full analytic coefficient: subtracting only its constant term would
+leave square-root remainders whose derivatives are unbounded.
+
+Between the maxima, write
 $\omega=m_P+dy$, $0<y<1$. The leading boundary loop has real and
 imaginary parts
 
@@ -264,9 +289,35 @@ $$
 -c_-/\sqrt{dy},\qquad c_+/\sqrt{d(1-y)},
 $$
 
-respectively, with positive bounded coefficients; its regular parts have
-bounded expansions in the associated Morse coordinates. The quotient is
-therefore $O(\sqrt d)$ times a function of bounded variation on $[0,1]$.
+respectively, with positive bounded coefficients. To control the full
+quotient, set $s=\omega-m_P$, $r=M_P-\omega=d-s$ and
+
+$$
+u=R_P(\omega)-1/U-H_{P,-}(s)/\sqrt s,\qquad
+v=H_{P,+}(-r)/\sqrt r.
+$$
+
+For sufficiently small $d$, uniformly in $U\in[u_c,U_1]$,
+
+$$
+|u|\asymp s^{-1/2},\quad v\asymp r^{-1/2},\quad
+|u'|\le Cs^{-3/2},\quad |v'|\le Cr^{-3/2},\quad
+u^2+v^2\ge c\left(s^{-1}+r^{-1}\right)=\frac{cd}{sr}.
+$$
+
+The bounded real remainder cannot cancel the first singular term here.
+Direct quotient differentiation now gives
+
+$$
+\left|\frac{d}{d\omega}\frac{v}{u^2+v^2}\right|
+\le C\left[\frac{r^{3/2}}{d^2}+\frac{s}{d\sqrt r}\right],\qquad
+\int_0^d\left[\frac{(d-s)^{3/2}}{d^2}
+                 +\frac{s}{d\sqrt{d-s}}\right]ds
+=\frac{26}{15}\sqrt d.
+$$
+
+Thus the full gap contributes $O(\sqrt d)$ variation; its endpoint values
+are zero. This also recovers the bounded-variation leading profile.
 For example its leading profile is proportional to
 
 $$
@@ -274,12 +325,23 @@ $$
 $$
 
 whose derivative has integrable endpoint singularities uniformly in the
-allowed coefficients. The regular terms are controlled by the same bounds,
-since the leading squared modulus is at least $c/d$ throughout this gap.
-Below both maxima, the imaginary singularities add with the same sign:
-$c_-/\sqrt{m_P-\omega}+c_+/\sqrt{M_P-\omega}$. They cannot cancel.
-Using the reciprocal of this sum, or (O7) with its monotone leading part,
-bounds the variation uniformly down to their common limit. Above $M_P$
+allowed coefficients. Below both maxima, put $x=m_P-\omega>0$. The exact
+decomposition instead gives
+
+$$
+u=R_P(\omega)-1/U,\qquad
+v=\frac{H_{P,-}(-x)}{\sqrt x}
+  +\frac{H_{P,+}(-x-d)}{\sqrt{x+d}}.
+$$
+
+For $x,d$ in fixed sufficiently small neighborhoods, the positive leading
+terms in $dv/d\omega$ dominate the bounded derivatives of $H_{P,\sigma}$.
+Consequently $v$ is monotone, $v\ge c$, and $|u'|\le C$.
+Equation (O7) bounds the $u'$ contribution by a fixed multiple of the
+interval length and the $v'$ contribution by
+$\int_c^\infty v^{-2}dv$. The quotient tends to zero at $x=0$.
+These bounds also apply directly at $d=0$, when the two positive singular
+coefficients add. Above $M_P$
 the density is zero. All other energy regions are uniform regular/cusp
 regions with a nonzero contact denominator. This proves a uniform bound near
 $\pi$, including the equal-maxima fiber. Compact intervening momenta use

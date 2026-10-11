@@ -323,30 +323,48 @@ feasible, nor that the much shorter dimensional spectral time is insufficient.
 
 ## Relationship to established work
 
-Sun, Feng, and Zhang [1] provide the finite-total-momentum contact scattering
-framework. At their resonance, matching kinetic units and rescaling relative
-momentum yields $T(J|P|^ze,P)^{-1}=|P|^{1-z}F_z(e)/(2J)$. The pole equation is
-therefore inherited; the factor of two does not change its zero. The physical
-statement assessed here connects that pole and its residue to a specified,
-unconditioned lattice position measurement.
+Sun, Feng, and Zhang [1], published Eqs. (6)–(8), supply the
+finite-momentum contact loop. Matching kinetic units and rescaling relative
+momentum in the renormalized continuum theory at resonance gives
 
-Kranzl and collaborators [2] already prepare nearby magnons and observe
-bound-pair propagation with finite group velocity in their selected
-long-range Heisenberg regime. Their interaction and branch differ from the
-attractive contact resonance here. Albeverio and collaborators [3] establish
-motion-induced binding under three-dimensional lattice hypotheses.
-Domínguez-Castro [4] treats mobile distinguishable particles with power-law
-hopping and onsite interaction, including disappearance of attractive rest
-dimers. These works preclude novelty claims for motion-induced binding,
-local pair detection, or the basic two-species scattering model.
+$$
+T(J|P|^ze,P)^{-1}=\frac{|P|^{1-z}}{2J}F_z(e).
+$$
 
-The remaining contribution is the microscopic, source-resolved resonance
-contrast, with its probability and internal-size accounting. The strongest
-objection is that this can be viewed as a precise consequence of existing
-two-body resonance theory using familiar spectral tools. Merely adding more
-coefficients or presenting the support projection as a separate mechanism
-would not answer that objection. The comparison is targeted, not exhaustive
-priority clearance.
+The pole equation is inherited. Its homogeneity predicts the pole and residue
+powers and the detuning scales; these are not separate mechanisms. Their
+Supplementary Note 1 matches the microscopic spin model to its low-energy
+scattering parameter.
+
+The public author response accompanying [1], Eqs. (R5)–(R7), also proposes
+evolution from two magnons at finite separation and a resonance diagnostic
+based on single-site magnon-density scaling while varying that separation.
+It explicitly identifies the growing bound-state size as a detection
+difficulty. This is a stated research proposal, distinct from an established
+same-site transport theorem.
+
+| Claim or ingredient | Predecessor content | Content established here |
+|---|---|---|
+| Moving pole and residue | The finite-momentum loop [1] supplies the pole equation and scaling predictions. | Exact fractional-lattice binding and independently controlled energy, velocity, and contact-residue asymptotics. |
+| Detuning scales | Homogeneity of that loop predicts $\lvert E_0\rvert\propto\delta^{z/(1-z)}$, $P\sim\delta^{1/(1-z)}$, and $v\sim J/\delta$. | Uniform lattice derivatives, exclusion of competing momentum scales, the global cutoff, and its unconditional coincidence weight. |
+| Local pair propagation | Macrì et al. [6] evolve adjacent spins and resolve slow bound and weak unbound components; Kranzl et al. [2] measure nearby-pair propagation. The response to [1] proposes a resonance-dependent local-density diagnostic. | The fixed onsite source and same-site detector give the $Z^2$ velocity law, with continuum contact contributions controlled. |
+| Deterministic rare-event readout | Spectral variation, Fourier smoothing, and Duhamel bounds are established methods. | Uniform integrated continuum control and a sufficient joint time–detuning regime for the unchanged sharp event. |
+
+The models and measurements in [2,6] differ from the attractive contact
+resonance here. In particular, the finite-velocity branch observed in [2]
+is not a theorem that every bound pair regularizes a singular velocity.
+Albeverio and collaborators [3] establish motion-induced binding under
+three-dimensional lattice hypotheses. Domínguez-Castro [4] treats mobile
+distinguishable particles with power-law hopping and onsite interaction,
+including disappearance of attractive rest dimers.
+
+The contribution assessed here is the microscopic, source-resolved resonance
+contrast with its probability, internal-size, and deterministic-time
+accounting. The two-body framework, local-pair dynamics, resonance diagnosis
+by local quenches, and qualitative size divergence remain inherited. The
+preparation result here quantifies optimal relative-support overlap. This
+comparison identifies the additional claims and their proof obligations; it
+is not exhaustive priority clearance.
 
 ## Proof route and endpoint convention
 
@@ -362,8 +380,12 @@ checks from these analytical limits.
 
 [1] N. Sun, L. Feng, and P. Zhang, *Efimov effect in long-range quantum spin
 chains*, Communications Physics **9**, 146 (2026), doi:10.1038/s42005-026-02580-0.
-Published two-magnon Eqs. (6)–(8); preprint v1 Eqs. (5)–(7).
+Published two-magnon Eqs. (6)–(8); Supplementary Note 1, Eqs. (S5)–(S13);
+preprint v1 Eqs. (5)–(7). The linked public peer-review file contains the
+author response, Eqs. (R5)–(R7), pp. 6–7.
 https://www.nature.com/articles/s42005-026-02580-0
+
+[Public author response](https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42005-026-02580-0/MediaObjects/42005_2026_2580_MOESM2_ESM.pdf).
 
 [2] F. Kranzl et al., *Observation of magnon bound states in the long-range,
 anisotropic Heisenberg model*, Physical Review X **13**, 031017 (2023),
@@ -386,3 +408,9 @@ https://www.mdpi.com/2218-2004/11/8/110
 regularity and applications*, arXiv:1608.08913. Fractional lattice operator
 and kernel, as recorded in the spectral foundation.
 https://arxiv.org/abs/1608.08913
+
+[6] T. Macrì, L. Lepori, G. Pagano, M. Lewenstein, and L. Barbiero,
+*Bound state dynamics in the long-range spin-1/2 XXZ model*,
+Physical Review B **104**, 214309 (2021), doi:10.1103/PhysRevB.104.214309.
+Section IV and Figure 3: dynamics from two neighboring spins.
+https://arxiv.org/html/2110.01760v1

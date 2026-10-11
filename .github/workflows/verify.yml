@@ -25,12 +25,14 @@ jobs:
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.13.5'
-      - name: Install pinned numerical packages
-        run: python -m pip install -r requirements.txt
+      - name: Install pinned numerical and plotting packages
+        run: python -m pip install -r requirements-figures.txt
       - name: Verify sources and all scientific assertions
         run: python tools/verify.py --output-dir "$RUNNER_TEMP/dimer-verification" --allow-numeric-report-differences
       - name: Reproduce the preserved alternative estimate
         run: python tools/verify_alternative_time.py --output-dir "$RUNNER_TEMP/dimer-verification/alternative"
+      - name: Reproduce the absolute coincidence figure
+        run: python tools/plot_coincidence.py --output "$RUNNER_TEMP/dimer-verification/coincidence_tail.svg" --data "$RUNNER_TEMP/dimer-verification/coincidence_tail.json"
       - name: Attach the exact tracked sources to passing evidence
         run: git archive --format=tar --output="$RUNNER_TEMP/dimer-verification/source.tar" HEAD
       - name: Preserve complete evidence

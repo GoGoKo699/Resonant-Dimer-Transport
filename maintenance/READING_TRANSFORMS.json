@@ -70,13 +70,17 @@
       "formatting": "Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.",
       "literal_replacements": [
         [
+          "## Review outcome",
+          "## Review outcome\n\nThe [claim-by-claim comparison](AUTHOR_ACCOUNT.md#relationship-to-established-work) also accounts for the published supplements, the public author response, and earlier local-pair dynamics."
+        ],
+        [
           "It does not provide the missing uniform-in-velocity continuum-convergence rate or an optimal tuning requirement.",
           "It is not itself a continuum-decay estimate or an optimal tuning requirement. Deterministic event accuracy and the sufficient joint regime are proved separately in the [finite-time certificate](FINITE_TIME_CERTIFICATE.md) and [observation-time theorem](OBSERVATION_TIME.md)."
         ]
       ],
       "omit_editorial_planning_sentence": true,
       "omit_historical_allocation_tail": false,
-      "output_sha256": "f4f5358dc6a03f8b22cc33d4ea5411fc824f2279db6294f550b70d2650b16739",
+      "output_sha256": "674aed40d4394a1318684cb1818312bbbb51179efd78b927ae28fdfe1c5a6fdf",
       "remove_repository_allocation": true,
       "scientific_correction": null,
       "source": "REVIEW.md",
