@@ -113,6 +113,7 @@ interval-evaluated, so no numerical experimental observation window is asserted.
 | [Detuning crossover](research/DETUNING_CROSSOVER.md) | Global inverse-detuning velocity cutoff and its source-weighted probability law. |
 | [Finite-time certificate](research/FINITE_TIME_CERTIFICATE.md) | Deterministic-time relative-error bound and its static spectral budgets. |
 | [Joint observation time](research/OBSERVATION_TIME.md) | Uniform integrated continuum decay and a sufficient simultaneous time–detuning regime. |
+| [Boundary resolvent](research/BOUNDARY_RESOLVENT.md) | Cusp, smooth-maximum, and principal-value calculations supporting the continuum estimates. |
 | [Threshold endpoint](research/THRESHOLD_ENDPOINT.md) | Correct lattice-edge scaling and the domain of the continuum approximation. |
 | [Transport proof](research/TRANSPORT_PROOF.md) | Continuum separation, two overlap factors, and unconditional measurement law. |
 | [Contribution assessment](research/CONTRIBUTION.md) | Closest predecessors and the precise claim remaining after attribution. |

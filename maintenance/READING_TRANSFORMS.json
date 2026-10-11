@@ -11,13 +11,17 @@
         [
           "## 4. New corollary: the whole relative wavefunction has a controlled size scaling",
           "## 4. Scaled relative wavefunction and preparation size"
+        ],
+        [
+          "Equation (1) is also explicit in the continuum amplitude, but this review does not produce a usable uniform rate for $\\eta(t)$. Thus (3) still takes long time at fixed $v$, followed by large $v$.",
+          "Equation (1) alone does not quantify the continuum decay rate. The [joint observation-time theorem](OBSERVATION_TIME.md) proves a uniform momentum-integrated bound $\\eta_U(t)\\le C/(Jt)$ near resonance and combines it with band-norm estimates to give a sufficient simultaneous time\u2013detuning regime. The resonance tail (3) retains its stated long-time-at-fixed-velocity, then high-velocity order."
         ]
       ],
       "omit_editorial_planning_sentence": false,
       "omit_historical_allocation_tail": false,
-      "output_sha256": "776261b0af6a918e96792d09fd6b9eeec0c85e6432f92d5c09b3e8efad76f209",
+      "output_sha256": "f02f82a9aad146598318f253c4d26fe430b61b7ca8d26a2eee489434047885d9",
       "remove_repository_allocation": false,
-      "scientific_correction": null,
+      "scientific_correction": "research/OBSERVATION_TIME.md",
       "source": "THEOREM.md",
       "source_sha256": "6d83a1bcc7990ee777f08f90ac29777fb3903eda754a120651bdd4af126d7651",
       "start": "## 1. Fixed physical task",

@@ -268,7 +268,7 @@ $$
 
 This is an explicit sufficient stability certificate, not an optimal or necessary tuning law. It establishes finite-time continuity despite the change of asymptotic velocity support at exactly $U_c$.
 
-Equation (1) is also explicit in the continuum amplitude, but this review does not produce a usable uniform rate for $\eta(t)$. Thus (3) still takes long time at fixed $v$, followed by large $v$. A bound of order $10^{-2}$ on total continuum error would not certify a rare $10^{-8}$ coincidence tail. No assertion of a finite-time high-velocity experimental window, strict finite-time light cone, or advantageous information transfer follows. These are restrictions on the stated interpretation, not requirements to add another model before reviewing the present theorem.
+Equation (1) alone does not quantify the continuum decay rate. The [joint observation-time theorem](OBSERVATION_TIME.md) proves a uniform momentum-integrated bound $\eta_U(t)\le C/(Jt)$ near resonance and combines it with band-norm estimates to give a sufficient simultaneous time–detuning regime. The resonance tail (3) retains its stated long-time-at-fixed-velocity, then high-velocity order. A bound of order $10^{-2}$ on total continuum error would not certify a rare $10^{-8}$ coincidence tail. No assertion of a finite-time high-velocity experimental window, strict finite-time light cone, or advantageous information transfer follows. These are restrictions on the stated interpretation, not requirements to add another model before reviewing the present theorem.
 
 ---
 

@@ -61,6 +61,10 @@ been interval-evaluated for an apparatus or a selected numerical detuning.
 
 ## 2. Uniform continuum estimate
 
+The [boundary resolvent appendix](BOUNDARY_RESOLVENT.md) supplies the
+signed cusp power integral, full analytic Morse coefficient, and regular
+principal-value derivative formulas used below.
+
 Let $w_{P,U}(\omega)$ be the continuous contact density extended by zero,
 as in [the finite-time certificate](FINITE_TIME_CERTIFICATE.md). If
 $U_c\le U\le U_1$, with a fixed dimensionless ratio $U_1/J<\infty$, then

@@ -4,6 +4,7 @@
 
 ## Scientific reading
 - [Joint observation time](research/OBSERVATION_TIME.md): uniform integrated continuum decay and sufficient time–detuning regime; not an optimal exponent or a certified numerical waiting time.
+- [Boundary resolvent](research/BOUNDARY_RESOLVENT.md): self-contained boundary-value estimates supporting the continuum variation proof.
 - [Finite-time certificate](research/FINITE_TIME_CERTIFICATE.md): sharp deterministic-time event error in static spectral budgets.
 - [Detuning crossover](research/DETUNING_CROSSOVER.md): global inverse-detuning cutoff, maximizing momentum scale, and unconditional probability crossover.
 - [Author account](research/AUTHOR_ACCOUNT.md): background, definitions, central claims, and closest predecessors.

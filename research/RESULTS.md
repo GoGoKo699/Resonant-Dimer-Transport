@@ -23,10 +23,12 @@ This index connects the accumulated results to their existing complete proofs. I
 | Resonance contrast | The resonant limiting coincidence tail has exponent $(4z-1)/(1-z)$. At each fixed $U>U_c$, limiting velocities have bounded support. | [Transport proof](TRANSPORT_PROOF.md), [spectral foundation](SPECTRAL_PROOF.md) |
 | Internal preparation size | The scaled normalized relative wavefunction has an $L^2$ limit. Fixed capture probability requires radius $\Theta(\lvert P\rvert^{-1})=\Theta((v/J)^{1/(1-z)})$. | [Theorem, Section 4](THEOREM.md) |
 | Detuning crossover | For $\delta=J(U_c^{-1}-U^{-1})>0$, $v_{\max}\sim K_zJ/\delta$ and every maximizing momentum is $\Theta(\delta^{1/(1-z)})$. The near-cutoff probability and full scaled profile include both overlaps. | [Detuning theorem](DETUNING_CROSSOVER.md) |
+| Rest residue and effective mass | With $\rho=\delta^{1/(1-z)}$, the rest contact weight is proportional to $\rho^{2z-1}$ and the curvature to $J\rho^{z-2}$, with explicit coefficients. The curvature limit is proved directly from the lattice integral. | [Rest crossover coefficients](DETUNING_CROSSOVER.md#explicit-rest-residue-and-curvature) |
 | Finite-time certificate | A deterministic-time error bound for the sharp position event combines a velocity-shell mass, band norms, and event-local continuum amplitude. | [Finite-time certificate](FINITE_TIME_CERTIFICATE.md) |
 | Uniform observation-time regime | Momentum-integrated continuum amplitude is bounded by $C/(Jt)$ uniformly near resonance. Sharper band norms give the sufficient time profile below. | [Observation-time theorem](OBSERVATION_TIME.md) |
 | Alternative conservative time estimate | A separate critical-energy collar argument gives explicit nonoptimized continuum constants and a stronger sufficient time requirement. Its original proof and six regression groups are preserved and reproduced separately. | [Alternative estimate](ALTERNATIVE_TIME_BOUND.md) |
 | Continuous spectral-peak control | A narrow peak above an interior continuum maximum makes a momentum-uniform variation bound false. Its height, shift, and width are calculated without treating it as another eigenstate. | [Observation-time theorem, Section 5](OBSERVATION_TIME.md) |
+| Boundary resolvent estimates | Cusp Cauchy transforms, full-coefficient Morse decomposition, and simple-root principal-value subtraction justify the continuum estimates used in the finite-time proofs. | [Boundary resolvent derivation](BOUNDARY_RESOLVENT.md) |
 
 ## Two distinct finite-time statements
 
@@ -64,6 +66,6 @@ Binding is relative to the continuum at the conserved total momentum. Same-site 
 
 The contact scattering framework, momentum-induced lattice binding, fractional kinetic operator, and nearby-pair detection have explicit predecessors. The [contribution account](CONTRIBUTION.md) and primary-source sections retain those attributions. No unrelated earlier project is part of this model.
 
-The [reproduction guide](../REPRODUCIBILITY.md) maps the 33 main scientific check groups, six separately reproduced alternative-estimate groups, and eight infrastructure checks to their scripts and reports. Finite numerical checks support the analytical account; they are not external proof review, interval certification, or exhaustive priority clearance. The original 77-file archive and canonical reports remain preserved.
+The [reproduction guide](../REPRODUCIBILITY.md) maps the 33 main scientific check groups, six separately reproduced alternative-estimate groups, three rest-crossover groups, and eight infrastructure checks to their scripts and reports. Finite numerical checks support the analytical account; they are not external proof review, interval certification, or exhaustive priority clearance. The original 77-file archive and canonical reports remain preserved.
 
 [Reader entry point](../README.md) · [Proof dependencies](PROOF_MAP.md) · [Current repository scope](../CURRENT.md)
