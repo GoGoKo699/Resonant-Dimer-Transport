@@ -178,6 +178,90 @@ $$
 The differentiated autocorrelation, not differentiation of the little-o
 term alone, proves the velocity expansion.
 
+### Explicit rest residue and curvature
+
+The quadratic endpoint in (D10) has a closed coefficient. Writing
+$a=a_z^*$ and $\beta=\beta_z$, one has
+
+$$
+D_z(0)=\frac\beta a,\qquad
+C_z^*=z\,2^{2/z-3}a^{1-2/z}>0. \tag{R1}
+$$
+
+The first identity follows by differentiating the exact rest loop
+$G_z(0,-a)=-A_z a^\beta$ and using $A_z a^\beta=1$.
+For the second, the denominator and numerator in (D10), respectively,
+are
+
+$$
+\frac{2^{-1/z}a^{1/z-2}}{\pi z}
+ \operatorname B(1/z,2-1/z),\qquad
+\frac{z\,2^{1/z-2}a^{-1-1/z}}\pi
+ \operatorname B(2-1/z,1+1/z).
+$$
+
+These follow from $u=2|x|^z/a$. The beta-function ratio in the quotient is
+$1/(2z)$, which proves (R1). Both integrals converge because $z>1/2$.
+
+Let $C(U)$ denote the exact lattice rest curvature, defined by
+$E_d(P;U)=E_d(0;U)+C(U)P^2+o(P^2)$ in the
+[spectral foundation, Section 5](SPECTRAL_PROOF.md#5-why-a-dimer-away-from-resonance-is-different).
+Then the same microscopic branch obeys
+
+$$
+Z(0;U_\delta)\sim
+ \left(\frac J{U_c}\right)^2\frac{a_z^*}{\beta_z}\rho^{2z-1},
+\qquad
+C(U_\delta)\sim J C_z^*\rho^{z-2}. \tag{R2}
+$$
+
+The residue limit is (D3) at $k=0$ together with (R1).
+The curvature limit requires a separate argument; $C^1$ convergence in
+(D3) alone would not imply it. Put
+$g_\delta=-E_d(0;U_\delta)>0$. The exact cusp-safe rest identity is
+
+$$
+C(U_\delta)=
+\frac{\displaystyle\int\frac{dq}{2\pi}
+ [\epsilon_z'(q)]^2/[2\epsilon_z(q)+g_\delta]^3}
+ {\displaystyle\int\frac{dq}{2\pi}
+ 1/[2\epsilon_z(q)+g_\delta]^2}.
+$$
+
+By (D3) and (D9), $g_\delta/(J\rho^z)\to a_z^*$.
+Scale $q=\rho x$ in both integrals. The numerator divided by
+$J^{-1}\rho^{-z-1}$ converges to the numerator in (D10), and the
+denominator divided by $J^{-2}\rho^{1-2z}$ converges to $D_z(0)$.
+To justify convergence on the expanding Brillouin zone, use the chord
+bounds $\epsilon_z(q)\ge cJ|q|^z$ and
+$|\epsilon_z'(q)|\le CJ|q|^{z-1}$ for $|q|\le\pi$.
+For sufficiently small $\delta$, the respective scaled integrands,
+extended by zero beyond $|x|\le\pi/\rho$, are bounded by fixed multiples of
+
+$$
+\frac{|x|^{2z-2}}{(1+|x|^z)^3},\qquad
+\frac1{(1+|x|^z)^2}.
+$$
+
+The first has integrable powers $2z-2>-1$ at the origin and $-z-2$ at
+infinity; the second is integrable at infinity because $2z>1$.
+Pointwise convergence away from $x=0$ and dominated convergence prove
+the two limits, hence (R2). No second derivative of the cusp dispersion
+has been integrated, and no asymptotic remainder has been differentiated.
+
+In lattice units, the corresponding rest effective mass is
+
+$$
+m_d(U_\delta):=\frac1{E_d''(0;U_\delta)}
+ \sim\frac{\rho^{2-z}}{2J C_z^*}
+ =\frac{\delta^{(2-z)/(1-z)}}{2J C_z^*}. \tag{R3}
+$$
+
+The finite quadratic curvature at each fixed stronger attraction therefore
+diverges on approaching resonance. Its rest velocity still vanishes.
+This is a local band-curvature statement; the global cutoff and its
+coincidence weight remain the separate conclusions (D4) and (D6).
+
 At the other endpoint, (D8) yields $e_z(k)/k^z\to c_z$. With
 $y=e_z(k)/k^z$, exact implicit differentiation gives
 
@@ -399,5 +483,12 @@ implementations. `tools/check_detuning.py` checks continuum derivatives against
 an additional quadrature, rest scaling, lattice profile/residue convergence,
 maximization diagnostics, and a source-weighted fast-velocity interval. The
 proofs, not finite grids or a fitted exponent, establish (D3)–(D7).
+
+`tools/check_rest_crossover.py` independently integrates the rest
+normalization and curvature numerator, checks the lattice residue/curvature
+limits at three fixed exponents, and compares the rest curvature with a
+separate small-momentum velocity calculation. The [reproduction guide](../REPRODUCIBILITY.md#rest-residue-and-curvature-checks)
+records its finite-quadrature scope; (R2) rests on the separate lattice
+dominated-convergence proof above.
 
 [Proof map](PROOF_MAP.md) · [Reproducibility](../REPRODUCIBILITY.md)

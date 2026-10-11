@@ -308,6 +308,9 @@ level with a multiple preimage.
 
 ## 6. Finite spectral variation away from coalescing momenta
 
+The local Cauchy-transform and boundary-derivative calculations are given
+explicitly in the [boundary resolvent appendix](BOUNDARY_RESOLVENT.md).
+
 It remains to justify the variation norm in (F2). For
 $r\le P\le\pi-r$, the relative dispersion has a cusp minimum at $P/2$
 and nondegenerate smooth maxima at $0$ and $\pi$ on the half-circle.

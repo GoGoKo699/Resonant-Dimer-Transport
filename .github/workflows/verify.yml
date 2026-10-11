@@ -31,6 +31,8 @@ jobs:
         run: python tools/verify.py --output-dir "$RUNNER_TEMP/dimer-verification" --allow-numeric-report-differences
       - name: Reproduce the preserved alternative estimate
         run: python tools/verify_alternative_time.py --output-dir "$RUNNER_TEMP/dimer-verification/alternative"
+      - name: Check the explicit rest-residue and curvature crossover
+        run: python tools/check_rest_crossover.py --output "$RUNNER_TEMP/dimer-verification/rest_crossover.json"
       - name: Reproduce the absolute coincidence figure
         run: python tools/plot_coincidence.py --output "$RUNNER_TEMP/dimer-verification/coincidence_tail.svg" --data "$RUNNER_TEMP/dimer-verification/coincidence_tail.json"
       - name: Attach the exact tracked sources to passing evidence

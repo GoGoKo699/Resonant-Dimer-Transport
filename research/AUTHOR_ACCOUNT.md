@@ -160,6 +160,16 @@ source/detector weights. Long time is taken at fixed detuning before approaching
 resonance. The detuning result alone does not supply an observation time;
 the separate joint time–detuning estimate below addresses deterministic readout.
 
+The same crossover also fixes the rest contact residue and effective mass.
+The [explicit rest coefficients](DETUNING_CROSSOVER.md#explicit-rest-residue-and-curvature)
+give $Z(0;U_\delta)\asymp\rho^{2z-1}$ and
+$m_d(U_\delta)\asymp J^{-1}\rho^{2-z}$, where
+$m_d=1/E_d''(0)$ and $\rho=\delta^{1/(1-z)}$.
+The vanishing mass describes the divergent rest curvature as resonance is
+approached; the rest velocity is still zero at each fixed positive detuning.
+This coefficient calculation uses the exact lattice curvature integral and
+is separate from the global maximum-velocity statement.
+
 ## Why the local measurement matters
 
 The normalized source in each total-momentum fiber is the constant relative-
@@ -335,6 +345,20 @@ The pole equation is inherited. Its homogeneity predicts the pole and residue
 powers and the detuning scales; these are not separate mechanisms. Their
 Supplementary Note 1 matches the microscopic spin model to its low-energy
 scattering parameter.
+
+That matching does not identify their auxiliary dimer residue with our
+normalized onsite probability $Z$. Their spin model forbids two magnons on
+one site; Supplementary Note 1, Eqs. (S2)–(S5), enforces this constraint by
+taking an onsite repulsion to infinity and introduces separate onsite and
+nearest-neighbor auxiliary fields. The factor $1/2$ in their loop is a
+scattering-amplitude convention: it leaves the pole equation unchanged but
+affects the propagator residue. In the present contact lattice model the
+normalized source and detector coefficient is fixed separately by the exact
+rank-one eigenfunction. Indeed, the scaled continuum wavefunction is square
+integrable for $z>1/2$, while its formal point value involves an ultraviolet
+divergence for $z<1$. A bare continuum contact value cannot replace the
+microscopic $B_z$. The inherited powers and the lattice source/detector
+normalization are therefore distinct pieces of the calculation.
 
 The public author response accompanying [1], Eqs. (R5)–(R7), also proposes
 evolution from two magnons at finite separation and a resonance diagnostic

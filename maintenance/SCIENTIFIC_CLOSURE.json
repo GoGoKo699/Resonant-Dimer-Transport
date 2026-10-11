@@ -1,0 +1,37 @@
+{
+  "repository": "GoGoKo699/Resonant-Dimer-Transport",
+  "baseline": "ed068ce791ac28537fd309f2cdc7efc15da026d9",
+  "date_utc": "2026-10-11",
+  "claim_impact": {
+    "rest_crossover": "The continuum rest normalization and curvature reduce to explicit beta-function coefficients. A separate dominated-convergence argument in the exact lattice curvature integral proves the rest residue, curvature, and effective-mass limits in R1-R3. This does not infer second-derivative convergence from the existing C1 theorem or alter the global cutoff claims.",
+    "boundary_resolvent": "The technical appendix derives the signed cusp boundary transform, full-coefficient Morse decomposition, and simple-root principal-value derivative formula supporting the existing variation envelope. It supplies proof detail without changing the finite-time theorem or any sufficient exponent.",
+    "current_time_account": "The generated theorem page replaces its historical denial of a uniform continuum rate with the established momentum-integrated C/(Jt) bound and a link to its proof. The resonance tail retains its iterated order of limits and no numerical operating window is asserted.",
+    "operator_matching": "The attribution distinguishes the predecessor's hard-core spin constraint and auxiliary-field residue convention from the normalized onsite contact probability of this lattice model. The inherited scaling powers remain credited; the microscopic coefficient requires source and detector matching."
+  },
+  "proof_locations": [
+    "research/DETUNING_CROSSOVER.md",
+    "research/BOUNDARY_RESOLVENT.md",
+    "research/OBSERVATION_TIME.md",
+    "research/AUTHOR_ACCOUNT.md"
+  ],
+  "preservation": {
+    "archive_files_changed": false,
+    "canonical_reports_changed": false,
+    "license_changed": false,
+    "original_assertions_or_tolerances_changed": false,
+    "original_scientific_checkers_changed": false,
+    "original_D1_D15_F1_F14_O1_O19_equation_blocks_changed": false
+  },
+  "attribution_sources": [
+    {
+      "url": "https://www.nature.com/articles/s42005-026-02580-0",
+      "locator": "Published two-magnon Eqs. (6)-(8), Supplementary Note 1 Eqs. (S2)-(S5)",
+      "provenance": "Exact downloaded source hashes are retained in maintenance/TRANSPORT_AUDIT.json."
+    },
+    {
+      "url": "https://arxiv.org/html/2502.20759v1",
+      "locator": "Two-magnon section, hard-core spin constraint and auxiliary dimer loop convention"
+    }
+  ],
+  "scope": "Author-side scientific derivation, internal proof audit, and finite numerical diagnostics; not external peer review, interval certification, or exhaustive priority clearance."
+}

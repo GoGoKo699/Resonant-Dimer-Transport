@@ -12,7 +12,11 @@ PAGES=[
  ('REVIEW.md','research/CONTRIBUTION.md','Proof and contribution assessment','## Review outcome',None),
 ]
 REPLACEMENTS={
- 'THEOREM.md': [('## 4. New corollary: the whole relative wavefunction has a controlled size scaling','## 4. Scaled relative wavefunction and preparation size')],
+ 'THEOREM.md': [
+  ('## 4. New corollary: the whole relative wavefunction has a controlled size scaling','## 4. Scaled relative wavefunction and preparation size'),
+  ('Equation (1) is also explicit in the continuum amplitude, but this review does not produce a usable uniform rate for $\\eta(t)$. Thus (3) still takes long time at fixed $v$, followed by large $v$.',
+   'Equation (1) alone does not quantify the continuum decay rate. The [joint observation-time theorem](OBSERVATION_TIME.md) proves a uniform momentum-integrated bound $\\eta_U(t)\\le C/(Jt)$ near resonance and combines it with band-norm estimates to give a sufficient simultaneous time–detuning regime. The resonance tail (3) retains its stated long-time-at-fixed-velocity, then high-velocity order.'),
+ ],
  'REVIEW.md': [('## Review outcome', '## Review outcome\n\nThe [claim-by-claim comparison](AUTHOR_ACCOUNT.md#relationship-to-established-work) also accounts for the published supplements, the public author response, and earlier local-pair dynamics.'), ('It does not provide the missing uniform-in-velocity continuum-convergence rate or an optimal tuning requirement.', 'It is not itself a continuum-decay estimate or an optimal tuning requirement. Deterministic event accuracy and the sufficient joint regime are proved separately in the [finite-time certificate](FINITE_TIME_CERTIFICATE.md) and [observation-time theorem](OBSERVATION_TIME.md).')],'prior/FOLLOWUP.md':[],'prior/prior/PILOT.md':[('At e=1 the same argument holds after isolating the two moving cusps and dominating them by |x-1/2|^(-z) and |x+1/2|^(-z).', 'At the endpoint use the exact lattice energy $E=E_{\\rm th}(P)=\\epsilon_z(P)$, not $E=J|P|^z$. The latter is above the lattice edge, so Eq. (8) cannot be extended by substituting e=1. The [exact-threshold lemma](THRESHOLD_ENDPOINT.md) proves the endpoint expansion with coefficient F_z(1), using uniform cusp domination and the same tail splitting.')],
 }
 def sha(data):return hashlib.sha256(data).hexdigest()
@@ -49,7 +53,7 @@ def expected():
    'append_sources':source=='prior/prior/PILOT.md','remove_repository_allocation':source=='REVIEW.md',
    'omit_historical_allocation_tail':source=='prior/FOLLOWUP.md',
    'omit_editorial_planning_sentence':source=='REVIEW.md',
-   'scientific_correction':('research/THRESHOLD_ENDPOINT.md' if source=='prior/prior/PILOT.md' else None),
+   'scientific_correction':('research/THRESHOLD_ENDPOINT.md' if source=='prior/prior/PILOT.md' else 'research/OBSERVATION_TIME.md' if source=='THEOREM.md' else None),
    'literal_replacements':REPLACEMENTS[source],'display_equations':len(equations(selected)),
    'equations_sha256':sha(json.dumps(equations(selected)).encode()),'output_sha256':sha(data),
    'formatting':'Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.'})
