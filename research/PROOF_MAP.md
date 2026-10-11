@@ -1,6 +1,9 @@
 # Proof map
 
-The [author account](AUTHOR_ACCOUNT.md) presents the background, definitions, and central claims.
+The [tutorial bridge](TUTORIAL_BRIDGE.md) starts from Economou's Green's-function
+textbook and derives the contact-pole and measurement dictionary. The
+[author account](AUTHOR_ACCOUNT.md) presents the background, definitions, and
+central claims.
 
 The reading order follows the logical dependencies of the local-source transport result.
 

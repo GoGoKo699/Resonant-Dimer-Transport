@@ -1,20 +1,59 @@
-# Resonant-Dimer-Transport
+# Resonant Dimer Transport
 
-> Source-resolved transport at a two-particle binding resonance in a fractional-hopping chain.
+> Source-resolved transport at a two-particle binding resonance in a fractional-hopping chain: moving bound states, vanishing contact weight, unconditional coincidence probabilities, and a sufficient joint time–detuning regime.
 
-## Scientific reading
-- [Joint observation time](research/OBSERVATION_TIME.md): uniform integrated continuum decay and sufficient time–detuning regime; not an optimal exponent or a certified numerical waiting time.
-- [Boundary resolvent](research/BOUNDARY_RESOLVENT.md): self-contained boundary-value estimates supporting the continuum variation proof.
-- [Finite-time certificate](research/FINITE_TIME_CERTIFICATE.md): sharp deterministic-time event error in static spectral budgets.
-- [Detuning crossover](research/DETUNING_CROSSOVER.md): global inverse-detuning cutoff, maximizing momentum scale, and unconditional probability crossover.
-- [Author account](research/AUTHOR_ACCOUNT.md): background, definitions, central claims, and closest predecessors.
-- [Threshold endpoint](research/THRESHOLD_ENDPOINT.md): exact lattice-edge scaling; correction to the endpoint proof prose.
-- [Theorem](research/THEOREM.md): local preparation, unconditional coincidences, velocity law, preparation-size profile.
-- [Proof map](research/PROOF_MAP.md): full spectral and transport dependencies.
-- [Contribution assessment](research/CONTRIBUTION.md): inherited framework and remaining physical synthesis.
-- [Reproducibility](REPRODUCIBILITY.md): thirty-three scientific groups, including finite-time and joint-regime regressions; source/report integrity.
-- [Current work](CURRENT.md): continue in this Chat; no workspace required.
-- [Agent instructions](AGENTS.md): scope, source preservation, and guarded repository changes.
+Canonical repository: https://github.com/GoGoKo699/Resonant-Dimer-Transport
+Author: Ruge Lin
+
+## Relevant questions
+
+- Does binding impose a finite group-velocity cutoff when the single-particle dispersion has a fractional cusp?
+- What can an onsite pair source and a same-site position detector observe at a two-particle binding resonance?
+- Why does local pair detection involve the square of the normalized contact spectral weight?
+- How does the maximum dimer velocity diverge near resonance, and how rare are coincidences near that cutoff?
+- How much relative-coordinate support is needed for fixed overlap with a fast bound pair?
+- How do rank-one lattice Green's functions, continuum spectral densities, and deterministic-time error bounds connect?
+
+## Search phrases
+
+Resonant Dimer Transport; Ruge Lin; fractional discrete Laplacian; long-range hopping; two-particle contact attraction; moving lattice bound state; rest-binding resonance; rank-one contact resolvent; dimer pole residue; local pair quench; same-site coincidence; source and detector overlaps; Z squared velocity measure; algebraic high-velocity tail; inverse-detuning velocity cutoff; bound-pair preparation size; joint time–detuning limit; Economou Green's Functions in Quantum Physics.
+
+## Scientific model and scope
+
+Two distinguishable particles on the infinite one-dimensional lattice have dispersion epsilon_z(k) = J [2 - 2 cos(k)]^(z/2), with J > 0 and 1/2 < z < 1, and contact attraction -U delta_(x_a,x_b). The hopping is the fractional discrete Laplacian, not an exact pure-power kernel at every distance. The source is |0,0>; the event is an unconditional same-site coincidence per prepared pair.
+
+The limiting coincidence-velocity measure is the pushforward of Z(P)^2 dP/(2 pi) by E_d'(P). Here Z is the contact probability in the normalized relative bound state. The conserved bound-sector population instead involves one Z. At resonance the coincidence tail exponent is (4z - 1)/(1 - z), equal to 8 at z = 3/4. At each fixed stronger attraction the limiting velocity support is bounded. Define delta = J (Uc^(-1) - U^(-1)) > 0, where Uc is the rest-binding threshold. Near resonance, the global cutoff scales as J/delta and its near-cutoff coincidence weight as delta^((4z - 1)/(1 - z)).
+
+The resonant tail takes the infinite lattice first, then long time at fixed velocity, then high velocity. Finite-time spatial tails and unbounded limiting velocity support are different statements. The separate observation-time theorem gives a sufficient simultaneous regime, not a necessary or optimal waiting time or an interval-certified operating window. The preparation-size statement concerns optimal relative-support overlap, not a loading protocol. Attribution is part of the scientific account.
+
+## Authoritative reading route
+
+- [Reader entry point](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/README.md): physical question, measurement, main results, and selected learning anchor.
+- [Tutorial bridge](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/TUTORIAL_BRIDGE.md): one-source learning route from Economou's third edition; notation dictionary, worked lattice example, and source/detector accounting.
+- [Author account](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/AUTHOR_ACCOUNT.md): physical explanation, precise claims, and closest predecessors.
+- [Results index](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/RESULTS.md): complete result-to-proof map.
+- [Theorem](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/THEOREM.md): local-source velocity law and relative preparation size.
+- [Spectral foundation](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/SPECTRAL_PROOF.md): exact fiber Hamiltonian, rest threshold, moving pole, differentiated velocity, and normalized contact residue.
+- [Transport proof](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/TRANSPORT_PROOF.md): continuum separation and the unconditional Z-squared measurement law.
+- [Threshold endpoint](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/THRESHOLD_ENDPOINT.md): exact lattice-edge scaling.
+- [Detuning crossover](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/DETUNING_CROSSOVER.md): global cutoff, probability crossover, rest residue, curvature, and effective mass.
+- [Finite-time certificate](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/FINITE_TIME_CERTIFICATE.md): sharp deterministic-time event error in static spectral budgets.
+- [Joint observation time](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/OBSERVATION_TIME.md): uniform integrated continuum decay and sufficient simultaneous time–detuning regime.
+- [Boundary resolvent](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/BOUNDARY_RESOLVENT.md): cusp, smooth-maximum, and principal-value estimates.
+- [Alternative time estimate](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/ALTERNATIVE_TIME_BOUND.md): independent conservative proof route.
+- [Proof map](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/PROOF_MAP.md): complete dependencies.
+- [Contribution assessment](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/CONTRIBUTION.md): inherited framework and scoped contribution.
+- [Reproducibility](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/REPRODUCIBILITY.md): 42 scientific groups, eight infrastructure checks, and source/report integrity.
+
+## Selected tutorial
+
+E. N. Economou, Green's Functions in Quantum Physics, third edition, Springer Series in Solid-State Sciences 7 (2006): https://doi.org/10.1007/3-540-28841-4 . The repository's tutorial bridge identifies relevant sections and supplies the model-specific steps. The textbook is the learning anchor; research attribution is recorded separately in the author account and contribution assessment.
+
+## Repository maintenance
+
+- [Agent instructions](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/AGENTS.md): repository scope, source preservation, and guarded changes.
+- [Current scope](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/CURRENT.md): ongoing scientific-record maintenance.
 
 ## Purpose and contact
-This repository serves as a record of the work and a guide for the author's self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
