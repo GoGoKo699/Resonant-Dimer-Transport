@@ -66,6 +66,15 @@ global maximum, its momentum scale, and the full probability crossover.
 Long time is taken at each fixed detuning first; this is not a finite-time
 visibility guarantee.
 
+![Absolute coincidence tails and the probability near the velocity cutoff](figures/coincidence_tail.svg)
+
+For $z=3/4$, the lattice calculation compares resonance with three positive
+detunings. Dashed lines mark the located velocity cutoffs. The right panel
+shows the absolute probability above $90\%$ of each cutoff: the larger cutoff
+comes with a rarer event. These are limiting probabilities per prepared pair.
+[Data and reproduction](REPRODUCIBILITY.md#coincidence-tail-figure) include
+crossing, quadrature, and source-overlap checks.
+
 ## Finite-time accuracy
 
 The [finite-time certificate](research/FINITE_TIME_CERTIFICATE.md) bounds the

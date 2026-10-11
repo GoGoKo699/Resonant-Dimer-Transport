@@ -42,6 +42,43 @@ python tools/verify_alternative_time.py --output-dir /absolute/new/alternative/r
 
 This runner checks the four exact imported source blobs, copies the original helper and checker into an isolated temporary layout, and executes their unchanged assertions using the preserved spectral solver. Its raw `legacy.json`, `legacy.log`, and `verification.json` remain in the requested new output directory. Hosted verification requires the main 33 scientific groups and these six supplemental groups, for 39 scientific groups in total, as well as the eight infrastructure checks. The two receipts keep their source and report claims separate; the alternative proof is not silently substituted for the sharper main theorem.
 
+## Coincidence-tail figure
+
+The [figure](figures/coincidence_tail.svg) evaluates the actual lattice
+limiting measure at $z=3/4$, with resonance and detunings
+$\delta=0.06,0.09,0.135$. Its [data](figures/coincidence_tail.json) retain
+absolute probabilities, momentum intervals, located cutoffs, quadrature
+error estimates, refinement comparisons, and source hashes.
+
+To recompute it in a separate output directory, install the optional plotting
+environment and run:
+
+```bash
+python -m pip install -r requirements-figures.txt
+python tools/plot_coincidence.py --output /absolute/new/path/coincidence_tail.svg --data /absolute/new/path/coincidence_tail.json
+```
+
+The generator integrates $Z(P)^2dP/\pi$ over scan-detected positive-momentum
+velocity intervals. It compares 72- and 144-cell crossing scans and tighter,
+subdivided quadratures at three thresholds for every coupling. A separate
+cusp-split quadrature checks the pole equation, normalized relative
+wavefunction, and contact overlap. Numerical maxima and scans are finite
+diagnostics; global support statements follow from the analytical proofs.
+Zero probabilities above a located cutoff are recorded separately and are
+not replaced by a positive floor on the logarithmic plot. The right panel
+uses $Q_U(0.9v_{\max})$ without rescaling its probability.
+
+To render the saved data without repeating the calculation:
+
+```bash
+python tools/plot_coincidence.py --from-data figures/coincidence_tail.json --output /absolute/new/path/coincidence_tail.svg
+```
+
+The figure represents the infinite lattice followed by long time at each
+fixed coupling and velocity threshold. It does not evaluate an observation
+time. These figure diagnostics are separate from the 39 scientific groups;
+the original assertions, tolerances, and canonical reports are unchanged.
+
 ## Three separate conclusions
 
 **Scientific assertions.** Every original test runs unchanged. A passing finite calculation supports a stated identity or diagnostic; it does not replace the infinite-lattice proof or constitute external peer review.

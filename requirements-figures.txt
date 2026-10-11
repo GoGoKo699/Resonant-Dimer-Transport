@@ -1,0 +1,3 @@
+# Optional plotting environment; the scientific checks use requirements.txt.
+-r requirements.txt
+matplotlib==3.10.8

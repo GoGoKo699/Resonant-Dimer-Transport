@@ -2,6 +2,8 @@
 
 ## Review outcome
 
+The [claim-by-claim comparison](AUTHOR_ACCOUNT.md#relationship-to-established-work) also accounts for the published supplements, the public author response, and earlier local-pair dynamics.
+
 No blocking mathematical defect was identified in the scoped infinite-lattice contact-transport theorem. The potentially consequential steps were checked explicitly: cusp versus smooth continuum edges, absence of a source-coupled atom at a continuum energy, the finite exceptional set needed to exclude singular continuous contact spectrum, both source/detector overlaps, passage from amplitude convergence to the whole unnormalized contact probability law, and the characteristic-function rather than uncontrolled stationary-phase proof. The long-time/high-velocity order remains essential.
 
 A corollary completes the size interpretation already present in the same eigenstate: the scaled normalized relative wavefunction converges in L2, hence the best overlap with a relative source of radius R has a limiting profile in PR. Fixed capture probability requires R of order 1/P, or order (v/J)^(1/(1-z)). This does not construct a physical loading protocol or grant momentum selection to the original local quench.
