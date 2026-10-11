@@ -116,6 +116,12 @@ Successful hosted runs also attach `source.tar`, created by `git archive HEAD` a
 
 `tools/build_reading.py` selects the declared scientific sections from the immutable archive, converts math delimiters for GitHub display, and records source hashes, output hashes, selections, and literal substitutions in `maintenance/READING_TRANSFORMS.json`. It verifies unchanged display-equation content. The ledger classifies the endpoint proof-prose correction and links its proof. It also records the theorem page's scientific reconciliation with the uniform observation-time estimate and its proof location. The active contribution page omits an editorial-planning sentence and links the time-dependent proofs; archived text and display equations remain unchanged. The [endpoint lemma](research/THRESHOLD_ENDPOINT.md) explains why the continuum energy approximation must not be substituted at the lattice edge. Edit the generator rather than a generated page, then regenerate and rerun the checks. The author account, endpoint lemma, detuning theorem, time-dependent proofs, and boundary resolvent appendix are maintained directly rather than generated from the archive.
 
+The [tutorial bridge](research/TUTORIAL_BRIDGE.md) is maintained directly. Its
+Green's-function dictionary and nearest-neighbor worked example are analytical
+teaching derivations; the example is a separate control outside the fractional
+exponent window. The scientific claims and check groups remain those indexed
+above. The selected textbook is linked, not redistributed.
+
 The original chronological notes, numerical repairs, failed runs, and pre-initialization handoff remain in [the archive](archive/review-2026-10-10/README.md). The live continuation instruction is [CURRENT.md](CURRENT.md): continue in Chat, without requiring a workspace.
 
 ## Scientific interpretation
