@@ -224,8 +224,8 @@ def main() -> None:
     result = unittest.TextTestRunner(verbosity=2).run(
         unittest.defaultTestLoader.loadTestsFromTestCase(Checks))
     sources = [Path(__file__), ROOT / "tools/detuning.py",
-               ROOT / "archive/review-2026-10-10/prior/transport.py",
-               ROOT / "archive/review-2026-10-10/prior/prior/dimer.py"]
+               ROOT / "tools/transport.py",
+               ROOT / "tools/dimer.py"]
     REPORT.update(
         status="PASS" if result.wasSuccessful() else "FAIL",
         test_groups=result.testsRun, preserved_scalar_modules_reused=True,

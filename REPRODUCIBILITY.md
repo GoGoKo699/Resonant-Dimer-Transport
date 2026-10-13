@@ -6,7 +6,6 @@ Use Python 3.13.5 and the pinned packages in `requirements.txt`.
 
 ```bash
 python -m pip install -r requirements.txt
-python tools/build_reading.py --check
 python tools/verify.py --output-dir /absolute/new/path/main-results
 python tools/verify_alternative_time.py --output-dir /absolute/new/path/alternative-results
 python tools/check_rest_crossover.py --output /absolute/new/path/rest-crossover.json
@@ -17,14 +16,14 @@ contains **42 scientific groups and eight infrastructure checks**:
 
 | Suite | Groups | Script and evidence |
 |---|---:|---|
-| Spectral, local-source transport, and preparation size | 15 | The source wrappers run through `tools/verify.py`; reports are in `scientific/`. |
+| Spectral, local-source transport, and preparation size | 15 | `tools/check_spectral.py`, `tools/check_transport.py`, and `tools/check_review.py`, run by `tools/verify.py`; reports are in `scientific/`. |
 | Exact lattice threshold | 3 | `tools/check_endpoint.py`; `endpoint.json` and log. |
 | Detuning crossover | 5 | `tools/check_detuning.py`; `detuning.json` and log. |
 | Static finite-time certificate | 5 | `tools/check_finite_time.py`; `finite_time.json` and log. |
 | Joint observation-time regime | 5 | `tools/check_observation_time.py`; `observation_time.json` and log. |
-| Conservative alternative time estimate | 6 | `tools/verify_alternative_time.py`; `legacy.json`, log, and separate `verification.json`. |
+| Conservative alternative time estimate | 6 | `tools/verify_alternative_time.py`; `alternative.json`, log, and separate `verification.json`. |
 | Rest residue and curvature | 3 | `tools/check_rest_crossover.py`; the requested JSON report. |
-| Source, generation, links, license, workflow, and scope | 8 | `tools/check_repository.py`, run by the main wrapper; `infrastructure.json` and log. |
+| Source integrity, proof formatting, links, license, workflow, and scope | 8 | `tools/check_repository.py`, run by the main wrapper; `infrastructure.json` and log. |
 
 The main wrapper covers 33 scientific groups and the eight infrastructure
 checks. Its `verification.json` records the exact Git commit and index tree,
@@ -58,9 +57,10 @@ arithmetic, and active Markdown control characters. The
 [joint theorem](research/OBSERVATION_TIME.md) proves the simultaneous limit.
 
 The [alternative estimate](research/ALTERNATIVE_TIME_BOUND.md) has six groups
-executed in an isolated temporary layout. The runner verifies its four exact
-source blobs, uses the scalar spectral solver, and retains raw reports and
-logs.
+executed with the separate `tools/alternative_time` helper namespace. It uses
+the scalar spectral solver and retains raw reports, logs, and source hashes.
+The [complete proof](research/ALTERNATIVE_TIME_PROOF.md) contains the explicit
+constants and conservative sufficient-time derivation.
 
 ### Rest-residue and curvature checks
 
@@ -113,11 +113,12 @@ coupling and velocity threshold. Its diagnostics run separately from the
 
 ## Source and report integrity
 
-The complete 77-file source archive, exact membership, three nested
-manifests, and license are checked. The whole source inventory must stay
-unchanged during verification. `maintenance/SOURCE_IMPORT.json` records the
-source-package digest and baseline; `maintenance/READING_TRANSFORMS.json`
-records the generated reading pages and every literal transformation.
+The scientific modules, proofs, canonical reports, figure assets, and license
+are checked against [the source-integrity record](maintenance/SOURCE_INTEGRITY.json).
+The whole source inventory must stay unchanged during verification. The
+record includes exact file hashes and source provenance; the complete original
+packages remain available at the recorded Git snapshot. All checks run from
+the current checkout without retrieving historical files.
 
 The default local command requires byte equality with all three canonical
 scientific reports. Hosted CI uses `--allow-numeric-report-differences` to
@@ -136,21 +137,17 @@ After safe extraction, compare every file with `source_sha256` in the main
 receipt before reproducing the checks. Verify merged main separately and
 compare its exact source tree.
 
-## Reading-page generation
+## Research-page maintenance
 
-`tools/build_reading.py` generates four research pages from immutable source
-sections. It verifies source equation content before applying the recorded
-presentation transforms, and records source
-hashes, output hashes, selections, and literal substitutions in the transform
-ledger. Displays use fenced math, upright operator names, and equation labels
-outside TeX to support GitHub's native renderer. Inline expressions use
-protected dollar-backtick delimiters; symbolic shorthand in the foundational
-prose is typeset through recorded replacements. Edit the generator,
-regenerate, and run `--check`. Scientific
-reconciliations link the [exact-threshold proof](research/THRESHOLD_ENDPOINT.md)
-and [observation-time theorem](research/OBSERVATION_TIME.md).
+The research pages are maintained directly and their hashes are recorded in
+the source-integrity record. Displays use fenced math, upright operator names,
+and equation labels outside TeX to support GitHub's native renderer. Inline
+expressions use protected dollar-backtick delimiters. Intentional edits require
+an updated integrity record and review of their scientific impact. The
+[exact-threshold proof](research/THRESHOLD_ENDPOINT.md) and
+[observation-time theorem](research/OBSERVATION_TIME.md) supply the corresponding
+scientific reconciliations.
 
-The other research pages are maintained directly. The
-[tutorial bridge](research/TUTORIAL_BRIDGE.md) supplies analytical teaching
+The [tutorial bridge](research/TUTORIAL_BRIDGE.md) supplies analytical teaching
 derivations, including a nearest-neighbor control outside the fractional
 exponent window. Economou's textbook is linked rather than redistributed.

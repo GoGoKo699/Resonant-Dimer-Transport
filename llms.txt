@@ -41,6 +41,7 @@ The resonant tail takes the infinite lattice first, then long time at fixed velo
 - [Joint observation time](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/OBSERVATION_TIME.md): uniform integrated continuum decay and sufficient simultaneous time–detuning regime.
 - [Boundary resolvent](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/BOUNDARY_RESOLVENT.md): cusp, smooth-maximum, and principal-value estimates.
 - [Alternative time estimate](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/ALTERNATIVE_TIME_BOUND.md): independent conservative proof route.
+- [Complete alternative proof](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/ALTERNATIVE_TIME_PROOF.md): explicit spectral constants, uniform pointwise continuum estimate, and deterministic relative-error limit.
 - [Proof map](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/PROOF_MAP.md): complete dependencies.
 - [Contribution and attribution](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/CONTRIBUTION.md): established ingredients and measurement-specific results.
 - [Reproducibility](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/REPRODUCIBILITY.md): 42 scientific groups, eight infrastructure checks, and source/report integrity.
@@ -48,11 +49,6 @@ The resonant tail takes the infinite lattice first, then long time at fixed velo
 ## Selected tutorial
 
 E. N. Economou, Green's Functions in Quantum Physics, third edition, Springer Series in Solid-State Sciences 7 (2006): https://doi.org/10.1007/3-540-28841-4 . The repository's tutorial bridge identifies relevant sections and supplies the model-specific steps. The textbook is the learning anchor; research attribution is recorded separately in the author account and contribution assessment.
-
-## Repository maintenance
-
-- [Agent instructions](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/AGENTS.md): repository scope, source preservation, and guarded changes.
-- [Maintenance context](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/CURRENT.md): scientific distinctions and repository authority.
 
 ## Purpose and contact
 

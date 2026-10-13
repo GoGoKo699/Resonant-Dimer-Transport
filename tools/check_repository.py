@@ -6,19 +6,23 @@ from pathlib import Path
 sys.dont_write_bytecode=True
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
-import verify,build_reading
+import verify
 class Checks(unittest.TestCase):
- def test_01_archive_and_reading(self):
-  r=verify.static_checks();self.assertEqual(r['archive_files'],77)
-  self.assertEqual([m['members'] for m in r['manifests']],[76,39,15]);self.assertGreaterEqual(r['local_links'],25)
+ def test_01_source_integrity_and_reading(self):
+  r=verify.static_checks();self.assertEqual(r['canonical_reports'],3)
+  self.assertEqual(r['research_pages'],15);self.assertGreaterEqual(r['local_links'],25)
  def test_02_owner_license(self):
   b=(ROOT/'LICENSE').read_bytes();self.assertEqual(hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest(),'e17a781bf47c4aadf18b68fc593846a1193b86c1')
- def test_03_deterministic_generation(self):
-  self.assertEqual(build_reading.expected(),build_reading.expected())
-  ledger=json.loads(build_reading.expected()['maintenance/READING_TRANSFORMS.json'])
-  self.assertGreater(sum(p['display_equations'] for p in ledger['pages']),50)
-  for name,b in build_reading.expected().items():
-   if name.endswith('.md'):self.assertNotIn(b'\\[',b);self.assertNotIn(b'\\]',b);self.assertEqual(b.count(b'$$')%2,0)
+ def test_03_proof_format_and_integrity(self):
+  records=json.loads((ROOT/'maintenance/SOURCE_INTEGRITY.json').read_text())['files']
+  displays=0
+  for p in (ROOT/'research').glob('*.md'):
+   self.assertIn(str(p.relative_to(ROOT)),records)
+   b=p.read_bytes();self.assertEqual(verify.sha(p),records[str(p.relative_to(ROOT))]['sha256'])
+   self.assertNotIn(b'\\[',b);self.assertNotIn(b'\\]',b);self.assertNotIn(b'$$',b)
+   self.assertEqual(len(re.findall(rb'^```[^\n]*$',b,re.M))%2,0)
+   displays+=b.count(b'```math\n')
+  self.assertGreater(displays,50)
  def test_04_tampering_and_safe_paths(self):
   with tempfile.TemporaryDirectory() as t:
    p=Path(t);(p/'a').write_text('original');before=verify.inventory(p);(p/'a').write_text('change')
@@ -38,8 +42,8 @@ class Checks(unittest.TestCase):
   for forbidden in ('pull_request_target','contents: write','git push','GITHUB_TOKEN:'):self.assertNotIn(forbidden,text)
   uses=re.findall(r'uses: ([^\s#]+)',text);self.assertEqual(len(uses),3)
   self.assertTrue(all(re.fullmatch(r'actions/[a-z-]+@[a-f0-9]{40}',s) for s in uses))
- def test_07_chat_and_contact(self):
-  self.assertIn('A separate workspace is not required',(ROOT/'CURRENT.md').read_text())
+ def test_07_maintenance_scope_and_contact(self):
+  self.assertIn('## Repository scope',(ROOT/'CURRENT.md').read_text())
   for p in ('README.md','llms.txt'):self.assertIn('mailto:gogoko699@gmail.com',(ROOT/p).read_text())
  def test_08_scientific_scope(self):
   s=(ROOT/'README.md').read_text()

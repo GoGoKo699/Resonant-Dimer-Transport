@@ -18,7 +18,7 @@ The alternative argument cuts out energy collars around the free-fiber critical 
 \gamma_z=\frac{4z-2}{10-z},
 ```
 
-with explicit constants in Section 3 of the [complete proof](../archive/coarse-time-2026-10-10/research/FINITE_TIME.md). This is compatible with the faster momentum-integrated decay in the main theorem: the estimates control different norms.
+with explicit constants in Section 3 of the [complete proof](ALTERNATIVE_TIME_PROOF.md). This is compatible with the faster momentum-integrated decay in the main theorem: the estimates control different norms.
 
 Combined with conservative band bounds and event-local interference accounting, the alternative proof establishes
 
@@ -41,16 +41,16 @@ The alternative proof also includes the exact minimum-gap identity, cusp-safe se
 
 ## Proof and reproduction
 
-The [complete derivation](../archive/coarse-time-2026-10-10/research/FINITE_TIME.md)
+The [complete derivation](ALTERNATIVE_TIME_PROOF.md)
 contains the explicit constants. Its six scientific regression groups run in
-an isolated temporary layout using the scalar spectral solver.
+a separate helper namespace using the scalar spectral solver.
 
 ```bash
 python tools/verify_alternative_time.py --output-dir /absolute/new/path/outside/repository
 ```
 
-The runner verifies source integrity and retains the raw six-group report and
-log. The [reproduction guide](../REPRODUCIBILITY.md) includes this suite in the
+The runner records source hashes, verifies that the repository is unchanged,
+and retains the raw six-group report and log. The [reproduction guide](../REPRODUCIBILITY.md) includes this suite in the
 42 scientific groups.
 
 [Results index](RESULTS.md) · [Main finite-time result](OBSERVATION_TIME.md) · [Reproducibility](../REPRODUCIBILITY.md)

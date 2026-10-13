@@ -6,9 +6,9 @@ Work only in `GoGoKo699/Resonant-Dimer-Transport`. Verify the live repository an
 
 ## Preserve the evidence
 
-`archive/review-2026-10-10/` is the exact 77-file imported package, including three nested manifests, original scientific modules and checks, canonical reports, failed versions, and historical handoffs. Do not change or remove those bytes, normalize their line endings, overwrite reference reports, or weaken their assertions/tolerances. The original license is unchanged. New corrections belong outside the archive with their claim impact explained.
+The scientific modules and checks live in `tools/`; the three canonical reports live in `evidence/`. `maintenance/SOURCE_INTEGRITY.json` records their exact hashes, source provenance, and the Git snapshot containing the complete original packages. Preserve numerical routines, assertions, tolerances, canonical-report bytes, and the license. Path or import changes require explicit review and verification. Scientific corrections require a proof and a claim-impact account.
 
-The generated research pages are defined by `tools/build_reading.py`. Modify the generator for presentation changes, regenerate, and verify the transform ledger. Do not edit those generated pages independently. Generation selects source sections, converts mathematical display delimiters, and records all literal substitutions. The endpoint proof-prose correction is explicitly classified as scientific and proved in `research/THRESHOLD_ENDPOINT.md`; the displayed equations and archived sources are preserved. Further scientific corrections require an explicit proof and claim-impact account outside the archive, not a silent presentation change.
+The research pages are maintained directly. Keep GitHub-compatible fenced display math and protected inline math. Update the source-integrity record for intentional edits and review their scientific impact. The exact lattice-threshold reconciliation is proved in `research/THRESHOLD_ENDPOINT.md`; the momentum-integrated continuum rate is proved in `research/OBSERVATION_TIME.md`. Keep the alternative-time helper in its separate module namespace.
 
 ## Keep the scientific distinctions
 
@@ -18,8 +18,8 @@ Credit the supplied finite-momentum contact scattering framework and other prede
 
 ## Verification and publication
 
-Run `python tools/build_reading.py --check` and `python tools/verify.py --output-dir /absolute/new/path/outside/repository`. Reports must be new and outside the source tree. The default policy requires all original assertions, source preservation, and exact canonical report bytes. Every discrepancy needs an explicit account; do not change a scientific tolerance to make a test pass.
+Run `python tools/verify.py --output-dir /absolute/new/path/outside/repository`, the separate alternative-time runner, and the rest-crossover checker. Reports must be new and outside the source tree. The default policy requires all original assertions, source preservation, and exact canonical report bytes. Every discrepancy needs an explicit account; do not change a scientific tolerance to make a test pass.
 
-Use a feature branch and PR. Review the actual tested head and source hashes, recheck concurrent main changes, merge with the expected-head guard, and verify merged main separately. Keep CI read-only and retain full evidence. Do not force-push shared history or transfer authority to another repository. The archived pre-initialization handoff is historical; `CURRENT.md` governs ongoing work.
+Use a feature branch and PR. Review the actual tested head and source hashes, recheck concurrent main changes, merge with the expected-head guard, and verify merged main separately. Keep CI read-only and retain full evidence. Do not force-push shared history or transfer authority to another repository. `CURRENT.md` governs ongoing work.
 
 Keep the reader-facing account scientific and complete. Do not add progress bars, development narration, venue promises, or automatic extensions merely to enlarge the project.

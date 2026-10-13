@@ -33,8 +33,8 @@ Z_EXPONENT = .75
 DETUNINGS = (.06, .09, .135)
 OBSERVABLE = 'Q_U(v)=integral_{|E_d_prime(P)|>v} Z(P)^2 dP/(2*pi)'
 SOURCE_PATHS = ('tools/plot_coincidence.py', 'tools/detuning.py',
-                'archive/review-2026-10-10/prior/transport.py',
-                'archive/review-2026-10-10/prior/prior/dimer.py')
+                'tools/transport.py',
+                'tools/dimer.py')
 VMIN, VMAX = .3, 3.
 warnings.simplefilter('error', IntegrationWarning)
 
