@@ -8,26 +8,26 @@ Hamiltonian, source, detector, and sufficient-time exponents are unchanged.
 
 Write
 
-$$
+```math
 I_P(w)=\int\frac{dq}{2\pi}\frac1{A_P(q)-w},\qquad
 A_P(q)=\epsilon_z(q+P/2)+\epsilon_z(q-P/2).
-$$
+```
 
 The upper-half-plane convention is important:
 
-$$
-\frac1{s-\omega-i0}=\operatorname{PV}\frac1{s-\omega}
+```math
+\frac1{s-\omega-i0}=\mathrm{PV}\frac1{s-\omega}
    +i\pi\delta(s-\omega),\qquad
-\operatorname{Im}I_P(\omega+i0)=\pi\rho_{0,P}(\omega)\ge0.
-$$
+\mathrm{Im}I_P(\omega+i0)=\pi\rho_{0,P}(\omega)\ge0.
+```
 
 Thus the continuous contact density is
 
-$$
+```math
 w_{P,U}(\omega)=\frac1{\pi U^2}
 \frac{v(\omega)}{u(\omega)^2+v(\omega)^2},\quad
-u=\operatorname{Re}I_P-1/U,\quad v=\operatorname{Im}I_P.
-$$
+u=\mathrm{Re}I_P-1/U,\quad v=\mathrm{Im}I_P.
+```
 
 All local neighborhoods below can first be chosen with fixed boundaries
 in the integration variable. Differentiation then introduces no moving
@@ -39,9 +39,9 @@ integrals, not to replace an on-shell principal value by an ordinary integral.
 Put $\beta=(1-z)/z\in(0,1)$. Near either minimum $q_0=\pm P/2$, at a
 fixed $0<P<\pi$, the free dispersion has the form
 
-$$
+```math
 A_P(q_0+x)-T_P=J|x|^z+g_P(x),\qquad g_P(x)=O(x).
-$$
+```
 
 On each side, the analytic regular term and the chord correction allow the
 inverse branch to be differentiated. Solving for $|x|$ gives
@@ -49,12 +49,12 @@ $|x|=(y/J)^{1/z}[1+O(y^\beta)]$, with the corresponding first two
 derivative bounds. Summing its positive inverse Jacobians gives, on a
 sufficiently small energy interval,
 
-$$
-\rho_{0,P}(T_P+y)=c_Py^\beta+r_P(y),\qquad c_P>0,
-$$
-$$
+```math
+\rho_{0,P}(T_P+y)=c_Py^\beta+r_P(y),\qquad c_P > 0,
+```
+```math
 |r_P^{(j)}(y)|\le C y^{\beta+\lambda-j},\qquad j=0,1,2,
-$$
+```
 
 for some $\lambda>0$; $\lambda=\beta$ is sufficient. These bounds follow
 by differentiating the inverse equation on either side of the cusp, where
@@ -68,27 +68,27 @@ bounded.
 The leading local Cauchy integral can be evaluated directly. For a fixed
 upper endpoint $a>0$ and $0<y<a/2$, let
 
-$$
+```math
 K_\beta(y)=\int_0^a\frac{r^\beta}{r-y-i0}\,dr.
-$$
+```
 
 Subtracting its edge value before scaling yields
 
-$$
+```math
 K_\beta(y)-K_\beta(0)
 =y^\beta\int_0^{a/y}\frac{x^{\beta-1}}{x-1-i0}\,dx
 =\pi[-\cot(\pi\beta)+i]y^\beta+O(y).
-$$
+```
 
 Here the principal-value integral over $(0,\infty)$ is
 $-\pi\cot(\pi\beta)$ and the on-shell imaginary contribution is
 $+i\pi$. The omitted large-$x$ tail has size $O(y)$ and derivative
 $O(1)$. Consequently
 
-$$
+```math
 K_\beta'(y)
 =\pi\beta[-\cot(\pi\beta)+i]y^{\beta-1}+O(1).
-$$
+```
 
 The remainder density has the same required, weaker bounds without an
 explicit coefficient. To see this, set $\gamma=\beta+\lambda>\beta$ and
@@ -100,21 +100,21 @@ the resulting regular integrand. On the last region use
 $|r-y|\ge r/2$. The bounds for the remainder difference and derivative are
 respectively
 
-$$
-\begin{cases}O(y^\gamma),\ O(y^{\gamma-1}),&\gamma<1,\\
+```math
+\begin{cases}O(y^\gamma),\ O(y^{\gamma-1}),&\gamma < 1,\\
 O(y\log(2/y)),\ O(\log(2/y)),&\gamma=1,\\
-O(y),\ O(1),&\gamma>1.
+O(y),\ O(1),&\gamma > 1.
 \end{cases}
-$$
+```
 
 Each is bounded by $O(y^\beta)$ and $O(y^{\beta-1})$, respectively.
 The contribution outside the cusp neighborhoods is $C^1$ in energy,
 because its denominator stays separated from zero. Therefore
 
-$$
+```math
 I_P(T_P+y+i0)-I_P(T_P)=O(y^\beta),\qquad
 \partial_yI_P(T_P+y+i0)=O(y^{\beta-1}).
-$$
+```
 
 For the interacting density, the threshold denominator is nonzero:
 $I_P(T_P)>1/U_c\ge1/U$. On compact positive momentum intervals this
@@ -134,31 +134,31 @@ factor $1/(2\pi)$. The odd part integrates to zero. Its even part is
 $h_P(t^2)$, with $h_P$ real analytic and $h_P(0)>0$. For
 $\zeta=\omega-M_P+i0$, the exact contribution is
 
-$$
+```math
 -\int_{-a}^a\frac{h_P(t^2)}{t^2+\zeta}\,dt.
-$$
+```
 
 Use the analytic division identity
 
-$$
+```math
 h_P(t^2)=h_P(-\zeta)+(t^2+\zeta)k_P(t^2,\zeta).
-$$
+```
 
 The divided difference $k_P$ is analytic even when $t^2=-\zeta$. Also,
 
-$$
+```math
 \int_{-a}^a\frac{dt}{t^2+\zeta}
 =\frac{\pi}{\sqrt\zeta}-\frac2a+O(\zeta),
-$$
+```
 
 where the square root is positive for $\zeta>0$ and has its cut on the
 negative real axis. The finite-endpoint remainder is analytic for
 $|\zeta|<a^2$. Combining the two identities gives the exact local form
 
-$$
+```math
 -\frac{H_P(\zeta)}{\sqrt\zeta}+R_P^{\mathrm{loc}}(\zeta),\qquad
 H_P(\zeta)=\pi h_P(-\zeta).
-$$
+```
 
 Both coefficient functions are analytic, and $H_P$ is positive for small
 real $\zeta$. A uniform positive curvature and uniform analytic Jacobian
@@ -204,18 +204,18 @@ to its dispersion value $s\in[a,b]$, and its inverse-branch density is
 $d(s)$. Let $e$ range in a fixed compact subinterval of $(a,b)$.
 If $d$ is $C^2$, then
 
-$$
+```math
 \int_a^b\frac{d(s)}{s-e-i0}\,ds
 =d(e)\log\frac{b-e}{e-a}
  +\int_a^b\frac{d(s)-d(e)}{s-e}\,ds+i\pi d(e).
-$$
+```
 
 The quotient in the regular integral has a continuous value at $s=e$.
 Its energy derivative is
 
-$$
+```math
 \frac{d(s)-d(e)-d'(e)(s-e)}{(s-e)^2},
-$$
+```
 
 bounded by $\|d''\|_\infty/2$. The logarithm and its derivative are
 bounded because $e$ stays away from $a,b$. This proves uniform $C^1$
@@ -227,10 +227,10 @@ nonzero, and their neighborhoods do not meet either cusp.
 For the intermediate-energy region of (O10), set $J=1$ and choose a
 reference energy $\omega>0$. Write
 
-$$
+```math
 h=\omega^{1/z},\qquad k=P/h\le k_0,
 \qquad B_{h,k}(x)=\frac{A_P(hx)}\omega.
-$$
+```
 
 Take $k_0>0$ sufficiently small and $\omega$ sufficiently small. On fixed
 $x$ intervals, $B_{h,k}$ tends to
@@ -242,10 +242,10 @@ their values bounded above and below by positive constants. Since
 $dq/d\omega$ contributes the scale $h/\omega=\omega^\beta$, the
 on-shell imaginary part obeys
 
-$$
-c\omega^\beta\le\operatorname{Im}I_P(\omega+i0)
+```math
+c\omega^\beta\le\mathrm{Im}I_P(\omega+i0)
 \le C\omega^\beta.
-$$
+```
 
 To bound the subtracted real part, use the same fixed root neighborhoods
 and their regular principal-value formula. On the scaled complement the
@@ -253,13 +253,13 @@ roots are absent. At $x=0$ the rest subtraction has the integrable
 singularity $|x|^{-z}$. For large $|x|$, the symmetric shift and chord
 bounds give a subtracted integrand bounded by
 
-$$
+```math
 C\bigl(|x|^{-2z}+k^2|x|^{-z-2}\bigr).
-$$
+```
 
 This tail is integrable uniformly because $2z>1$. Restoring the factor
 $h/\omega$ gives
-$|\operatorname{Re}I_P(\omega+i0)-I_0(0)|\le C\omega^\beta$.
+$|\mathrm{Re}I_P(\omega+i0)-I_0(0)|\le C\omega^\beta$.
 The fixed outer lattice region contributes $O(\omega+P^2)$; since
 $P\le k_0\omega^{1/z}$ and $\beta<1$, this fits the same bound.
 
@@ -271,35 +271,35 @@ complement the differentiated scaled kernel has tail $O(|x|^{-2z})$;
 near the off-shell cusps its denominator is separated from zero. Hence
 the energy derivative has the factor $h/\omega^2$ and obeys
 
-$$
+```math
 |\partial_\omega I_P(\omega+i0)|\le C\omega^{\beta-1}.
-$$
+```
 
 The fixed outer lattice region contributes only $O(1)$, also within this
 bound. This proves all three estimates of (O10), including the boundary
 derivative, without differentiating a pointwise continuum remainder.
 
 Finally, $I_0(0)-1/U=\delta\ge0$ in these dimensionless units.
-Write $\operatorname{Re}I_P-I_0(0)=r$ and
-$v=\operatorname{Im}I_P$. If $\delta>2C\omega^\beta$, then
+Write $\mathrm{Re}I_P-I_0(0)=r$ and
+$v=\mathrm{Im}I_P$. If $\delta>2C\omega^\beta$, then
 $|\delta+r|\ge\delta/2$. Otherwise $v\ge c\omega^\beta$ controls
 $\delta+\omega^\beta$. Thus
 
-$$
+```math
 |I_P(\omega+i0)-1/U|\ge c'(\delta+\omega^\beta).
-$$
+```
 
 The gradient of $v/(u^2+v^2)$ has magnitude at most
 $C/(u^2+v^2)$. Combining the denominator bound with the boundary
 derivative yields (O11). Its variation integral is bounded using the
 substitution $x=\omega^\beta$:
 
-$$
+```math
 \int_{RP^z}^{\omega_0}
 \frac{\omega^{\beta-1}}{(\delta+\omega^\beta)^2}\,d\omega
 \le\frac{1}{\beta[\delta+(RP^z)^\beta]}
 \le\frac{C}{\delta+P^{1-z}}.
-$$
+```
 
 Together with the scaled lower-critical-energy region and the global
 maximum calculation, these estimates justify the variation envelope

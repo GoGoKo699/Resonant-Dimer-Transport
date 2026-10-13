@@ -61,8 +61,8 @@ whereas that of $`g_{0,P}`$ is negative. Thus both conventions give the same
 positive free contact density:
 
 ```math
-\rho_{0,P}(E)=\frac1\pi\operatorname{Im}I_P(E+i0)
-=-\frac1\pi\operatorname{Im}g_{0,P}(E+i0).
+\rho_{0,P}(E)=\frac1\pi\mathrm{Im}I_P(E+i0)
+=-\frac1\pi\mathrm{Im}g_{0,P}(E+i0).
 ```
 
 The operator $`(h_P-w)^{-1}`$ has a bound atom proportional to
@@ -76,7 +76,7 @@ Translation invariance conserves total momentum $`P`$. Write the individual
 momenta as $`P/2+q`$ and $`P/2-q`$. Their free energies add:
 
 ```math
-\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \frac12<z<1,
+\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J > 0,\quad \frac12 < z < 1,
 \qquad
 A_P(q)=\epsilon_z(q+P/2)+\epsilon_z(q-P/2).
 ```
@@ -151,7 +151,7 @@ For $`-\pi\le P\le\pi`$, put $`a_P=4J\cos(P/2)\ge0`$. Then
 ```math
 A_P^{\rm nn}(q)=4J-a_P\cos q,\qquad
 I_P^{\rm nn}(E)=\frac1{\sqrt{(4J-E)^2-a_P^2}},
-\qquad E<4J-a_P.
+\qquad E < 4J-a_P.
 ```
 
 The integral follows from $`\tan(q/2)`$ substitution. Its pole condition and
@@ -242,9 +242,9 @@ norm because $`\int |q|^{-2z}dq`$ diverges for $`z>1/2`$.
 At $`U=U_c`$, subtract the rest loop and scale $`q=|P|x`$:
 
 ```math
-F_z(e)=\int_{\mathbb R}\frac{dx}{2\pi}
+F_z(e)=\int_{\mathbb{R}}\frac{dx}{2\pi}
 \left[\frac1{|x+1/2|^z+|x-1/2|^z-e}-\frac1{2|x|^z}\right],
-\qquad F_z(c_z)=0,\quad 0<c_z<1.
+\qquad F_z(c_z)=0,\quad 0 < c_z < 1.
 ```
 
 The [spectral proof](SPECTRAL_PROOF.md) justifies the lattice limit and a
@@ -253,7 +253,7 @@ energy remainder. Its conclusions are
 
 ```math
 E_d(P)\sim Jc_z|P|^z,\qquad
-E'_d(P)\sim Jzc_z\operatorname{sgn}(P)|P|^{z-1},\qquad
+E'_d(P)\sim Jzc_z\mathrm{sgn}(P)|P|^{z-1},\qquad
 Z(P)\sim B_z|P|^{2z-1},\qquad
 B_z=\frac{J^2}{U_c^2F'_z(c_z)}.
 ```

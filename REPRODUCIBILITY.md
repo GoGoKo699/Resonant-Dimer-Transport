@@ -139,9 +139,12 @@ compare its exact source tree.
 ## Reading-page generation
 
 `tools/build_reading.py` generates four research pages from immutable source
-sections. It verifies unchanged display-equation content and records source
+sections. It verifies source equation content before applying the recorded
+presentation transforms, and records source
 hashes, output hashes, selections, and literal substitutions in the transform
-ledger. Edit the generator, regenerate, and run `--check`. Scientific
+ledger. Displays use fenced math, upright operator names, and equation labels
+outside TeX to support GitHub's native renderer. Edit the generator,
+regenerate, and run `--check`. Scientific
 reconciliations link the [exact-threshold proof](research/THRESHOLD_ENDPOINT.md)
 and [observation-time theorem](research/OBSERVATION_TIME.md).
 
