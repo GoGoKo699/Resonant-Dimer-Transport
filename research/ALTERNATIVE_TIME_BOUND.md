@@ -35,7 +35,7 @@ where
 M_z=\frac{(4z-1)(10-z)}{4(1-z)(2z-1)},\qquad 0 < \theta < 1.
 ```
 
-At $z=3/4$, this sufficient exponent is $37$. The main theorem supplies the less restrictive sufficient regime $Jt\gg\delta^{-7}\sqrt{\log(2/\delta)}$. Both are sufficient bounds obtained by different estimates.
+At $`z=3/4`$, this sufficient exponent is $`37`$. The main theorem supplies the less restrictive sufficient regime $`Jt\gg\delta^{-7}\sqrt{\log(2/\delta)}`$. Both are sufficient bounds obtained by different estimates.
 
 The alternative proof also includes the exact minimum-gap identity, cusp-safe second band derivative, and the Fourier-sandwich estimate. The [finite-time certificate](FINITE_TIME_CERTIFICATE.md) and [observation-time theorem](OBSERVATION_TIME.md) give the static error budget and the sharper joint regime.
 
