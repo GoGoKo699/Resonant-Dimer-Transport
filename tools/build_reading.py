@@ -678,8 +678,8 @@ def format_inline(text):
  """Use GitHub's protected inline syntax outside code and display blocks."""
  parts=re.split(r'(```[^\n]*\n.*?\n```|\$`[^\n]*?`\$|`[^`\n]*`)',text,flags=re.S)
  for i in range(0,len(parts),2):
-  parts[i]=re.sub(r'(?<![\\$])\$(?![$`])([^\n$]+?)(?<!\\)\$(?![$`])',
-   lambda m:'$`'+m.group(1)+'`$',parts[i])
+  parts[i]=re.sub(r'(?<![\\$])\$(?![$`])([^$]+?)(?<!\\)\$(?![$`])',
+   lambda m:'$`'+re.sub(r'\s*\n\s*',' ',m.group(1))+'`$',parts[i])
  return ''.join(parts)
 def expected():
  output={};ledger={'archive':str(ARCHIVE.relative_to(ROOT)),'pages':[]}

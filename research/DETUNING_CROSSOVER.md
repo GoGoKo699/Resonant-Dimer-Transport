@@ -171,8 +171,7 @@ e_z(0)=-a_z^*,\quad a_z^*=A_z^{-1/\beta_z}.
 **(D9)**
 
 For example, substitute $`x=(a/2)^{1/z}t`$ and then $`u=t^z`$. The remaining
-integral is $\int_0^\infty u^{\beta_z-1}/(1+u)\,du
-=\pi/\sin(\pi\beta_z)$. This also proves the small-detuning rest-energy law
+integral is $`\int_0^\infty u^{\beta_z-1}/(1+u)\,du =\pi/\sin(\pi\beta_z)`$. This also proves the small-detuning rest-energy law
 $`E_d(0;U_\delta)\sim-Ja_z^*\rho^z`$ once (D3) is established.
 
 The negative rest energy permits the autocorrelation proof from the spectral

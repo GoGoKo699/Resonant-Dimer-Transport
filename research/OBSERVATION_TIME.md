@@ -406,8 +406,7 @@ I_{EE}\le CJ^{-3}b^{1-3z},\quad
 
 **(O13)**
 
-For the last bound use $I_{PP}=2\int \epsilon'(k)\epsilon'(P-k)D^{-3}
-dk/(2\pi)$`, not an absolute integral of `$\epsilon''$. In the local scaled
+For the last bound use $`I_{PP}=2\int \epsilon'(k)\epsilon'(P-k)D^{-3} dk/(2\pi)`$, not an absolute integral of $`\epsilon''`$. In the local scaled
 region the product is uniformly integrable even when the two cusps merge,
 by Cauchy--Schwarz and $`2z-2>-1`$. The outer tail is bounded by
 $`C J^{-1}|k|^{-z-2}`$. The other estimates follow from the same splitting
