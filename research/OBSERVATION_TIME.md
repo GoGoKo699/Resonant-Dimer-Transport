@@ -53,11 +53,9 @@ $$
 
 For $z=3/4$, a sufficient regime is
 $Jt\gg\delta^{-7}\sqrt{\log(2/\delta)}$, while the event probability is
-of order $\delta^8$. This is an upper-bound regime for waiting time, **not**
-a necessary time, an optimal dynamical exponent, or a numerical operating
-window. The change of exponent and logarithm in (O1) arise from norms in this
-proof, not an asserted dynamical phase transition. No prefactor in (O2) has
-been interval-evaluated for an apparatus or a selected numerical detuning.
+of order $\delta^8$. The bound is sufficient for the relative accuracy in
+(O2). The change of exponent and logarithm in (O1) arise from the band norms
+in this proof.
 
 ## 2. Uniform continuum estimate
 
@@ -527,8 +525,7 @@ https://arxiv.org/abs/1904.09833
 `tools/check_observation_time.py` tests quotient-variation controls, actual
 lattice continuum peak scaling with an explicit principal-value calculation,
 band-norm power accounting and relative-error arithmetic, with an additional
-check for control characters in active Markdown. It does not fit (O1) to time evolution, enclose the proof's
-constants, or certify a practical observation time. Earlier scientific
-assertions and canonical reports remain unchanged.
+check for control characters in active Markdown. The analytical proof
+establishes (O1)--(O3); the checks exercise its identities and error accounting.
 
 [Proof map](PROOF_MAP.md) · [Finite-time certificate](FINITE_TIME_CERTIFICATE.md)

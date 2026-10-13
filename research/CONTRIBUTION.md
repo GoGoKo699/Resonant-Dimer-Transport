@@ -1,54 +1,54 @@
-# Proof and contribution assessment
+# Contribution and attribution
 
-## Review outcome
+## Source-resolved resonance contrast
 
-The [claim-by-claim comparison](AUTHOR_ACCOUNT.md#relationship-to-established-work) also accounts for the published supplements, the public author response, and earlier local-pair dynamics.
+The result connects the exact fractional-lattice contact pole to a specified
+local source and same-site detector. At the rest-binding resonance, the
+persistent coincidence signal has an algebraic velocity tail; at each fixed
+stronger attraction its limiting support is bounded. The calculation retains
+both contact overlaps and the unconditional probability per prepared pair.
+The scaled relative wavefunction quantifies the source support required for
+fixed overlap, while the finite-time proofs control the sharp event at a
+deterministic observation time.
 
-No blocking mathematical defect was identified in the scoped infinite-lattice contact-transport theorem. The potentially consequential steps were checked explicitly: cusp versus smooth continuum edges, absence of a source-coupled atom at a continuum energy, the finite exceptional set needed to exclude singular continuous contact spectrum, both source/detector overlaps, passage from amplitude convergence to the whole unnormalized contact probability law, and the characteristic-function rather than uncontrolled stationary-phase proof. The long-time/high-velocity order remains essential.
+## Established ingredients
 
-A corollary completes the size interpretation already present in the same eigenstate: the scaled normalized relative wavefunction converges in L2, hence the best overlap with a relative source of radius R has a limiting profile in PR. Fixed capture probability requires R of order 1/P, or order (v/J)^(1/(1-z)). This does not construct a physical loading protocol or grant momentum selection to the original local quench.
+| Source | Ingredient and relevant model |
+|---|---|
+| [Sun, Feng, and Zhang](https://www.nature.com/articles/s42005-026-02580-0) · [preprint v1](https://arxiv.org/html/2502.20759v1) | Their finite-momentum contact loop and resonance subtraction supply the continuum pole equation. Homogeneity predicts the pole, residue, and detuning powers. Their microscopic hard-core spin model and auxiliary-field residues require a separate normalization from the onsite contact probability used here. |
+| [Albeverio, Lakaev, Makarov, and Muminov](https://arxiv.org/abs/math-ph/0501013) | Theorem 5.4 establishes motion-induced lattice binding under smooth three-dimensional positivity-preserving hypotheses. Section 3 of the spectral foundation gives the explicit one-dimensional fractional-cusp proof. |
+| [Ciaurri, Roncal, Stinga, Torrea, and Varona](https://arxiv.org/abs/1608.08913) | The fractional discrete Laplacian, its exact hopping kernel, and long-distance power law are established model ingredients. |
+| [Domínguez-Castro](https://www.mdpi.com/2218-2004/11/8/110) | The two-species power-law hopping model with onsite interaction includes a total-momentum scattering equation and disappearance of attractive rest dimers. |
+| [Kranzl and collaborators](https://arxiv.org/html/2212.03899v2) | Local neighboring-magnon preparation and nearby-pair position measurements distinguish bound and scattering propagation. Their selected repulsive hard-core branch has finite velocity in a different interaction and exponent regime. |
+| [Fukuhara and collaborators](https://arxiv.org/pdf/1305.6598) | Local two-spin preparation and position correlations resolve free and bound motion in the short-range Heisenberg chain. |
+| [Frymark and Liaw](https://arxiv.org/pdf/1904.09833) | The Aronszajn–Krein resolvent identity, point-mass weights, and continuous densities provide the rank-one spectral formulas. |
 
-The finite-time perturbation estimate |delta probability| <= t|delta U| is another elementary corollary. It is not itself a continuum-decay estimate or an optimal tuning requirement. Deterministic event accuracy and the sufficient joint regime are proved separately in the [finite-time certificate](FINITE_TIME_CERTIFICATE.md) and [observation-time theorem](OBSERVATION_TIME.md).
+The [author account](AUTHOR_ACCOUNT.md#relationship-to-established-work)
+gives the claim-by-claim comparison, including the published supplements,
+public author response, and the local-pair dynamics of Macrì and collaborators.
+The exact loop specialization is in
+[the spectral foundation](SPECTRAL_PROOF.md#9-relationship-to-established-work).
 
-## Strongest predecessor reconstruction
+## What the proofs establish
 
-### Sun--Feng--Zhang
+The additional control is microscopic and measurement-specific: lattice
+limits for energy, velocity, and normalized contact weight; continuum contact
+separation; the velocity pushforward with two overlaps; the global detuning
+cutoff and its absolute probability; and the growing relative-support capture
+profile. The [finite-time certificate](FINITE_TIME_CERTIFICATE.md) bounds
+sharp-event error through static spectral budgets, and
+[the joint observation-time theorem](OBSERVATION_TIME.md) proves a sufficient
+simultaneous time–detuning regime.
 
-Read the primary published two-magnon section at Eqs. (5)--(8), the later negative-energy three-magnon discussion, and compare with the readable v1 preprint, whose arbitrary-momentum T-matrix is Eq. (5). The published article is *Efimov effect in long-range quantum spin chains*, Communications Physics **9**, 146 (2026), arXiv:2502.20759.
-
-Primary published text: https://www.nature.com/articles/s42005-026-02580-0
-Primary v1 text: https://arxiv.org/html/2502.20759v1
-
-At resonance, subtract their zero-momentum zero-energy loop, put k=P and E=J|P|^z e, and rescale q=|P|x. This gives precisely |P|^(1-z)F_z(e)/(2J). The pole equation is thus supplied by their effective theory. Its derivative determines the residue exponent. Once local creation and local detection contribute two overlaps, ordinary pushforward of momentum to band velocity gives the tail exponent. The new wavefunction-scaling corollary is also based on the same contact pole, not a new universality principle.
-
-Their inspected two-body discussion explicitly evaluates the rest bound pole and then applies finite momentum at negative energies in the three-body equation. I did not find our complete positive-energy below-fixed-momentum-continuum local-quench theorem stated in those passages. That absence is not proof that none of its consequences are implicit; the reconstruction above identifies the direct implications rather than relying on the absence of a phrase.
-
-### Kranzl and collaborators
-
-Read the primary HTML of *Observation of magnon bound states in the long-range, anisotropic Heisenberg model*, arXiv:2212.03899v2, especially Sections III--IV and the discussion of bound-state participation. It supplies the directly relevant distinction between unbounded single-magnon velocity and finite velocity for the bound branch in its chosen regime. Its local neighboring-magnon preparation and nearby-pair measurements are precedents for the observable.
-
-https://arxiv.org/html/2212.03899v2
-
-The primary text specifies exponent 1.4 for that experimental realization, different interactions, and a repulsively bound branch. Our z interval corresponds to hopping exponents strictly between 1.5 and 2. No figure value, experimental velocity, or advertised operating window has been extracted for the present model. Their data are not reanalyzed or refuted. A word such as 'always' in a discussion of their selected branch is not an unrestricted theorem about every model of binding.
-
-### Other inherited ingredients and source-access boundaries
-
-The Albeverio--Lakaev--Makarov--Muminov primary record was checked again. It explicitly establishes nonzero-momentum below-threshold spectrum from a rest eigenvalue/virtual level under its three-dimensional positivity-preserving hypotheses. The full theorem reading is recorded in the preserved pilot rather than newly claimed here. https://arxiv.org/abs/math-ph/0501013
-
-The Ciaurri--Roncal--Stinga--Torrea--Varona primary record confirms the fractional lattice operator and its established kernel framework. Its detailed formulas were read in the pilot; they are not a new model ingredient. https://arxiv.org/abs/1608.08913
-
-Frymark--Liaw's rank-one spectral formulas and Fukuhara's local magnon observation remain credited from the preserved source readings. This pass's attempted HTML routes did not return those bodies, so a fresh full-text reread is not claimed. The original formulas and their source roles were checked against the explicit derivation here.
-
-The Dominguez-Castro primary article returned HTTP 429 on this pass. Its earlier two-species power-law model comparison remains in the preserved pilot. Failure to reread it does not support an absence claim. No new source-access hold is asserted as proof of novelty.
-
-Targeted searches using bound pairs, fractional dispersion, resonance, and long-range hopping did not reveal a directly covering complete local-quench theorem. Search coverage is neither exhaustive nor a priority certificate. Unrelated topological edge-state and single-magnon sources were not used to support the dimer result. Figures or diagrams were not required for the equations used in this review.
-
-## Contribution judgment
-
-The positive case is the failure of finite-velocity regularization by binding at a resonance, demonstrated in a local observation rather than only a pole plot. The skeptical case is substantial: the two-body framework is already available, the central exponent is ordinary residue/velocity power counting, the strict distinction requires resonance tuning and iterated limits, and the high-speed events are rare. The available result is not a demonstration of efficient superballistic transport. Familiar methods and rare events do not decide physical significance; the assessment rests on the source-resolved transport conclusion.
-
-Keep the central claim as the source-resolved resonance contrast. Do not create separate novelty headlines from the scaling profile, gamma-function coefficients, generic pushforward exponent, or elementary Duhamel continuity bound. No many-body, disordered, lossy, or alternate-device expansion is needed merely to make this bounded result assessable.
+The pole equation, local-pair observation, and motion-induced binding remain
+attributed to the sources above. The high-speed coincidence events are rare,
+and their internal preparation radius grows with velocity. The resonance
+velocity tail takes long time at fixed velocity before high velocity; the
+joint theorem states its own simultaneous sufficient regime. The support
+result is a fiberwise overlap optimum; the sharp-event error bound retains
+the onsite source and same-site detector. The [proof map](PROOF_MAP.md)
+locates each complete derivation.
 
 ---
 
-[Proof map](PROOF_MAP.md) · [Reproducibility](../REPRODUCIBILITY.md) · [Preserved source](../archive/review-2026-10-10/REVIEW.md)
+[Proof map](PROOF_MAP.md) · [Reproducibility](../REPRODUCIBILITY.md)

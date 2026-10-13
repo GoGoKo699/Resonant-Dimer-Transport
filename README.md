@@ -4,7 +4,7 @@
 
 Two distinguishable particles hop on a one-dimensional lattice with a fractional kinetic energy and attract on the same site. At the rest-binding threshold, the persistent same-site coincidence signal has an algebraically unbounded velocity distribution. At any fixed stronger attraction, the same measurement has bounded limiting velocity support.
 
-The result includes the probability cost of local creation and detection, the scattering continuum, and the spatial extent needed to prepare fast dimers with fixed overlap. It is not a claim of efficient superballistic transport.
+The result includes the probability cost of local creation and detection, the scattering continuum, and the spatial extent needed to prepare fast dimers with fixed overlap. The fast tail is rare, and the corresponding eigenstates are spatially extended.
 
 | Read next | Purpose |
 |---|---|
@@ -13,7 +13,7 @@ The result includes the probability cost of local creation and detection, the sc
 | [Spectral foundation](research/SPECTRAL_PROOF.md) · [Threshold endpoint](research/THRESHOLD_ENDPOINT.md) | Derive the moving pole, contact residue, and exact lattice-edge scaling. |
 | [Detuning crossover](research/DETUNING_CROSSOVER.md) · [Joint observation time](research/OBSERVATION_TIME.md) | Follow the global velocity cutoff, its probability cost, and a sufficient observation regime. |
 | [Proof map](research/PROOF_MAP.md) · [Transport proof](research/TRANSPORT_PROOF.md) | Locate the complete derivations and their dependencies. |
-| [Contribution assessment](research/CONTRIBUTION.md) · [Reproducibility](REPRODUCIBILITY.md) | Check attribution and reproduce all 42 scientific groups and eight infrastructure checks. |
+| [Contribution and attribution](research/CONTRIBUTION.md) · [Reproducibility](REPRODUCIBILITY.md) | Check attribution and reproduce all 42 scientific groups and eight infrastructure checks. |
 | [LLM guide](llms.txt) | Find relevant research questions, search phrases, and authoritative source files. |
 
 ## Physical task
@@ -48,7 +48,7 @@ Q(v)\sim\frac{B_z^2}{\pi(4z-1)}
 \left(\frac{zc_zJ}{v}\right)^{(4z-1)/(1-z)}.
 ```
 
-For $`z=3/4`$ it is proportional to $`(J/v)^8`$: the tail persists but is rare. The limit takes the infinite lattice first, then long time at fixed velocity, and finally high velocity. It is not a fixed-time arrival guarantee or a strict light cone.
+For $`z=3/4`$ it is proportional to $`(J/v)^8`$: the tail persists but is rare. The limit takes the infinite lattice first, then long time at fixed velocity, and finally high velocity. Deterministic observations are governed by the finite-time estimates below.
 
 A fixed capture probability in a selected fast eigenstate requires relative source radius of order
 
@@ -73,8 +73,8 @@ $`\theta v_{\max}(U)`$ is of order $`\delta^{(4z-1)/(1-z)}`$. At $`z=3/4`$, bett
 tuning raises the cutoff as $`\delta^{-1}`$ while its near-cutoff weight falls
 as $`\delta^8`$. The [detuning theorem](research/DETUNING_CROSSOVER.md) proves the
 global maximum, its momentum scale, and the full probability crossover.
-Long time is taken at each fixed detuning first; this is not a finite-time
-visibility guarantee.
+Long time is taken at each fixed detuning first. The joint observation-time
+theorem below controls simultaneous time and detuning limits.
 
 ![Absolute coincidence tails and the probability near the velocity cutoff](figures/coincidence_tail.svg)
 
@@ -107,9 +107,9 @@ p_{\delta,t}\sim C_{3/4,\theta}\delta^8,
 
 where $`p_{\delta,t}`$ is the actual coincidence probability beyond
 $`\theta v_{\max}(U_\delta)t`$, for a fixed $`0<\theta<1`$. The general
-fixed-$`z`$ statement is in that theorem. This is a sufficient upper-bound
-regime, not a necessary or optimal time scale. Its prefactor has not been
-interval-evaluated, so no numerical experimental observation window is asserted.
+fixed-$`z`$ statement is in that theorem. The regime is sufficient for relative
+accuracy, with constants depending on the fixed exponent, cutoff fraction,
+and chosen accuracy.
 
 ## One tutorial, then this result
 
@@ -129,7 +129,7 @@ and time-dependent proofs. The route assumes standard quantum mechanics,
 Fourier transforms, and basic complex analysis; the repository supplies the
 model-specific derivations.
 
-The finite-momentum scattering framework, motion-induced lattice binding, fractional lattice operator, nearby-pair detection, and spectral pushforward methods have explicit predecessors. The assessed contribution is their microscopic, source-resolved resonance contrast, not a new scattering mechanism or general optimization principle.
+The finite-momentum scattering framework, motion-induced lattice binding, fractional lattice operator, nearby-pair detection, and spectral pushforward methods have explicit predecessors. The [contribution account](research/CONTRIBUTION.md) identifies the microscopic, source-resolved resonance contrast and its probability, size, and time estimates.
 
 ## Purpose and contact
 

@@ -17,14 +17,11 @@ For a fractional-cutoff event take $s=\theta a v_{\max}(U)$, $0<\theta<1$.
 Then $q(s)>0$. No time averaging, momentum filtering, change of initial state,
 or smoothing of the actual detector is used in the conclusions.
 
-The [joint observation-time theorem](OBSERVATION_TIME.md) separately controls
-the detuning dependence of these budgets. This note gives a nonasymptotic
-error bound and a sufficient observation time
-in terms of **static spectral quantities**. Their finiteness is proved below.
-It does not evaluate that time as a power of detuning, prove that the bound is
-optimal, or give an interval-certified numerical observation time. In
-particular, it does not claim that the dimensional time
-$(J\delta^{z/(1-z)})^{-1}$ already suffices for a rare event.
+This note gives a nonasymptotic error bound and a sufficient observation time
+in terms of **static spectral quantities**, whose finiteness is proved below.
+The prescription requires valid bounds on those quantities. The
+[joint observation-time theorem](OBSERVATION_TIME.md) controls their detuning
+dependence.
 
 ## 2. Quantities entering the bound
 
@@ -222,7 +219,7 @@ $$
 
 Use $p_t^d\le q+d_t$, (F8), and (F10) to obtain (F4). In particular,
 relative accuracy of a rare event requires continuum amplitude error small
-relative to $\sqrt q$, **not** $q$. The earlier whole-distribution estimate
+relative to $\sqrt q$, **not** $q$. The whole-distribution estimate
 $2\sqrt W\eta+\eta^2$ is still correct, but unnecessarily expensive for
 this one event. This improvement is elementary projection geometry, not a
 new dynamical mechanism.
@@ -381,11 +378,10 @@ variation. The bounds are uniform for $P\in\mathcal K_r$ at fixed $U$
 (and for $U$ in a fixed compact subset of $[U_c,\infty)$). This proves
 $L_r<\infty$ and completes the proof of (F4)--(F6).
 
-## 7. What the certificate settles
+## 7. Interpretation and verification
 
-The prior weak limit did not itself give a finite-time error estimate.
-Equations (F2)--(F6) now separate the static ingredients needed for one,
-and the estimate holds for **every sufficiently late deterministic time**,
+Equations (F2)--(F6) separate the static ingredients of the finite-time error
+estimate. The bound holds for **every sufficiently late deterministic time**,
 not just a selected subsequence or a time-averaged detector. The continuum
 amplitude tolerance is correctly matched to the square root of the rare
 probability. The source, detector, and unconditional normalization are unchanged.
@@ -397,8 +393,6 @@ regime. Neither that estimate nor (F6) is a necessary or optimal law
 $T=\Theta(\delta^{-\nu})$. At $z=3/4$, $q\asymp\delta^8$ makes a
 continuum tolerance $o(\delta^4)$ sufficient once the band error is
 $o(\delta^8)$; it does not determine the time needed to reach those errors.
-These are sharp distinctions in the interpretation, not reasons to change
-the physical task.
 
 The Aronszajn--Krein density formula is inherited; see Frymark and Liaw,
 *Spectral Analysis, Model Theory and Applications of Finite-Rank Perturbations*,
@@ -409,7 +403,7 @@ here in the required normalization. Cheng, Huang, and Zheng,
 perturbations*, arXiv:2209.08965, study the ordinary continuum Laplacian under
 spectral assumptions; their stated setting does not supply a uniform estimate
 for this moving fractional-lattice fiber. No decay exponent from that result
-is imported here. The earlier finite-momentum scattering attribution remains
+is imported here. The finite-momentum scattering attribution is
 in [the detuning theorem](DETUNING_CROSSOVER.md).
 
 Primary records: https://arxiv.org/abs/1904.09833 ;

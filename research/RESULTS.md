@@ -10,7 +10,9 @@ $$
 
 and contact attraction $-U\delta_{x_a,x_b}$. The preparation is $|0,0\rangle$. The measured probability is $C_j(t)=|\langle j,j|e^{-itH}|0,0\rangle|^2$, per initially prepared pair. Unequal final positions remain in the normalization. There is no band-prepared source, energy filtering, or time-averaged detector.
 
-This index connects the accumulated results to their existing complete proofs. It adds no model, mathematical claim, or numerical benchmark. The [author account](AUTHOR_ACCOUNT.md) supplies the physical explanation and primary references.
+This index connects each result to its complete proof. The
+[author account](AUTHOR_ACCOUNT.md) supplies the physical explanation and
+primary references.
 
 ## Result map
 
@@ -26,7 +28,7 @@ This index connects the accumulated results to their existing complete proofs. I
 | Rest residue and effective mass | With $\rho=\delta^{1/(1-z)}$, the rest contact weight is proportional to $\rho^{2z-1}$ and the curvature to $J\rho^{z-2}$, with explicit coefficients. The curvature limit is proved directly from the lattice integral. | [Rest crossover coefficients](DETUNING_CROSSOVER.md#explicit-rest-residue-and-curvature) |
 | Finite-time certificate | A deterministic-time error bound for the sharp position event combines a velocity-shell mass, band norms, and event-local continuum amplitude. | [Finite-time certificate](FINITE_TIME_CERTIFICATE.md) |
 | Uniform observation-time regime | Momentum-integrated continuum amplitude is bounded by $C/(Jt)$ uniformly near resonance. Sharper band norms give the sufficient time profile below. | [Observation-time theorem](OBSERVATION_TIME.md) |
-| Alternative conservative time estimate | A separate critical-energy collar argument gives explicit nonoptimized continuum constants and a stronger sufficient time requirement. Its original proof and six regression groups are preserved and reproduced separately. | [Alternative estimate](ALTERNATIVE_TIME_BOUND.md) |
+| Alternative conservative time estimate | A critical-energy collar argument gives explicit continuum constants and a more conservative sufficient time requirement. | [Alternative estimate](ALTERNATIVE_TIME_BOUND.md) |
 | Continuous spectral-peak control | A narrow peak above an interior continuum maximum makes a momentum-uniform variation bound false. Its height, shift, and width are calculated without treating it as another eigenstate. | [Observation-time theorem, Section 5](OBSERVATION_TIME.md) |
 | Boundary resolvent estimates | Cusp Cauchy transforms, full-coefficient Morse decomposition, and simple-root principal-value subtraction justify the continuum estimates used in the finite-time proofs. | [Boundary resolvent derivation](BOUNDARY_RESOLVENT.md) |
 
@@ -58,14 +60,14 @@ $$
 \end{cases}
 $$
 
-Along $Jt/\mathcal T_z(\delta)\to\infty$, the ratio $p_{\delta,t}/q_\delta$ tends to one. These are sufficient upper regimes, not necessary or optimal waiting times. Their constants have not been interval-evaluated to produce a numerical experimental operating window. The case distinction comes from norms in the proof, not an established new physical phase.
+Along $Jt/\mathcal T_z(\delta)\to\infty$, the ratio $p_{\delta,t}/q_\delta$ tends to one. These are sufficient bounds for relative accuracy. The case distinction comes from the band norms in the proof.
 
 ## Interpretation and evidence
 
 Binding is relative to the continuum at the conserved total momentum. Same-site detection, bound-sector population, and overlap with a selected extended eigenstate are different quantities. Unbounded support of a limiting velocity law is not a finite-weight superballistic front, a strict finite-time light cone, or an efficient loading protocol. The sufficient joint regime does not prove that shorter times are inadequate.
 
-The contact scattering framework, momentum-induced lattice binding, fractional kinetic operator, and nearby-pair detection have explicit predecessors. The [contribution account](CONTRIBUTION.md) and primary-source sections retain those attributions. No unrelated earlier project is part of this model.
+The contact scattering framework, momentum-induced lattice binding, fractional kinetic operator, and nearby-pair detection have explicit predecessors. The [contribution account](CONTRIBUTION.md) and primary-source sections give those attributions.
 
-The [reproduction guide](../REPRODUCIBILITY.md) maps the 33 main scientific check groups, six separately reproduced alternative-estimate groups, three rest-crossover groups, and eight infrastructure checks to their scripts and reports. Finite numerical checks support the analytical account; they are not external proof review, interval certification, or exhaustive priority clearance. The original 77-file archive and canonical reports remain preserved.
+The [reproduction guide](../REPRODUCIBILITY.md) maps the 33 main scientific check groups, six alternative-estimate groups, three rest-crossover groups, and eight infrastructure checks to their scripts and reports. The numerical checks support the analytical account through exact identities, finite-scale comparisons, and quadrature diagnostics.
 
-[Reader entry point](../README.md) · [Proof dependencies](PROOF_MAP.md) · [Current repository scope](../CURRENT.md)
+[Reader entry point](../README.md) · [Proof dependencies](PROOF_MAP.md)

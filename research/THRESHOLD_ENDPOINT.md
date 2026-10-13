@@ -113,23 +113,18 @@ endpoint justification is (E1), not substitution of $e=1$ into the
 fixed-$e<1$ lattice resolvent. The strict inequality $F_z(1)>0$ follows from
 the subadditivity argument already given for the continuum integral.
 
-## Scope of the correction and checks
+## Consequences and checks
 
-The preserved pilot's sentence extending its fixed-$e$ lattice argument to
-$e=1$ used the wrong lattice energy. The archive is unchanged. The generated
-spectral page replaces that sentence with the exact-threshold convention
-and a link to this proof; the literal replacement is recorded in the reading
-transform ledger. This is a correction to proof prose, not merely formatting.
-
-The pole lies at $e\to c_z<1$, so its existence, differentiated velocity,
-residue, local-coincidence tail, and preparation-size conclusions are
-unaffected. The weaker-attraction threshold coefficient is justified by
-(E4). No uniform finite-time transport rate is inferred.
+The pole lies at $e\to c_z<1$, within the domain of the fixed-energy-ratio
+expansion. Its existence, differentiated velocity, residue, local-coincidence
+tail, and preparation-size conclusions use that expansion. The
+weaker-attraction threshold coefficient instead uses the exact-edge limit
+(E4).
 
 `tools/check_endpoint.py` adds three regression groups: exclusion of the
 above-edge substitution; comparison of two threshold quadratures; and
 convergence to the endpoint coefficient with an exact energy-unit check.
-It explicitly reuses the preserved scalar solver for one representation.
+It uses the scalar solver for one representation.
 The second quadrature uses an algebraic endpoint weight and a stable
 trigonometric difference. These are finite diagnostics, not interval
 certificates; the limit rests on (E2)–(E3).

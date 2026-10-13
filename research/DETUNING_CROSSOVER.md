@@ -21,9 +21,9 @@ $$
 
 The statements below concern the **limiting coincidence-velocity measure**.
 The infinite lattice and long-time limit at each fixed $U_\delta$ precede
-$\delta\downarrow0$. They do not interchange observation time and detuning,
-provide a finite-time rare-event detection guarantee, or remove the two
-source/detector overlap factors.
+$\delta\downarrow0$. Both source/detector overlap factors are retained.
+Simultaneous time and detuning limits are controlled in the separate
+[observation-time theorem](OBSERVATION_TIME.md).
 
 ## 2. Crossover theorem
 
@@ -51,7 +51,8 @@ D_z(k)=\int_{\mathbb R}\frac{dx}{2\pi}
 $$
 
 Here $D_z(k)$ is a normalization function, not the Fourier coefficient called
-$D_z$ in the earlier small-window calculation. On every finite $k$ interval,
+$D_z$ in the [small-window calculation](THEOREM.md#small-scaled-windows).
+On every finite $k$ interval,
 
 $$
 e_\rho\longrightarrow e_z\quad\hbox{in }C^1,
@@ -441,7 +442,7 @@ $$
 $$
 
 After multiplying by $(J/U_c)^4$, this is exactly the coefficient of the
-previous resonant coincidence tail. The comparison is first
+resonant coincidence tail. The comparison is first
 $\delta\downarrow0$ at fixed $s$, then $s\downarrow0$; it is not a uniform
 interchange with either finite time or arbitrary simultaneous limits.
 
@@ -469,16 +470,14 @@ inverse-detuning dimensional prediction are not separate inventions here.
 The additional analytical content is uniform microscopic derivative control,
 exclusion of competing momentum scales in the global maximum, and the
 unconditional source/detector-weighted probability crossover. It quantifies
-the tuning dependence of the same resonance contrast. It is not a new
-scattering mechanism, an experimental realization, or a finite-time transport
-advantage. Targeted searches did not establish an earlier statement of this
-complete source-resolved crossover; that is not exhaustive priority clearance.
+the tuning dependence of the same resonance contrast within the contact
+scattering framework.
 
 Primary source: https://www.nature.com/articles/s42005-026-02580-0
 
 Readable preprint: https://arxiv.org/html/2502.20759v1
 
-`tools/detuning.py` explicitly reuses the preserved scalar pole and resolvent
+`tools/detuning.py` uses the scalar pole and resolvent
 implementations. `tools/check_detuning.py` checks continuum derivatives against
 an additional quadrature, rest scaling, lattice profile/residue convergence,
 maximization diagnostics, and a source-weighted fast-velocity interval. The
