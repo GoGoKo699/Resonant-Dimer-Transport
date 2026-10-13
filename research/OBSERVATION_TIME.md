@@ -6,13 +6,13 @@ Fix $1/2<z<1$, $J>0$, and a fraction $0<\theta<1$. The Hamiltonian,
 onsite pair source, and unconditional same-site position detector are those
 in [the author account](AUTHOR_ACCOUNT.md). Set
 
-$$
+```math
 \delta=J(U_c^{-1}-U^{-1}),\qquad \rho=\delta^{1/(1-z)},\qquad U=U_\delta>U_c,
-$$
-$$
+```
+```math
 p_{\delta,t}=\sum_{|j|>\theta v_{\max}(U_\delta)t} C_j(t),\qquad
 q_\delta=Q_{U_\delta}(\theta v_{\max}(U_\delta)).
-$$
+```
 
 The [detuning theorem](DETUNING_CROSSOVER.md) establishes
 $q_\delta\sim C_{z,\theta}\delta^{\alpha_z}$, with
@@ -22,7 +22,7 @@ the bound branch. There is no time averaging or filtering of the source.
 
 Define
 
-$$
+```math
 \nu_z=\begin{cases}
 (3z-\tfrac12)/(1-z),&\tfrac12<z<\tfrac34,\\
 7,&z=\tfrac34,\\
@@ -30,26 +30,32 @@ $$
 \end{cases}
 \qquad
 \ell_z(\delta)=\begin{cases}\sqrt{\log(2/\delta)},&z=\tfrac34,\\1,&z\ne\tfrac34.
-\end{cases} \tag{O1}
-$$
+\end{cases}
+```
+
+**(O1)**
 
 **Sufficient-time theorem.** For every $0<\varepsilon\le1$ there are
 $\delta_0>0$ and $C<\infty$, depending on $z,\theta,\varepsilon$ but
 not on $J,\delta,t$, such that
 
-$$
+```math
 \boxed{0<\delta<\delta_0,\quad
 Jt\ge C\delta^{-\nu_z}\ell_z(\delta)
 \quad\Longrightarrow\quad
-|p_{\delta,t}-q_\delta|\le\varepsilon q_\delta.} \tag{O2}
-$$
+|p_{\delta,t}-q_\delta|\le\varepsilon q_\delta.}
+```
+
+**(O2)**
 
 Equivalently, along any joint limit with $\delta\downarrow0$ and
 $Jt\delta^{\nu_z}/\ell_z(\delta)\to\infty$,
 
-$$
-\boxed{p_{\delta,t}=C_{z,\theta}\delta^{\alpha_z}[1+o(1)].} \tag{O3}
-$$
+```math
+\boxed{p_{\delta,t}=C_{z,\theta}\delta^{\alpha_z}[1+o(1)].}
+```
+
+**(O3)**
 
 For $z=3/4$, a sufficient regime is
 $Jt\gg\delta^{-7}\sqrt{\log(2/\delta)}$, while the event probability is
@@ -68,25 +74,31 @@ as in [the finite-time certificate](FINITE_TIME_CERTIFICATE.md). If
 $U_c\le U\le U_1$, with a fixed dimensionless ratio $U_1/J<\infty$, then
 there is $C_0<\infty$, depending only on $z,U_1/J$, such that
 
-$$
-\operatorname{TV}_{\omega}(w_{P,U})
-\le\frac{C_0}{J}(1+|P|^{z-1})\quad(0<|P|\le\pi). \tag{O4}
-$$
+```math
+\mathrm{TV}_{\omega}(w_{P,U})
+\le\frac{C_0}{J}(1+|P|^{z-1})\quad(0<|P|\le\pi).
+```
+
+**(O4)**
 
 In particular,
 
-$$
+```math
 \mathcal L_U^2:=\int\frac{dP}{2\pi}
- [\operatorname{TV}_{\omega}(w_{P,U})]^2
+ [\mathrm{TV}_{\omega}(w_{P,U})]^2
 \le\frac{C_0^2}{J^2}
-\left[1+\frac{2\pi^{z-1}}z+\frac{\pi^{2z-2}}{2z-1}\right]. \tag{O5}
-$$
+\left[1+\frac{2\pi^{z-1}}z+\frac{\pi^{2z-2}}{2z-1}\right].
+```
+
+**(O5)**
 
 Thus the full contact-continuum remainder satisfies
 
-$$
-\boxed{\eta_U(t)\le\mathcal L_U/t\le C_1/(Jt).} \tag{O6}
-$$
+```math
+\boxed{\eta_U(t)\le\mathcal L_U/t\le C_1/(Jt).}
+```
+
+**(O6)**
 
 The uniformity is in $U\in[U_c,U_1]$. It is **not** a uniform bound on
 each fiber's variation. The right side of (O4) diverges at $P=0$; its square
@@ -99,24 +111,26 @@ No momentum margin or excluded probability remains in (O6).
 It suffices to set $J=1$ in the proof. Write $u_c=U_c/J$ and use the same
 letters for dimensionless energies and couplings. The exact rank-one formula is
 
-$$
+```math
 w(\omega)=\frac{1}{\pi U^2}
-\frac{\operatorname{Im}I_P(\omega+i0)}
-{[\operatorname{Re}I_P(\omega+i0)-1/U]^2+
- [\operatorname{Im}I_P(\omega+i0)]^2}.
-$$
+\frac{\mathrm{Im}I_P(\omega+i0)}
+{[\mathrm{Re}I_P(\omega+i0)-1/U]^2+
+ [\mathrm{Im}I_P(\omega+i0)]^2}.
+```
 
 For $v>0$ put $\Phi(u,v)=v/(u^2+v^2)$. The following elementary estimates
 will be used without trying to bound the real part away from zero:
 
-$$
+```math
 |\partial_u\Phi|\le C v^{-2},\quad
 |\partial_v\Phi|\le v^{-2},\quad
 |\partial_u\Phi(u,v)|\le C(1+u^2)^{-3/2}
-\quad(c\le v\le C'). \tag{O7}
-$$
+\quad(c\le v\le C').
+```
 
-The last bound is integrable over $u\in\mathbb R$. Consequently a monotone
+**(O7)**
+
+The last bound is integrable over $u\in\mathbb{R}$. Consequently a monotone
 real-part passage through zero with imaginary part bounded above and below
 has uniformly bounded quotient variation, independently of its steepness or
 of an additive constant in its real part. Similarly, if $v$ is monotone and
@@ -126,34 +140,36 @@ $v\ge c$, its contribution is bounded by $\int_c^\infty v^{-2}dv$.
 
 Take $P>0$ small. On the half-circle the three critical energies are
 
-$$
+```math
 T_P=\epsilon(P),\quad m_P=2\epsilon(P/2),\quad M_P=2\epsilon(\pi-P/2).
-$$
+```
 
 The first is a cusp minimum, the second a smooth local maximum, and the third
 the global maximum. Their exact values, not the leading continuum
 approximations, are used at endpoints. For scaled energy $e=\omega/P^z$ set
 
-$$
+```math
 F_P(e)=P^{z-1}[I_P(P^z e+i0)-I_0(0)],\qquad
 \lambda=\delta/P^{1-z}\ge0.
-$$
+```
 
 Then
 
-$$
+```math
 w(P^z e)=\frac{P^{z-1}}{\pi U^2}
-\Phi(\lambda+\operatorname{Re}F_P(e),\operatorname{Im}F_P(e)). \tag{O8}
-$$
+\Phi(\lambda+\mathrm{Re}F_P(e),\mathrm{Im}F_P(e)).
+```
+
+**(O8)**
 
 On any fixed scaled-energy interval containing the two lower critical values,
 the quotient in (O8) has variation bounded uniformly in small $P$ and **all**
 $\lambda\ge0$. Here are the estimates at the only singular locations.
 
 At $e=t_P:=T_P/P^z$, put $y=e-t_P$ and $\beta=(1-z)/z\in(0,1)$.
-The inverse cusp branches give $v=\operatorname{Im}F_P=O(y^\beta)$ and
+The inverse cusp branches give $v=\mathrm{Im}F_P=O(y^\beta)$ and
 $|v'|+|u'|\le C y^{\beta-1}$. The exact-threshold lemma gives
-$\operatorname{Re}F_P(t_P)\to F_z(1)>0$. Shrink a fixed neighborhood so that
+$\mathrm{Re}F_P(t_P)\to F_z(1)>0$. Shrink a fixed neighborhood so that
 $\lambda+u\ge c+\lambda$. The derivative of (O8)'s quotient is then bounded
 by $C y^{\beta-1}$, uniformly in $\lambda$. The value tends to zero at
 this lower endpoint.
@@ -163,16 +179,18 @@ nondegenerate maximum. A local Morse coordinate and the two on-shell outer
 roots give the following normal forms, with coefficients bounded above and
 away from zero independently of small $P$:
 
-$$
+```math
 \begin{array}{c|cc}
- & u=\operatorname{Re}F_P & v=\operatorname{Im}F_P\\ \hline
+ & u=\mathrm{Re}F_P & v=\mathrm{Im}F_P\\ \hline
 e=\mu_P-y & O(1),\quad u'=O(1)
  & c_Py^{-1/2}+O(1),\quad \partial_yv=-\tfrac12c_Py^{-3/2}+O(y^{-1/2})\\
 e=\mu_P+y & -c_Py^{-1/2}+O(1),\quad
  \partial_yu=\tfrac12c_Py^{-3/2}+O(y^{-1/2})
  & d_P+O(y),\quad v'=O(1).
-\end{array} \tag{O9}
-$$
+\end{array}
+```
+
+**(O9)**
 
 On the lower side, $v$ is monotone for a sufficiently small fixed
 neighborhood, so (O7) controls its unbounded range and the bounded derivative
@@ -211,11 +229,13 @@ $k=P/\omega^{1/z}\le R^{-1/z}$. The on-shell roots are simple and stay
 away from the two cusps, uniformly in this range. The free density and
 subtracted boundary loop obey
 
-$$
-c\omega^\beta\le\operatorname{Im}I_P(\omega+i0)\le C\omega^\beta,
-\quad |\operatorname{Re}I_P(\omega+i0)-I_0(0)|\le C\omega^\beta,
-\quad |\partial_\omega I_P(\omega+i0)|\le C\omega^{\beta-1}. \tag{O10}
-$$
+```math
+c\omega^\beta\le\mathrm{Im}I_P(\omega+i0)\le C\omega^\beta,
+\quad |\mathrm{Re}I_P(\omega+i0)-I_0(0)|\le C\omega^\beta,
+\quad |\partial_\omega I_P(\omega+i0)|\le C\omega^{\beta-1}.
+```
+
+**(O10)**
 
 One direct justification is to split the scaled integral into small fixed
 neighborhoods of its simple roots and the complement. On each root
@@ -234,11 +254,13 @@ integral across an on-shell pole.
 
 Since $I_0(0)-1/U=\delta$, (O10) implies
 
-$$
+```math
 |I_P(\omega+i0)-1/U|\ge c(\delta+\omega^\beta),\qquad
 |w'(\omega)|\le
-\frac{C\omega^{\beta-1}}{(\delta+\omega^\beta)^2}. \tag{O11}
-$$
+\frac{C\omega^{\beta-1}}{(\delta+\omega^\beta)^2}.
+```
+
+**(O11)**
 
 For the first inequality, if $\delta$ is larger than twice the upper bound
 on the real correction, use the real part; otherwise use the lower bound
@@ -265,12 +287,12 @@ The even part of the coordinate Jacobian is analytic in $t^2$, uniformly
 in $P$ near $\pi$. Dividing that analytic function by $t^2+\zeta$ before
 integrating gives the exact local decomposition
 
-$$
+```math
 I_P(\omega+i0)=R_P(\omega)
 -\sum_{\sigma\in\{-,+\}}
 \frac{H_{P,\sigma}(\omega-M_\sigma)}
      {\sqrt{\omega-M_\sigma+i0}}.
-$$
+```
 
 Here the square root has its cut on the negative real axis and is positive
 above the maximum. The functions $H_{P,\sigma}$ are real analytic, satisfy
@@ -287,54 +309,54 @@ Between the maxima, write
 $\omega=m_P+dy$, $0<y<1$. The leading boundary loop has real and
 imaginary parts
 
-$$
+```math
 -c_-/\sqrt{dy},\qquad c_+/\sqrt{d(1-y)},
-$$
+```
 
 respectively, with positive bounded coefficients. To control the full
 quotient, set $s=\omega-m_P$, $r=M_P-\omega=d-s$ and
 
-$$
+```math
 u=R_P(\omega)-1/U-H_{P,-}(s)/\sqrt s,\qquad
 v=H_{P,+}(-r)/\sqrt r.
-$$
+```
 
 For sufficiently small $d$, uniformly in $U\in[u_c,U_1]$,
 
-$$
+```math
 |u|\asymp s^{-1/2},\quad v\asymp r^{-1/2},\quad
 |u'|\le Cs^{-3/2},\quad |v'|\le Cr^{-3/2},\quad
 u^2+v^2\ge c\left(s^{-1}+r^{-1}\right)=\frac{cd}{sr}.
-$$
+```
 
 The bounded real remainder cannot cancel the first singular term here.
 Direct quotient differentiation now gives
 
-$$
+```math
 \left|\frac{d}{d\omega}\frac{v}{u^2+v^2}\right|
 \le C\left[\frac{r^{3/2}}{d^2}+\frac{s}{d\sqrt r}\right],\qquad
 \int_0^d\left[\frac{(d-s)^{3/2}}{d^2}
                  +\frac{s}{d\sqrt{d-s}}\right]ds
 =\frac{26}{15}\sqrt d.
-$$
+```
 
 Thus the full gap contributes $O(\sqrt d)$ variation; its endpoint values
 are zero. This also recovers the bounded-variation leading profile.
 For example its leading profile is proportional to
 
-$$
+```math
 \frac{y\sqrt{1-y}}{c_-^2(1-y)+c_+^2y},
-$$
+```
 
 whose derivative has integrable endpoint singularities uniformly in the
 allowed coefficients. Below both maxima, put $x=m_P-\omega>0$. The exact
 decomposition instead gives
 
-$$
+```math
 u=R_P(\omega)-1/U,\qquad
 v=\frac{H_{P,-}(-x)}{\sqrt x}
   +\frac{H_{P,+}(-x-d)}{\sqrt{x+d}}.
-$$
+```
 
 For $x,d$ in fixed sufficiently small neighborhoods, the positive leading
 terms in $dv/d\omega$ dominate the bounded derivatives of $H_{P,\sigma}$.
@@ -358,11 +380,13 @@ second-derivative identity are proved in the finite-time certificate.
 For small detuning they imply the following sharper bounds, uniformly on
 $0\le P\le\pi$:
 
-$$
+```math
 Z(P)\le C(P+\rho)^{2z-1},\quad
 |Z'(P)|\le C(P+\rho)^{2z-2},\quad
-|E''(P)|\le CJ(P+\rho)^{z-2}. \tag{O12}
-$$
+|E''(P)|\le CJ(P+\rho)^{z-2}.
+```
+
+**(O12)**
 
 To verify the powers rather than differentiate an asymptotic remainder,
 use the exact uncentered resolvent $D=\epsilon(k)+\epsilon(P-k)-E(P)$.
@@ -372,13 +396,15 @@ $\rho\le P\le p_0$, the energy-ratio bracket from the detuning proof gives
 the same estimates with $P$ in place of $\rho$. Set $b=\max(P,\rho)$.
 Splitting at $|k|=Cb$ gives
 
-$$
+```math
 I_E\ge cJ^{-2}b^{1-2z},\quad
 |I_P|\le CJ^{-1}b^{-z},\quad
 |I_{PE}|\le CJ^{-2}b^{-2z},\quad
 I_{EE}\le CJ^{-3}b^{1-3z},\quad
-|I_{PP}|\le CJ^{-1}b^{-z-1}. \tag{O13}
-$$
+|I_{PP}|\le CJ^{-1}b^{-z-1}.
+```
+
+**(O13)**
 
 For the last bound use $I_{PP}=2\int \epsilon'(k)\epsilon'(P-k)D^{-3}
 dk/(2\pi)$, not an absolute integral of $\epsilon''$. In the local scaled
@@ -392,31 +418,35 @@ the global bound.
 
 Integrating the squares in (O12) gives
 
-$$
+```math
 \|Z'\|_2\le C\begin{cases}
 \rho^{2z-3/2},&z<3/4,\\
 \sqrt{\log(2/\rho)},&z=3/4,\\
 1,&z>3/4,
 \end{cases}
-$$
-$$
+```
+```math
 J^{-1}\|E''Z\|_2\le C\begin{cases}
 \rho^{3z-5/2},&z<5/6,\\
 \sqrt{\log(2/\rho)},&z=5/6,\\
 1,&z>5/6.
-\end{cases} \tag{O14}
-$$
+\end{cases}
+```
+
+**(O14)**
 
 For a fixed auxiliary velocity margin $h>0$, the coefficient $A(h)$ in
 (F3) consequently satisfies
 
-$$
+```math
 A(h)\le\frac{C_h}{J}\begin{cases}
 \rho^{z-1/2},&z<3/4,\\
 \rho^{1/4}\sqrt{\log(2/\rho)},&z=3/4,\\
 \rho^{1-z},&z>3/4.
-\end{cases} \tag{O15}
-$$
+\end{cases}
+```
+
+**(O15)**
 
 The logarithm at $5/6$ in the second norm is subleading to the first term
 of $A(h)$. It introduces no additional case in (O15).
@@ -428,9 +458,9 @@ Continuity and positivity of the detuning probability profile imply that,
 for each fixed accuracy, one can choose **one fixed $h>0$**, independent of
 small $\delta$, such that
 
-$$
+```math
 S(s_\delta,h)\le\varepsilon q_\delta/6.
-$$
+```
 
 Indeed divide this shell by $\rho^{4z-1}$, use compact velocity and residue
 convergence, and squeeze the two moving boundaries by fixed nearby levels.
@@ -440,10 +470,12 @@ zero measure. This also covers a level with a multiple momentum preimage.
 In (F4) replace the margin-based continuum budget by $C_1/(Jt)$ from (O6).
 It is sufficient to require
 
-$$
+```math
 t\ge \frac{6A(h)}{\varepsilon q_\delta},\qquad
-Jt\ge\frac{12C_1}{\varepsilon\sqrt{q_\delta}}. \tag{O16}
-$$
+Jt\ge\frac{12C_1}{\varepsilon\sqrt{q_\delta}}.
+```
+
+**(O16)**
 
 The first requirement, using $q_\delta\asymp\rho^{4z-1}$ and (O15),
 is $Jt\ge C\rho^{-3z+1/2}$ below $3/4$,
@@ -458,19 +490,21 @@ arbitrarily small, it also proves the joint limit (O3).
 A useful check on Section 2 is that a fiberwise variation bound uniform in
 $P$ would be false. At **fixed $U>U_c$** and $P\downarrow0$, define
 
-$$
+```math
 a_z=z(1-z)2^{2-z},\quad b_z(x)=|x+1/2|^z+|x-1/2|^z,
-$$
+```
 
 and let $x_z>1/2$ be the unique solution of $b_z(x_z)=2^{1-z}$;
 write $d_z=b_z'(x_z)>0$. Just above $m_P=2\epsilon(P/2)$, the real
 loop has an inverse-square-root term from the closed inner branch:
 
-$$
+```math
 I_P(m_P+\Delta+i0)
 =I_0(0)-\frac{1}{2\sqrt{(-\epsilon''(P/2))\Delta}}
-+O(P^{1-z}/J)+i\frac{P^{1-z}}{Jd_z}[1+o(1)]. \tag{O17}
-$$
++O(P^{1-z}/J)+i\frac{P^{1-z}}{Jd_z}[1+o(1)].
+```
+
+**(O17)**
 
 This expansion is uniform when $\Delta$ is within fixed positive multiples
 of $J P^{2-z}/\delta^2$; the imaginary part has a relative error, while
@@ -479,20 +513,24 @@ Morse coordinate as (O9); the regular subtracted loop is $O(P^{1-z}/J)$.
 There is a unique real-denominator zero $\omega_*(P)$ in this neighborhood,
 with
 
-$$
+```math
 \omega_*-m_P\sim\frac{J P^{2-z}}{4a_z\delta^2},\qquad
-\Gamma_P:=\frac{\operatorname{Im}I_P(\omega_*+i0)}
-{\partial_\omega\operatorname{Re}I_P(\omega_*+i0)}
-\sim\frac{J P^{3-2z}}{2a_zd_z\delta^3}. \tag{O18}
-$$
+\Gamma_P:=\frac{\mathrm{Im}I_P(\omega_*+i0)}
+{\partial_\omega\mathrm{Re}I_P(\omega_*+i0)}
+\sim\frac{J P^{3-2z}}{2a_zd_z\delta^3}.
+```
+
+**(O18)**
 
 After centering on the **exact** zero and scaling by $\Gamma_P$,
 
-$$
+```math
 \frac{w_{P,U}(\omega_*+\Gamma_P x)}{w_{P,U}(\omega_*)}
 \longrightarrow\frac1{1+x^2},\qquad
-w_{P,U}(\omega_*)\sim\frac{Jd_z}{\pi U^2}P^{z-1}, \tag{O19}
-$$
+w_{P,U}(\omega_*)\sim\frac{Jd_z}{\pi U^2}P^{z-1},
+```
+
+**(O19)**
 
 uniformly for bounded $x$. Its spectral weight on a fixed number of widths
 is of order $P^{2-z}/\delta^3$, so its diverging height is consistent with

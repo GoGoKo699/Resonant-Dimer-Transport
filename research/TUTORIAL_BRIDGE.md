@@ -61,8 +61,8 @@ whereas that of $`g_{0,P}`$ is negative. Thus both conventions give the same
 positive free contact density:
 
 ```math
-\rho_{0,P}(E)=\frac1\pi\operatorname{Im}I_P(E+i0)
-=-\frac1\pi\operatorname{Im}g_{0,P}(E+i0).
+\rho_{0,P}(E)=\frac1\pi\mathrm{Im}I_P(E+i0)
+=-\frac1\pi\mathrm{Im}g_{0,P}(E+i0).
 ```
 
 The operator $`(h_P-w)^{-1}`$ has a bound atom proportional to
@@ -242,7 +242,7 @@ norm because $`\int |q|^{-2z}dq`$ diverges for $`z>1/2`$.
 At $`U=U_c`$, subtract the rest loop and scale $`q=|P|x`$:
 
 ```math
-F_z(e)=\int_{\mathbb R}\frac{dx}{2\pi}
+F_z(e)=\int_{\mathbb{R}}\frac{dx}{2\pi}
 \left[\frac1{|x+1/2|^z+|x-1/2|^z-e}-\frac1{2|x|^z}\right],
 \qquad F_z(c_z)=0,\quad 0<c_z<1.
 ```
@@ -253,7 +253,7 @@ energy remainder. Its conclusions are
 
 ```math
 E_d(P)\sim Jc_z|P|^z,\qquad
-E'_d(P)\sim Jzc_z\operatorname{sgn}(P)|P|^{z-1},\qquad
+E'_d(P)\sim Jzc_z\mathrm{sgn}(P)|P|^{z-1},\qquad
 Z(P)\sim B_z|P|^{2z-1},\qquad
 B_z=\frac{J^2}{U_c^2F'_z(c_z)}.
 ```

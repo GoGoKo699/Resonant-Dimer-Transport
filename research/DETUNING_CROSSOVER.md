@@ -6,18 +6,20 @@ Keep the Hamiltonian, local preparation, and unconditional same-site detector
 of the [author account](AUTHOR_ACCOUNT.md). Fix $J>0$ and $1/2<z<1$ throughout.
 Approach the rest-binding resonance from the stronger-attraction side and set
 
-$$
+```math
 \delta=J\left(\frac1{U_c}-\frac1U\right)>0,\qquad
-\rho=\delta^{1/(1-z)},\qquad U=U_\delta\downarrow U_c. \tag{D1}
-$$
+\rho=\delta^{1/(1-z)},\qquad U=U_\delta\downarrow U_c.
+```
+
+**(D1)**
 
 Both $\delta$ and $\rho$ are dimensionless in lattice units. Define
 
-$$
+```math
 e_\rho(k)=\frac{E_d(\rho k;U_\delta)}{J\rho^z},\qquad
 V_\rho(k)=e_\rho'(k)=\frac{\delta}{J}E_d'(\rho k;U_\delta),
 \quad 0\le k\le\pi/\rho.
-$$
+```
 
 The statements below concern the **limiting coincidence-velocity measure**.
 The infinite lattice and long-time limit at each fixed $U_\delta$ precede
@@ -29,64 +31,72 @@ Simultaneous time and detuning limits are controlled in the separate
 
 Put
 
-$$
+```math
 a_z(k,x)=|x+k/2|^z+|x-k/2|^z,
-$$
-$$
-G_z(k,e)=\int_{\mathbb R}\frac{dx}{2\pi}
+```
+```math
+G_z(k,e)=\int_{\mathbb{R}}\frac{dx}{2\pi}
 \left[\frac1{a_z(k,x)-e}-\frac1{2|x|^z}\right],\qquad e<k^z.
-$$
+```
 
 At each $k\ge0$ there is a unique solution $e_z(k)<k^z$ of
 
-$$
-G_z(k,e_z(k))=-1. \tag{D2}
-$$
+```math
+G_z(k,e_z(k))=-1.
+```
+
+**(D2)**
 
 Define its positive normalization integral and velocity by
 
-$$
-D_z(k)=\int_{\mathbb R}\frac{dx}{2\pi}
+```math
+D_z(k)=\int_{\mathbb{R}}\frac{dx}{2\pi}
 \frac1{[a_z(k,x)-e_z(k)]^2},\qquad V_z(k)=e_z'(k).
-$$
+```
 
 Here $D_z(k)$ is a normalization function, not the Fourier coefficient called
 $D_z$ in the [small-window calculation](THEOREM.md#small-scaled-windows).
 On every finite $k$ interval,
 
-$$
+```math
 e_\rho\longrightarrow e_z\quad\hbox{in }C^1,
 \qquad
 \frac{U_\delta^2}{J^2}\rho^{1-2z}Z(\rho k;U_\delta)
-\longrightarrow D_z(k)^{-1}\quad\hbox{uniformly}. \tag{D3}
-$$
+\longrightarrow D_z(k)^{-1}\quad\hbox{uniformly}.
+```
+
+**(D3)**
 
 The continuous function $|V_z|$ tends to zero at both $k=0$ and $k=\infty$
 and is not identically zero. Thus
 
-$$
+```math
 K_z:=\max_{k\ge0}|V_z(k)|\in(0,\infty)
-$$
+```
 
 exists and is attained at positive finite momenta. Since $Z(P;U)>0$
 on every bound fiber and the velocity is continuous, the spectral maximum
 is also the endpoint of the support seen by the coincidence detector.
 Crucially, the local convergence in (D3) controls the **global** lattice maximum:
 
-$$
+```math
 \boxed{v_{\max}(U)=\frac{J}{\delta}[K_z+o(1)]
-=\frac{U U_c}{U-U_c}[K_z+o(1)].} \tag{D4}
-$$
+=\frac{U U_c}{U-U_c}[K_z+o(1)].}
+```
+
+**(D4)**
 
 Every maximizing momentum satisfies
 
-$$
+```math
 \boxed{|P_{\max}(U)|=\Theta(\rho)
-=\Theta(\delta^{1/(1-z)}).} \tag{D5}
-$$
+=\Theta(\delta^{1/(1-z)}).}
+```
+
+**(D5)**
 
 More precisely, the distance of $|P_{\max}|/\rho$ to
-$\mathcal K_z=\operatorname{argmax}_{k\ge0}|V_z(k)|$ tends to zero. Neither
+$\mathcal K_z=\mathrm{argmax}_{k\ge0}|V_z(k)|$ tends to zero. Neither
 uniqueness of a maximizer nor monotonicity of the velocity is assumed.
 The inverse power of $U-U_c$ in (D4) is one for every fixed exponent in the
 declared window; the coefficient and momentum exponent do depend on $z$.
@@ -94,30 +104,34 @@ There is no uniform claim as $z$ approaches either endpoint of its window.
 
 For the actual local-source measurement, define as before
 
-$$
+```math
 Q_U(v)=\lim_{t\to\infty}\Pr_U(x_a=x_b,\ |X|>vt),\qquad
 \alpha_z=\frac{4z-1}{1-z}.
-$$
+```
 
 For each fixed $s>0$, the corresponding probability crossover is
 
-$$
+```math
 \boxed{\delta^{-\alpha_z}Q_{U_\delta}(Js/\delta)
-\longrightarrow\left(\frac J{U_c}\right)^4\mathcal H_z(s),}\tag{D6}
-$$
-$$
+\longrightarrow\left(\frac J{U_c}\right)^4\mathcal H_z(s),}
+```
+
+**(D6)**
+```math
 \mathcal H_z(s)=\frac1\pi\int_0^\infty
-\frac{\mathbf1_{\{|V_z(k)|>s\}}}{D_z(k)^2}\,dk.
-$$
+\frac{\mathbf{1}_{\{|V_z(k)|>s\}}}{D_z(k)^2}\,dk.
+```
 
 This function is finite and continuous for $s>0$, positive for $0<s<K_z$,
 and zero for $s\ge K_z$. Consequently, for any fixed $0<\theta<1$,
 
-$$
+```math
 Q_U(\theta v_{\max}(U))\sim
 \left(\frac J{U_c}\right)^4\mathcal H_z(\theta K_z)
-\delta^{\alpha_z}. \tag{D7}
-$$
+\delta^{\alpha_z}.
+```
+
+**(D7)**
 
 Approaching resonance therefore sends the speed cutoff to infinity while
 making the absolute coincidence probability near any fixed fraction of that
@@ -129,28 +143,32 @@ not competing descriptions of transport.
 
 For $k>0$, change variables $x=ky$ in (D2):
 
-$$
+```math
 G_z(k,e)=k^{1-z}F_z(e/k^z),\qquad
-F_z(e_z(k)/k^z)=-k^{z-1}. \tag{D8}
-$$
+F_z(e_z(k)/k^z)=-k^{z-1}.
+```
+
+**(D8)**
 
 The function $F_z$ is strictly increasing for $e<1$, with
 $F_z(c_z)=0$ and $F_z(1)>0$. Its derivative is strictly positive. At large
 negative energy the change of variable $x=|e|^{1/z}y$ gives
 $F_z(e)\sim-A_z(-e)^{\beta_z}$, where
 
-$$
+```math
 \beta_z=\frac{1-z}{z}\in(0,1),\qquad
 A_z=\frac{2^{-1/z}}{z\sin(\pi\beta_z)}>0.
-$$
+```
 
 These properties prove unique solvability of (D8). At $k=0$ a beta integral
 is exact:
 
-$$
+```math
 G_z(0,-a)=-A_z a^{\beta_z},\qquad
-e_z(0)=-a_z^*,\quad a_z^*=A_z^{-1/\beta_z}. \tag{D9}
-$$
+e_z(0)=-a_z^*,\quad a_z^*=A_z^{-1/\beta_z}.
+```
+
+**(D9)**
 
 For example, substitute $x=(a/2)^{1/z}t$ and then $u=t^z$. The remaining
 integral is $\int_0^\infty u^{\beta_z-1}/(1+u)\,du
@@ -159,22 +177,24 @@ $E_d(0;U_\delta)\sim-Ja_z^*\rho^z$ once (D3) is established.
 
 The negative rest energy permits the autocorrelation proof from the spectral
 foundation to be applied on the real line. For $h_t(x)=e^{-t|x|^z}$ one has
-$h_t\in H^1(\mathbb R)$ because $2z-2>-1$. Apply the autocorrelation expansion
+$h_t\in H^1(\mathbb{R})$ because $2z-2>-1$. Apply the autocorrelation expansion
 to the convergent difference $G_z(k,e)-G_z(0,e)$, not to either divergent
 unsubtracted continuum integral. Integration with $e^{te}$ for $e<0$ is
 justified by $\|h_t'\|_2^2=O(t^{1/z})$. Implicit differentiation then gives
 
-$$
+```math
 e_z(k)=-a_z^*+C_z^* k^2+o(k^2),\qquad
-V_z(k)=2C_z^* k+o(k), \tag{D10}
-$$
-$$
+V_z(k)=2C_z^* k+o(k),
+```
+
+**(D10)**
+```math
 C_z^*=
 \frac{\displaystyle\int\frac{dx}{2\pi}
  \frac{z^2|x|^{2z-2}}{(2|x|^z+a_z^*)^3}}
  {\displaystyle\int\frac{dx}{2\pi}
  \frac1{(2|x|^z+a_z^*)^2}}>0.
-$$
+```
 
 The differentiated autocorrelation, not differentiation of the little-o
 term alone, proves the velocity expansion.
@@ -184,22 +204,24 @@ term alone, proves the velocity expansion.
 The quadratic endpoint in (D10) has a closed coefficient. Writing
 $a=a_z^*$ and $\beta=\beta_z$, one has
 
-$$
+```math
 D_z(0)=\frac\beta a,\qquad
-C_z^*=z\,2^{2/z-3}a^{1-2/z}>0. \tag{R1}
-$$
+C_z^*=z\,2^{2/z-3}a^{1-2/z}>0.
+```
+
+**(R1)**
 
 The first identity follows by differentiating the exact rest loop
 $G_z(0,-a)=-A_z a^\beta$ and using $A_z a^\beta=1$.
 For the second, the denominator and numerator in (D10), respectively,
 are
 
-$$
+```math
 \frac{2^{-1/z}a^{1/z-2}}{\pi z}
- \operatorname B(1/z,2-1/z),\qquad
+ \mathrm{B}(1/z,2-1/z),\qquad
 \frac{z\,2^{1/z-2}a^{-1-1/z}}\pi
- \operatorname B(2-1/z,1+1/z).
-$$
+ \mathrm{B}(2-1/z,1+1/z).
+```
 
 These follow from $u=2|x|^z/a$. The beta-function ratio in the quotient is
 $1/(2z)$, which proves (R1). Both integrals converge because $z>1/2$.
@@ -209,25 +231,27 @@ $E_d(P;U)=E_d(0;U)+C(U)P^2+o(P^2)$ in the
 [spectral foundation, Section 5](SPECTRAL_PROOF.md#5-why-a-dimer-away-from-resonance-is-different).
 Then the same microscopic branch obeys
 
-$$
+```math
 Z(0;U_\delta)\sim
  \left(\frac J{U_c}\right)^2\frac{a_z^*}{\beta_z}\rho^{2z-1},
 \qquad
-C(U_\delta)\sim J C_z^*\rho^{z-2}. \tag{R2}
-$$
+C(U_\delta)\sim J C_z^*\rho^{z-2}.
+```
+
+**(R2)**
 
 The residue limit is (D3) at $k=0$ together with (R1).
 The curvature limit requires a separate argument; $C^1$ convergence in
 (D3) alone would not imply it. Put
 $g_\delta=-E_d(0;U_\delta)>0$. The exact cusp-safe rest identity is
 
-$$
+```math
 C(U_\delta)=
 \frac{\displaystyle\int\frac{dq}{2\pi}
  [\epsilon_z'(q)]^2/[2\epsilon_z(q)+g_\delta]^3}
  {\displaystyle\int\frac{dq}{2\pi}
  1/[2\epsilon_z(q)+g_\delta]^2}.
-$$
+```
 
 By (D3) and (D9), $g_\delta/(J\rho^z)\to a_z^*$.
 Scale $q=\rho x$ in both integrals. The numerator divided by
@@ -239,10 +263,10 @@ $|\epsilon_z'(q)|\le CJ|q|^{z-1}$ for $|q|\le\pi$.
 For sufficiently small $\delta$, the respective scaled integrands,
 extended by zero beyond $|x|\le\pi/\rho$, are bounded by fixed multiples of
 
-$$
+```math
 \frac{|x|^{2z-2}}{(1+|x|^z)^3},\qquad
 \frac1{(1+|x|^z)^2}.
-$$
+```
 
 The first has integrable powers $2z-2>-1$ at the origin and $-z-2$ at
 infinity; the second is integrable at infinity because $2z>1$.
@@ -252,11 +276,13 @@ has been integrated, and no asymptotic remainder has been differentiated.
 
 In lattice units, the corresponding rest effective mass is
 
-$$
+```math
 m_d(U_\delta):=\frac1{E_d''(0;U_\delta)}
  \sim\frac{\rho^{2-z}}{2J C_z^*}
- =\frac{\delta^{(2-z)/(1-z)}}{2J C_z^*}. \tag{R3}
-$$
+ =\frac{\delta^{(2-z)/(1-z)}}{2J C_z^*}.
+```
+
+**(R3)**
 
 The finite quadratic curvature at each fixed stronger attraction therefore
 diverges on approaching resonance. Its rest velocity still vanishes.
@@ -266,10 +292,12 @@ coincidence weight remain the separate conclusions (D4) and (D6).
 At the other endpoint, (D8) yields $e_z(k)/k^z\to c_z$. With
 $y=e_z(k)/k^z$, exact implicit differentiation gives
 
-$$
+```math
 V_z(k)=k^{z-1}\left[zy-(1-z)\frac{F_z(y)}{F_z'(y)}\right],\qquad
-D_z(k)=k^{1-2z}F_z'(y). \tag{D11}
-$$
+D_z(k)=k^{1-2z}F_z'(y).
+```
+
+**(D11)**
 
 Thus $V_z(k)\sim zc_z k^{z-1}$ and
 $D_z(k)\sim F_z'(c_z)k^{1-2z}$ as $k\to\infty$.
@@ -283,10 +311,10 @@ can occur. It has Lebesgue measure zero, even at $s=K_z$.
 
 Use the exact scaled lattice integral
 
-$$
+```math
 G_{\rho,z}(k,e)=\frac{J}{\rho^{1-z}}
  [I_{\rho k}(J\rho^z e)-I_0(0)].
-$$
+```
 
 The pole equation is exactly $G_{\rho,z}(k,e_\rho(k))=-1$. For bounded $k$
 and bounded $e$ separated by a positive distance from $k^z$, this function,
@@ -306,10 +334,10 @@ independent of the moving singularities.
 For $M\rho\le|q|\le q_0$, with $M$ larger than twice the bounded $k$ range,
 the symmetric shift and energy bounds give
 
-$$
+```math
 \left|\frac1{A_{\rho k}(q)-J\rho^z e}-\frac1{2\epsilon_z(q)}\right|
 \le \frac CJ\left(\rho^z|q|^{-2z}+\rho^2|q|^{-z-2}\right).
-$$
+```
 
 After scaling and integration the bound is
 $C(M^{1-2z}+M^{-1-z})$. For $\partial_eG_{\rho,z}$ the tail bound is
@@ -327,10 +355,10 @@ on that compact tube. This proves uniform root convergence. The exact identity
 $e_\rho'=-\partial_kG_{\rho,z}/\partial_eG_{\rho,z}$ proves the $C^1$ part
 of (D3). Finally,
 
-$$
+```math
 \partial_eG_{\rho,z}(k,e_\rho(k))
 =J^2\rho^{2z-1}I'_{\rho k}(E_d),
-$$
+```
 
 combined with $Z=(U_\delta^2 I')^{-1}$ proves the residue statement.
 This analysis always stays strictly below the exact lattice threshold; it
@@ -351,28 +379,30 @@ the lattice root obeys $-CJ\rho^z\le E_d\le-cJ\rho^z<0$. For such energies,
 put $h_t(q)=e^{-t\epsilon_z(q)}$ on the momentum circle. The derivative of
 its autocorrelation satisfies
 
-$$
+```math
 |\partial_P\langle h_t(\cdot+P/2),h_t(\cdot-P/2)\rangle|
 \le |P|\|h_t'\|_2^2.
-$$
+```
 
 For example, the Fourier series bound is $|\sin(nP)|\le |nP|$.
 The Laplace representation of the resolvent consequently gives
 
-$$
+```math
 |\partial_P I_P(E)|\le
 2|P|\int\frac{dq}{2\pi}\frac{[\epsilon_z'(q)]^2}{[2\epsilon_z(q)-E]^3}
 \le\frac C J |P|\rho^{-z-1}.
-$$
+```
 
 The last integral is finite because $2z-2>-1$ and follows by scaling $q=\rho x$.
 On $|q|\le\rho$ the energy and shift bounds give
 $I'_P(E_d)\ge cJ^{-2}\rho^{1-2z}$. Therefore
 
-$$
+```math
 |V_\rho(k)|=\frac\delta J|E_d'(\rho k)|\le Ck
-\quad(0\le k\le k_0). \tag{D12}
-$$
+\quad(0\le k\le k_0).
+```
+
+**(D12)**
 
 ### Large scaled momentum
 
@@ -382,20 +412,22 @@ Choose fixed $e_-<e_+<1$ such that $F_z(e_-)<-2$ and $F_z(e_+)>0$.
 Uniform fixed-energy-ratio lattice convergence, with sufficiently small fixed
 $p_0$, traps every such root in
 
-$$
+```math
 e_-\le E_d(P;U_\delta)/(JP^z)\le e_+.
-$$
+```
 
 This gives a denominator gap of order $JP^z$. The region $|q|\le2P$ yields
 $I'_P\ge cJ^{-2}P^{1-2z}$. Split the absolute derivative numerator at $2P$
 and $q_0$. Near the two cusps, integrate their powers $|q\pm P/2|^{z-1}$;
 outside, use $|\partial_PA_P|\le CJP|q|^{z-2}$. The result is
 
-$$
+```math
 \int\frac{dq}{2\pi}\frac{|\partial_PA_P(q)|}{[A_P(q)-E_d]^2}
 \le C J^{-1}P^{-z},\qquad
-|V_\rho(k)|\le C k^{z-1}. \tag{D13}
-$$
+|V_\rho(k)|\le C k^{z-1}.
+```
+
+**(D13)**
 
 On the remaining compact physical momenta $p_0\le P\le\pi$, the resonant
 branch already has a positive minimum gap. Increasing $U$ lowers its energy;
@@ -403,10 +435,12 @@ for $U$ in a bounded neighborhood of $U_c$ the denominator normalization is
 also uniformly bounded below. Integrability of $\epsilon_z'$ therefore gives
 $|E_d'(P;U)|\le CJ$ and $|V_\rho|\le C\delta$ there. Combining the regions,
 
-$$
+```math
 \limsup_{\rho\downarrow0}\sup_{k\ge R}|V_\rho(k)|
-\le C R^{z-1}\longrightarrow0\quad(R\to\infty). \tag{D14}
-$$
+\le C R^{z-1}\longrightarrow0\quad(R\to\infty).
+```
+
+**(D14)**
 
 Equations (D12) and (D14), together with $K_z>0$, trap all maximizers in a
 fixed compact interval inside $(0,\infty)$. Uniform convergence on that interval
@@ -417,11 +451,11 @@ velocity plot is used as a global maximization proof.
 
 The already proved local-quench theorem gives
 
-$$
+```math
 Q_{U_\delta}(Js/\delta)
 =\frac\rho\pi\int_0^{\pi/\rho}
-Z(\rho k;U_\delta)^2\mathbf1_{\{|V_\rho(k)|>s\}}\,dk.
-$$
+Z(\rho k;U_\delta)^2\mathbf{1}_{\{|V_\rho(k)|>s\}}\,dk.
+```
 
 For fixed $s>0$, (D12)–(D14) confine the superlevel region to a fixed compact
 interval away from zero for all sufficiently small $\rho$. Apply the uniform
@@ -435,11 +469,13 @@ follows by squeezing $\theta\delta v_{\max}/J$ between nearby fixed thresholds.
 At small positive $s$, use the large-$k$ asymptotics (D11) to squeeze the
 superlevel set and integrate $D_z(k)^{-2}\sim k^{4z-2}/F_z'(c_z)^2$. This gives
 
-$$
+```math
 \mathcal H_z(s)\sim
 \frac1{\pi(4z-1)F_z'(c_z)^2}
-\left(\frac{zc_z}{s}\right)^{\alpha_z}\quad(s\downarrow0). \tag{D15}
-$$
+\left(\frac{zc_z}{s}\right)^{\alpha_z}\quad(s\downarrow0).
+```
+
+**(D15)**
 
 After multiplying by $(J/U_c)^4$, this is exactly the coefficient of the
 resonant coincidence tail. The comparison is first

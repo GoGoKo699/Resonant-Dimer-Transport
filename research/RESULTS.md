@@ -4,9 +4,9 @@
 
 Two distinguishable particles move on the infinite one-dimensional lattice with dispersion
 
-$$
+```math
 \epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \frac12<z<1,
-$$
+```
 
 and contact attraction $-U\delta_{x_a,x_b}$. The preparation is $|0,0\rangle$. The measured probability is $C_j(t)=|\langle j,j|e^{-itH}|0,0\rangle|^2$, per initially prepared pair. Unequal final positions remain in the normalization. There is no band-prepared source, energy filtering, or time-averaged detector.
 
@@ -36,29 +36,29 @@ primary references.
 
 The static certificate controls the same sharp detector through
 
-$$
+```math
 |p_t(s)-q(s)|\le d_t+2\sqrt{q(s)+d_t}\,e_t+e_t^2,
-$$
+```
 
 where $d_t$ is the band-event error budget and $e_t$ is the contact-continuum amplitude budget. The event-local square root is essential: an event of probability $q$ needs amplitude error small relative to $\sqrt q$, not necessarily $q$. The explicit static prescription and its margins are in [the certificate](FINITE_TIME_CERTIFICATE.md).
 
 The [uniform theorem](OBSERVATION_TIME.md) then controls those budgets as the detuning vanishes. With fixed $0<\theta<1$, set
 
-$$
+```math
 p_{\delta,t}=\Pr_U(x_a=x_b,|X|>\theta v_{\max}(U)t),\qquad
 q_\delta=Q_U(\theta v_{\max}(U))\sim C_{z,\theta}\delta^{(4z-1)/(1-z)}.
-$$
+```
 
 For each fixed relative accuracy there are detuning-independent constants such that $Jt\ge C\mathcal T_z(\delta)$ is sufficient, where
 
-$$
+```math
 \mathcal T_z(\delta)=
 \begin{cases}
 \delta^{-(3z-1/2)/(1-z)},&1/2<z<3/4,\\
 \delta^{-7}\sqrt{\log(2/\delta)},&z=3/4,\\
 \delta^{-(5z-2)/(1-z)},&3/4<z<1.
 \end{cases}
-$$
+```
 
 Along $Jt/\mathcal T_z(\delta)\to\infty$, the ratio $p_{\delta,t}/q_\delta$ tends to one. These are sufficient bounds for relative accuracy. The case distinction comes from the band norms in the proof.
 

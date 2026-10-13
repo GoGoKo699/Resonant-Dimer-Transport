@@ -166,6 +166,20 @@ def sha(data):return hashlib.sha256(data).hexdigest()
 def equations(text):
  # Delimiter conversion only; no equation contents are normalized.
  return re.findall(r'\\\[(.*?)\\\]|\$\$(.*?)\$\$',text,re.S)
+def format_math(text):
+ """Keep TeX protected from Markdown and labels outside native MathML tables."""
+ text=re.sub(r'\\operatorname\s*\{([^{}]+)\}',r'\\mathrm{\1}',text)
+ text=re.sub(r'\\operatorname\s+([A-Za-z]+)',r'\\mathrm{\1}',text)
+ text=re.sub(r'\\mathbb\s+([A-Za-z])',r'\\mathbb{\1}',text)
+ text=re.sub(r'\\mathbf([0-9])',r'\\mathbf{\1}',text)
+ def display(match):
+  body=match.group(1) if match.group(1) is not None else match.group(2)
+  labels=re.findall(r'\\tag\{([^{}]+)\}',body)
+  body=re.sub(r'\s*\\tag\{[^{}]+\}', '',body).strip()
+  result='```math\n'+body+'\n```'
+  if labels:result+='\n\n**('+', '.join(labels)+')**'
+  return result
+ return re.sub(r'\$\$\n(.*?)\n\$\$|```math\n(.*?)\n```',display,text,flags=re.S)
 def expected():
  output={};ledger={'archive':str(ARCHIVE.relative_to(ROOT)),'pages':[]}
  for source,dest,title,start,stop in PAGES:
@@ -185,6 +199,7 @@ def expected():
    transformed=transformed.replace(old,new,1)
   if equations(selected)!=equations(transformed):raise ValueError('Equation changed')
   transformed=transformed.replace('\\[','$$').replace('\\]','$$').replace('\\(','$').replace('\\)','$')
+  transformed=format_math(transformed)
   footer='\n\n---\n\n[Proof map](PROOF_MAP.md) · [Reproducibility](../REPRODUCIBILITY.md)\n'
   data=('# '+title+'\n\n'+transformed.strip()+footer).encode()
   output[dest]=data
@@ -197,7 +212,8 @@ def expected():
    'literal_replacements':replacements,'display_equations':len(equations(selected)),
    'equations_sha256':sha(json.dumps(equations(selected)).encode()),'output_sha256':sha(data),
    'footer_links':['research/PROOF_MAP.md','REPRODUCIBILITY.md'],
-   'formatting':'Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.'})
+   'math_rendering':{'display':'fenced math','equation_labels':'Markdown outside TeX','operator_macro':'mathrm','single_token_arguments':'explicit braces'},
+   'formatting':'Preserve mathematical expressions; use fenced math, external equation labels, upright operator names, and explicit single-token macro arguments.'})
  output['maintenance/READING_TRANSFORMS.json']=(json.dumps(ledger,indent=2,sort_keys=True)+'\n').encode()
  return output
 

@@ -10,7 +10,7 @@
         "research/PROOF_MAP.md",
         "REPRODUCIBILITY.md"
       ],
-      "formatting": "Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.",
+      "formatting": "Preserve mathematical expressions; use fenced math, external equation labels, upright operator names, and explicit single-token macro arguments.",
       "literal_replacements": [
         [
           "Both particle numbers are fixed at one. There is no bath, disorder, external force, many-body background, changing interaction, or measurement during evolution. Lattice spacing and $\\hbar$ are one. The kinetic operator is the established fractional discrete Laplacian, not an exact pure power hopping at short distance and not a claim that an identified apparatus implements its full kernel.",
@@ -73,9 +73,15 @@
           "The [joint observation-time theorem](OBSERVATION_TIME.md) proves a uniform momentum-integrated bound $\\eta_U(t)\\le C/(Jt)$ near resonance and combines it with band-norm estimates to give a sufficient simultaneous time\u2013detuning regime. The resonance tail (3) retains its long-time-at-fixed-velocity, then high-velocity order. Relative accuracy for a rare event requires the [event-local error bound](FINITE_TIME_CERTIFICATE.md), which compares continuum amplitude with the square root of its probability."
         ]
       ],
+      "math_rendering": {
+        "display": "fenced math",
+        "equation_labels": "Markdown outside TeX",
+        "operator_macro": "mathrm",
+        "single_token_arguments": "explicit braces"
+      },
       "omit_editorial_planning_sentence": false,
       "omit_historical_allocation_tail": false,
-      "output_sha256": "3fe2bfd6519963eef8df1c4ec3217c44906569db31196d25cd1d96dffe587a78",
+      "output_sha256": "b8d5e9796a09e1675125559940657a85c32000d32c5f1e1949d8688fb27c4161",
       "presentation_cleanup": "Reader-facing scientific account; source attribution and equation content preserved.",
       "remove_repository_allocation": false,
       "scientific_correction": "research/OBSERVATION_TIME.md",
@@ -93,7 +99,7 @@
         "research/PROOF_MAP.md",
         "REPRODUCIBILITY.md"
       ],
-      "formatting": "Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.",
+      "formatting": "Preserve mathematical expressions; use fenced math, external equation labels, upright operator names, and explicit single-token macro arguments.",
       "literal_replacements": [
         [
           "## 1. Same model; specified source and detector",
@@ -168,9 +174,15 @@
           "The [author account](AUTHOR_ACCOUNT.md#relationship-to-established-work) compares the models and observables in detail."
         ]
       ],
+      "math_rendering": {
+        "display": "fenced math",
+        "equation_labels": "Markdown outside TeX",
+        "operator_macro": "mathrm",
+        "single_token_arguments": "explicit braces"
+      },
       "omit_editorial_planning_sentence": false,
       "omit_historical_allocation_tail": true,
-      "output_sha256": "fdaafdf95a3f4ee67c4797dec913ccf90f646c99d83583304cc115c87d6e6e07",
+      "output_sha256": "a3168a23e28e773ac6e08fad7d81db5dce9f85ac4cda35bd192e69a1f9f1753a",
       "presentation_cleanup": "Reader-facing scientific account; source attribution and equation content preserved.",
       "remove_repository_allocation": false,
       "scientific_correction": "research/OBSERVATION_TIME.md",
@@ -188,7 +200,7 @@
         "research/PROOF_MAP.md",
         "REPRODUCIBILITY.md"
       ],
-      "formatting": "Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.",
+      "formatting": "Preserve mathematical expressions; use fenced math, external equation labels, upright operator names, and explicit single-token macro arguments.",
       "literal_replacements": [
         [
           "There is no bath, drive, preparation by acceleration, many-body background, disorder or changing interaction.",
@@ -275,9 +287,15 @@
           "Primary sources are linked under their own publication and distribution terms."
         ]
       ],
+      "math_rendering": {
+        "display": "fenced math",
+        "equation_labels": "Markdown outside TeX",
+        "operator_macro": "mathrm",
+        "single_token_arguments": "explicit braces"
+      },
       "omit_editorial_planning_sentence": false,
       "omit_historical_allocation_tail": false,
-      "output_sha256": "292ec73499f4766bdf820d038fec9d381a7341784abb24cd4b3300f7197823e6",
+      "output_sha256": "2585489a2627d25132e1071a98d1c23c0085f949e3d984bc3f5dff15d950405d",
       "presentation_cleanup": "Reader-facing scientific account; source attribution and equation content preserved.",
       "remove_repository_allocation": false,
       "scientific_correction": "research/THRESHOLD_ENDPOINT.md",
@@ -295,13 +313,19 @@
         "research/PROOF_MAP.md",
         "REPRODUCIBILITY.md"
       ],
-      "formatting": "Convert LaTeX math delimiters to GitHub dollar delimiters; preserve equation contents.",
+      "formatting": "Preserve mathematical expressions; use fenced math, external equation labels, upright operator names, and explicit single-token macro arguments.",
       "literal_replacements": [
         [
           "## Review outcome\n\nNo blocking mathematical defect was identified in the scoped infinite-lattice contact-transport theorem. The potentially consequential steps were checked explicitly: cusp versus smooth continuum edges, absence of a source-coupled atom at a continuum energy, the finite exceptional set needed to exclude singular continuous contact spectrum, both source/detector overlaps, passage from amplitude convergence to the whole unnormalized contact probability law, and the characteristic-function rather than uncontrolled stationary-phase proof. The long-time/high-velocity order remains essential.\n\nA corollary completes the size interpretation already present in the same eigenstate: the scaled normalized relative wavefunction converges in L2, hence the best overlap with a relative source of radius R has a limiting profile in PR. Fixed capture probability requires R of order 1/P, or order (v/J)^(1/(1-z)). This does not construct a physical loading protocol or grant momentum selection to the original local quench.\n\nThe finite-time perturbation estimate |delta probability| <= t|delta U| is another elementary corollary. It does not provide the missing uniform-in-velocity continuum-convergence rate or an optimal tuning requirement.\n\n## Strongest predecessor reconstruction\n\n### Sun--Feng--Zhang\n\nRead the primary published two-magnon section at Eqs. (5)--(8), the later negative-energy three-magnon discussion, and compare with the readable v1 preprint, whose arbitrary-momentum T-matrix is Eq. (5). The published article is *Efimov effect in long-range quantum spin chains*, Communications Physics **9**, 146 (2026), arXiv:2502.20759.\n\nPrimary published text: https://www.nature.com/articles/s42005-026-02580-0\nPrimary v1 text: https://arxiv.org/html/2502.20759v1\n\nAt resonance, subtract their zero-momentum zero-energy loop, put k=P and E=J|P|^z e, and rescale q=|P|x. This gives precisely |P|^(1-z)F_z(e)/(2J). The pole equation is thus supplied by their effective theory. Its derivative determines the residue exponent. Once local creation and local detection contribute two overlaps, ordinary pushforward of momentum to band velocity gives the tail exponent. The new wavefunction-scaling corollary is also based on the same contact pole, not a new universality principle.\n\nTheir inspected two-body discussion explicitly evaluates the rest bound pole and then applies finite momentum at negative energies in the three-body equation. I did not find our complete positive-energy below-fixed-momentum-continuum local-quench theorem stated in those passages. That absence is not proof that none of its consequences are implicit; the reconstruction above identifies the direct implications rather than relying on the absence of a phrase.\n\n### Kranzl and collaborators\n\nRead the primary HTML of *Observation of magnon bound states in the long-range, anisotropic Heisenberg model*, arXiv:2212.03899v2, especially Sections III--IV and the discussion of bound-state participation. It supplies the directly relevant distinction between unbounded single-magnon velocity and finite velocity for the bound branch in its chosen regime. Its local neighboring-magnon preparation and nearby-pair measurements are precedents for the observable.\n\nhttps://arxiv.org/html/2212.03899v2\n\nThe primary text specifies exponent 1.4 for that experimental realization, different interactions, and a repulsively bound branch. Our z interval corresponds to hopping exponents strictly between 1.5 and 2. No figure value, experimental velocity, or advertised operating window has been extracted for the present model. Their data are not reanalyzed or refuted. A word such as 'always' in a discussion of their selected branch is not an unrestricted theorem about every model of binding.\n\n### Other inherited ingredients and source-access boundaries\n\nThe Albeverio--Lakaev--Makarov--Muminov primary record was checked again. It explicitly establishes nonzero-momentum below-threshold spectrum from a rest eigenvalue/virtual level under its three-dimensional positivity-preserving hypotheses. The full theorem reading is recorded in the preserved pilot rather than newly claimed here. https://arxiv.org/abs/math-ph/0501013\n\nThe Ciaurri--Roncal--Stinga--Torrea--Varona primary record confirms the fractional lattice operator and its established kernel framework. Its detailed formulas were read in the pilot; they are not a new model ingredient. https://arxiv.org/abs/1608.08913\n\nFrymark--Liaw's rank-one spectral formulas and Fukuhara's local magnon observation remain credited from the preserved source readings. This pass's attempted HTML routes did not return those bodies, so a fresh full-text reread is not claimed. The original formulas and their source roles were checked against the explicit derivation here.\n\nThe Dominguez-Castro primary article returned HTTP 429 on this pass. Its earlier two-species power-law model comparison remains in the preserved pilot. Failure to reread it does not support an absence claim. No new source-access hold is asserted as proof of novelty.\n\nTargeted searches using bound pairs, fractional dispersion, resonance, and long-range hopping did not reveal a directly covering complete local-quench theorem. Search coverage is neither exhaustive nor a priority certificate. Unrelated topological edge-state and single-magnon sources were not used to support the dimer result. Figures or diagrams were not required for the equations used in this review.\n\n## Contribution judgment\n\nThe positive case is the failure of finite-velocity regularization by binding at a resonance, demonstrated in a local observation rather than only a pole plot. The skeptical case is substantial: the two-body framework is already available, the central exponent is ordinary residue/velocity power counting, the strict distinction requires resonance tuning and iterated limits, and the high-speed events are rare. The available result is not a demonstration of efficient superballistic transport. Familiar tools and rare events do not automatically make a theorem insignificant, but neither does proving a sharp asymptotic formula establish PRL-level broad interest.\n\nKeep the central claim as the source-resolved resonance contrast. Do not create separate novelty headlines from the scaling profile, gamma-function coefficients, generic pushforward exponent, or elementary Duhamel continuity bound. No many-body, disordered, lossy, or alternate-device expansion is needed merely to make this bounded result assessable.\n",
           "## Source-resolved resonance contrast\n\nThe result connects the exact fractional-lattice contact pole to a specified\nlocal source and same-site detector. At the rest-binding resonance, the\npersistent coincidence signal has an algebraic velocity tail; at each fixed\nstronger attraction its limiting support is bounded. The calculation retains\nboth contact overlaps and the unconditional probability per prepared pair.\nThe scaled relative wavefunction quantifies the source support required for\nfixed overlap, while the finite-time proofs control the sharp event at a\ndeterministic observation time.\n\n## Established ingredients\n\n| Source | Ingredient and relevant model |\n|---|---|\n| [Sun, Feng, and Zhang](https://www.nature.com/articles/s42005-026-02580-0) \u00b7 [preprint v1](https://arxiv.org/html/2502.20759v1) | Their finite-momentum contact loop and resonance subtraction supply the continuum pole equation. Homogeneity predicts the pole, residue, and detuning powers. Their microscopic hard-core spin model and auxiliary-field residues require a separate normalization from the onsite contact probability used here. |\n| [Albeverio, Lakaev, Makarov, and Muminov](https://arxiv.org/abs/math-ph/0501013) | Theorem 5.4 establishes motion-induced lattice binding under smooth three-dimensional positivity-preserving hypotheses. Section 3 of the spectral foundation gives the explicit one-dimensional fractional-cusp proof. |\n| [Ciaurri, Roncal, Stinga, Torrea, and Varona](https://arxiv.org/abs/1608.08913) | The fractional discrete Laplacian, its exact hopping kernel, and long-distance power law are established model ingredients. |\n| [Dom\u00ednguez-Castro](https://www.mdpi.com/2218-2004/11/8/110) | The two-species power-law hopping model with onsite interaction includes a total-momentum scattering equation and disappearance of attractive rest dimers. |\n| [Kranzl and collaborators](https://arxiv.org/html/2212.03899v2) | Local neighboring-magnon preparation and nearby-pair position measurements distinguish bound and scattering propagation. Their selected repulsive hard-core branch has finite velocity in a different interaction and exponent regime. |\n| [Fukuhara and collaborators](https://arxiv.org/pdf/1305.6598) | Local two-spin preparation and position correlations resolve free and bound motion in the short-range Heisenberg chain. |\n| [Frymark and Liaw](https://arxiv.org/pdf/1904.09833) | The Aronszajn\u2013Krein resolvent identity, point-mass weights, and continuous densities provide the rank-one spectral formulas. |\n\nThe [author account](AUTHOR_ACCOUNT.md#relationship-to-established-work)\ngives the claim-by-claim comparison, including the published supplements,\npublic author response, and the local-pair dynamics of Macr\u00ec and collaborators.\nThe exact loop specialization is in\n[the spectral foundation](SPECTRAL_PROOF.md#9-relationship-to-established-work).\n\n## What the proofs establish\n\nThe additional control is microscopic and measurement-specific: lattice\nlimits for energy, velocity, and normalized contact weight; continuum contact\nseparation; the velocity pushforward with two overlaps; the global detuning\ncutoff and its absolute probability; and the growing relative-support capture\nprofile. The [finite-time certificate](FINITE_TIME_CERTIFICATE.md) bounds\nsharp-event error through static spectral budgets, and\n[the joint observation-time theorem](OBSERVATION_TIME.md) proves a sufficient\nsimultaneous time\u2013detuning regime.\n\nThe pole equation, local-pair observation, and motion-induced binding remain\nattributed to the sources above. The high-speed coincidence events are rare,\nand their internal preparation radius grows with velocity. The resonance\nvelocity tail takes long time at fixed velocity before high velocity; the\njoint theorem states its own simultaneous sufficient regime. The support\nresult is a fiberwise overlap optimum; the sharp-event error bound retains\nthe onsite source and same-site detector. The [proof map](PROOF_MAP.md)\nlocates each complete derivation.\n"
         ]
       ],
+      "math_rendering": {
+        "display": "fenced math",
+        "equation_labels": "Markdown outside TeX",
+        "operator_macro": "mathrm",
+        "single_token_arguments": "explicit braces"
+      },
       "omit_editorial_planning_sentence": true,
       "omit_historical_allocation_tail": false,
       "output_sha256": "f9a98b846fdcbd0c652f61a7cb30b3a6064c4761a9abca7e466dd81d49f7733d",
