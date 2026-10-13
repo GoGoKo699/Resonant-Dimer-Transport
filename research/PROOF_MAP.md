@@ -27,6 +27,7 @@ The reading order follows the logical dependencies of the local-source transport
 | Relative size and fixed-support source bounds | [Transport proof, Section 6](TRANSPORT_PROOF.md) |
 | Whole scaled wavefunction and growing-source capture curve | [Theorem, Section 4](THEOREM.md) |
 | Finite-time interaction continuity versus iterated asymptotics | [Theorem, Section 5](THEOREM.md) |
-| Contribution and directly relevant sources | [Contribution assessment](CONTRIBUTION.md) |
+| Contribution and directly relevant sources | [Contribution and attribution](CONTRIBUTION.md) |
 
-The four foundational reading pages are generated from preserved source sections. The recorded endpoint prose correction links to its separate proof; the author account and subsequent endpoint, detuning, and time-dependent proofs are maintained directly. The source package and its complete historical evidence are in [the archive](../archive/review-2026-10-10/README.md). The [reproducibility instructions](../REPRODUCIBILITY.md) explain the distinction between analytical proofs, finite numerical checks, and report identity. Archived sources and earlier checkers are unchanged.
+The [reproducibility guide](../REPRODUCIBILITY.md) maps the numerical checks to
+these analytical statements and records source and report integrity.

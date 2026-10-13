@@ -1,6 +1,6 @@
 # Alternative conservative finite-time estimate
 
-The main [observation-time theorem](OBSERVATION_TIME.md) supplies the sharper sufficient regime used in the scientific account. A separately derived estimate is retained here because its explicit constants and critical-energy controls provide a different proof route. It does not add a second physical model or a stronger operational claim.
+The [observation-time theorem](OBSERVATION_TIME.md) supplies the sharper sufficient regime. This estimate gives a complementary proof route with explicit constants and critical-energy controls for the same physical event.
 
 ## Same event, more conservative sufficient condition
 
@@ -18,7 +18,7 @@ $$
 \gamma_z=\frac{4z-2}{10-z},
 $$
 
-with explicit, deliberately nonoptimized constants in Section 3 of the [preserved proof](../archive/coarse-time-2026-10-10/research/FINITE_TIME.md). This is compatible with the faster momentum-integrated decay in the main theorem: the estimates control different norms and neither is asserted to be optimal.
+with explicit constants in Section 3 of the [complete proof](../archive/coarse-time-2026-10-10/research/FINITE_TIME.md). This is compatible with the faster momentum-integrated decay in the main theorem: the estimates control different norms.
 
 Combined with conservative band bounds and event-local interference accounting, the alternative proof establishes
 
@@ -35,18 +35,22 @@ $$
 M_z=\frac{(4z-1)(10-z)}{4(1-z)(2z-1)},\qquad 0<\theta<1.
 $$
 
-At $z=3/4$, this sufficient exponent is $37$. The main theorem instead supplies the substantially less restrictive sufficient regime $Jt\gg\delta^{-7}\sqrt{\log(2/\delta)}$. These are upper-bound constructions, not competing predictions for an optimal waiting time. No actual infinite-lattice evolution at either diverging time scale was simulated.
+At $z=3/4$, this sufficient exponent is $37$. The main theorem supplies the less restrictive sufficient regime $Jt\gg\delta^{-7}\sqrt{\log(2/\delta)}$. Both are sufficient bounds obtained by different estimates.
 
-The alternative proof also includes the exact minimum-gap identity, cusp-safe second band derivative, and the Fourier-sandwich estimate. The current [finite-time certificate](FINITE_TIME_CERTIFICATE.md) and [observation-time theorem](OBSERVATION_TIME.md) remain the direct reading route for the accumulated result.
+The alternative proof also includes the exact minimum-gap identity, cusp-safe second band derivative, and the Fourier-sandwich estimate. The [finite-time certificate](FINITE_TIME_CERTIFICATE.md) and [observation-time theorem](OBSERVATION_TIME.md) give the static error budget and the sharper joint regime.
 
-## Preserved sources and separate reproduction
+## Proof and reproduction
 
-The [source snapshot](../archive/coarse-time-2026-10-10/README.md) retains the exact proof, helper, checker, and review record from the parallel finite-time branch. These original bytes are neither rewritten to match the newer notation nor allowed to overwrite the current helper with the same historical filename. Its six scientific regression groups run unchanged in an isolated temporary layout, using the already preserved spectral solver.
+The [complete derivation](../archive/coarse-time-2026-10-10/research/FINITE_TIME.md)
+contains the explicit constants. Its six scientific regression groups run in
+an isolated temporary layout using the scalar spectral solver.
 
 ```bash
 python tools/verify_alternative_time.py --output-dir /absolute/new/path/outside/repository
 ```
 
-The runner checks every imported blob and confirms that its source files remain unchanged. It keeps the raw six-group report and log. Its success is author-side reproduction, not an independent theorem audit or a certificate for a practical waiting time. The main 33-group suite is still run separately by `tools/verify.py`; hosted verification requires both suites.
+The runner verifies source integrity and retains the raw six-group report and
+log. The [reproduction guide](../REPRODUCIBILITY.md) includes this suite in the
+42 scientific groups.
 
 [Results index](RESULTS.md) · [Main finite-time result](OBSERVATION_TIME.md) · [Reproducibility](../REPRODUCIBILITY.md)

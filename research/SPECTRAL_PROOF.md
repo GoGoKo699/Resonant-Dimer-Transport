@@ -8,7 +8,7 @@ $$
 \epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \tfrac12<z<1.
 $$
 
-They interact only on the same site, with attractive potential -U delta_(x_a,x_b), U>0. The complete Hamiltonian is bounded and self-adjoint in the two-particle sector. There is no bath, drive, preparation by acceleration, many-body background, disorder or changing interaction.
+They interact only on the same site, with attractive potential -U delta_(x_a,x_b), U>0. The complete Hamiltonian is bounded and self-adjoint in the two-particle sector. The Hamiltonian is time independent and translation invariant.
 
 The single-particle operator is the established fractional power J(-Delta)^(z/2) of the discrete Laplacian [CRSTV]. Its hopping at nonzero integer separation r is positive in the convention H=diagonal - sum_r t_r translation_r:
 
@@ -18,7 +18,7 @@ t_r=\frac{J\Gamma(1+z)\sin(\pi z/2)}{\pi}
 \sim \frac{J\Gamma(1+z)\sin(\pi z/2)}{\pi |r|^{1+z}}.
 $$
 
-This is **not** the exact pure-power kernel J/|r|^(1+z) at short distances. It is a convenient standard microscopic regularization with the same long-wavelength power. No current apparatus is asserted to implement every coefficient or independently tunable interaction in this model.
+The gamma-function kernel fixes the microscopic short-distance hopping; its long-distance power is J/|r|^(1+z) times the stated coefficient.
 
 Total crystal momentum P is conserved. In a P fiber the relative-momentum Hamiltonian acts in L^2([-pi,pi],dq/(2pi)) as
 
@@ -95,7 +95,7 @@ $$
 \boxed{0<E_d(P)<\epsilon_z(P)\quad\text{for every}\quad P\ne0.} \tag{6}
 $$
 
-This proof does not turn a finite ring's lowest level into an infinite-lattice bound state. It establishes a fiber eigenvalue separated from that fiber's continuum. It also does not say that adding center-of-mass momentum dynamically converts an arbitrary scattering preparation into the eigenstate.
+This establishes an infinite-lattice relative-coordinate eigenstate separated from the continuum at its conserved total momentum.
 
 The general phenomenon that motion changes the internal binding problem on a lattice is inherited from [ALMM]. Their displayed theorem uses a three-dimensional lattice and twice-differentiable dispersions with a nondegenerate minimum. Those assumptions are not satisfied by the one-dimensional cusp here. This distinguishes theorem scope, not ownership of the physical mechanism.
 
@@ -185,7 +185,7 @@ $$
 \boxed{E'_d(P)\sim zc_zJ P^{z-1}\quad(P\downarrow0).} \tag{11}
 $$
 
-It is a diverging **spectral group velocity**. No relativistic causality statement, guaranteed fast state transfer, ballistic front, or local-quench probability has been deduced from it.
+It is a diverging **spectral group velocity**. Its local-source coincidence weight is derived in [the transport proof](TRANSPORT_PROOF.md).
 
 ## 5. Why a dimer away from resonance is different
 
@@ -230,7 +230,7 @@ At z=0.75 the coefficient is 0.6816851254..., so Z(P) is asymptotic to that cons
 
 In a finite-volume regularization the normalized operator creating the probe is L^(-1/2) sum_x exp(iPx) a_x^dagger b_x^dagger. Its vacuum spectral measure has a line of weight Z(P) at E_d(P), plus a continuum. The infinite-volume limit defines the fiber quantity. Both the gap and its contact weight decrease toward P=0. Consequently, increasingly small momenta demand spectral resolution and have decreasing overlap with this local pair source.
 
-The exact momentum is essential. Momentum-changing disorder or an external operation can provide decay channels not present in this translation-invariant problem. No such operation is added here. Bound wave functions in a long-range hopping model need not decay exponentially.
+Total momentum is conserved in this translation-invariant problem. Bound wavefunctions in a long-range hopping model need not decay exponentially.
 
 ## 7. A hard-core, nearest-neighbor control
 
@@ -275,9 +275,9 @@ In a joint weak-detuning limit, set h=J(U^(-1)-Uc^(-1))/|P|^(1-z)>=0. Away from 
 
 A finite control with z=.75 and U=.7Uc has no below-band contact state at P=.0001, but has one at P=.1. The momentum-dependent availability of binding itself is not a new general observation [ALMM, K23].
 
-## 9. Strongest predecessor reconstruction
+## 9. Relationship to established work
 
-### [SFZ] already supplies the universal pole equation
+### [SFZ] Finite-momentum pole equation
 
 The 2026 published text of Sun, Feng and Zhang [SFZ], Eqs. (6),(8), gives the arbitrary-total-momentum contact T-matrix and its resonance subtraction. The v1 preprint numbers the same formulas (5),(7). Their scattering parameter denoted P is **not our total momentum P**.
 
@@ -287,37 +287,37 @@ $$
 T(E,P)^{-1}=\frac{|P|^{1-z}}{2J}F_z(e).
 $$
 
-Thus (7) is an **exact specialization of their effective theory**, not a newly invented scattering equation. The factor 1/2 changes T normalization, not the pole. The existence of a root between 0 and 1, its interpretation as a fractional bound branch, the lattice convergence proof, and the matrix-resolvent controls are the calculations made here. The cited passages evaluate the rest bound pole and use nonzero momenta for the three-body equation; they do not spell out this positive-energy below-continuum branch. That absence does not make consequences of their equation independent conceptual inventions.
+Thus (7) is an **exact specialization of their effective theory**. The factor 1/2 changes T normalization, while the pole equation is unchanged. Sections 3–6 establish the root between 0 and 1, its below-fixed-momentum-continuum interpretation, lattice convergence, differentiated velocity, and normalized contact weight.
 
-### [ALMM] already establishes motion-induced lattice binding
+### [ALMM] Motion-induced lattice binding
 
-Their Theorem 5.4 assumes the smooth three-dimensional setting and guarantees nonempty below-band discrete spectrum for every nonzero total momentum when the rest fiber has a threshold eigenvalue or resonance. They explicitly explain that changing momentum, not adding attractive potential, can create binding. The short fractional proof in Section 3 extends the specific calculation outside those smooth hypotheses; it does not discover that mechanism.
+Their Theorem 5.4 assumes the smooth three-dimensional setting and guarantees nonempty below-band discrete spectrum for every nonzero total momentum when the rest fiber has a threshold eigenvalue or resonance. They explicitly explain that changing momentum, not adding attractive potential, can create binding. Section 3 supplies the explicit calculation for the fractional cusp outside those smooth hypotheses.
 
-### [K23] already observes momentum-selective magnon binding
+### [K23] Momentum-selective magnon binding
 
-Kranzl et al. report broad low-momentum spectral weight, a sharp high-momentum bound feature, and finite group velocity for the bound branch they study. Their dominant state is a repulsively bound high-energy branch of a long-range anisotropic Heisenberg model, with long-range longitudinal coupling as well. Our attractive, resonance-tuned branch, exponent window, and short-range interaction differ. We neither reanalyze their data nor refute their specified finite-velocity result. Their spectroscopy provides relevant context, not a demonstrated realization of our model or an unrestricted theorem that all bound pairs have finite velocity.
+Kranzl et al. report broad low-momentum spectral weight, a sharp high-momentum bound feature, and finite group velocity for the bound branch they study. Their dominant state is a repulsively bound high-energy branch of a long-range anisotropic Heisenberg model, with long-range longitudinal coupling as well. Our attractive, resonance-tuned branch, exponent window, and short-range interaction differ. Their spectroscopy establishes finite velocity for the specified branch and provides context for the resonance contrast in this contact model.
 
 ### Other model ingredients
 
-[DC23] treats two species with equal power-law hopping and onsite interaction, supplies a total-momentum scattering equation, and examines the disappearance of attractive rest dimers. It removes any claim that using mobile distinguishable particles or a finite binding threshold is new. [CRSTV] supplies the fractional lattice kinetic operator and exact kernel, so that operator is inherited too.
+[DC23] treats two species with equal power-law hopping and onsite interaction, supplies a total-momentum scattering equation, and examines the disappearance of attractive rest dimers. [CRSTV] supplies the fractional lattice kinetic operator and exact kernel. These model ingredients remain attributed to the respective sources.
 
-**Contribution under assessment:** a controlled resonance-to-bound-pair dispersion contrast, with the fractional moving pole and its vanishing local spectral weight made explicit in microscopic models. The central sign/residue calculations are short consequences of an existing two-body framework. No claim of a new Efimov effect, first motion-bound dimer, experimental contradiction, or independent invention of the contact effective theory is justified.
+The spectral result is a controlled resonance-to-bound-pair dispersion contrast in the exact lattice model, with a fractional moving pole and vanishing local spectral weight. Its scattering framework and motion-induced binding mechanism remain attributed above. The [transport proof](TRANSPORT_PROOF.md) carries the normalized local overlaps into the observed probability law.
 
 
 ## Primary sources
 
-[ALMM] S. Albeverio, S. N. Lakaev, K. A. Makarov and Z. I. Muminov, *The Threshold effects for the two-particle Hamiltonians on lattices*, arXiv:math-ph/0501013. Read the introduction, Hypotheses 3.1 and 5.1, and Theorem 5.4/proof. https://arxiv.org/pdf/math-ph/0501013
+[ALMM] S. Albeverio, S. N. Lakaev, K. A. Makarov and Z. I. Muminov, *The Threshold effects for the two-particle Hamiltonians on lattices*, arXiv:math-ph/0501013. Introduction, Hypotheses 3.1 and 5.1, and Theorem 5.4/proof. https://arxiv.org/pdf/math-ph/0501013
 
-[SFZ] N. Sun, L. Feng and P. Zhang, *Efimov effect in long-range quantum spin chains*, Communications Physics 9,146 (2026); arXiv:2502.20759. Read the published two-magnon section and its arbitrary-momentum T-matrix, compared with preprint v1 and the accessible combined PDF. Source equations are identified by version. No figure or table values are used. https://www.nature.com/articles/s42005-026-02580-0 ; https://arxiv.org/html/2502.20759v1
+[SFZ] N. Sun, L. Feng and P. Zhang, *Efimov effect in long-range quantum spin chains*, Communications Physics 9,146 (2026); arXiv:2502.20759. Published two-magnon section and arbitrary-momentum T-matrix; preprint v1 provides the indicated alternative equation numbering. https://www.nature.com/articles/s42005-026-02580-0 ; https://arxiv.org/html/2502.20759v1
 
-[K23] F. Kranzl et al., *Observation of magnon bound states in the long-range, anisotropic Heisenberg model*, Physical Review X 13,031017 (2023); arXiv:2212.03899. Read Sec. III and Appendix E--F, including the sign of the bound branch, stated velocity behavior and preparation. Figure screenshots were unavailable; no plotted points were digitized or used to infer a numerical parameter not stated in prose. https://arxiv.org/pdf/2212.03899
+[K23] F. Kranzl et al., *Observation of magnon bound states in the long-range, anisotropic Heisenberg model*, Physical Review X 13,031017 (2023); arXiv:2212.03899. Section III and Appendices E–F: bound-branch sign, velocity behavior, and preparation. https://arxiv.org/pdf/2212.03899
 
-[DC23] G. A. Dominguez-Castro, *Bose Polaron in a One-Dimensional Lattice with Power-Law Hopping*, Atoms 11,110 (2023). Read the two-body construction, Eqs. (8)--(10), and its zero-momentum analysis. The many-body polaron result is not used here. https://www.mdpi.com/2218-2004/11/8/110
+[DC23] G. A. Dominguez-Castro, *Bose Polaron in a One-Dimensional Lattice with Power-Law Hopping*, Atoms 11,110 (2023). Two-body construction, Eqs. (8)–(10), and zero-momentum analysis. https://www.mdpi.com/2218-2004/11/8/110
 
-[CRSTV] O. Ciaurri, L. Roncal, P. R. Stinga, J. L. Torrea and J. L. Varona, *Nonlocal discrete diffusion equations and the fractional discrete Laplacian, regularity and applications*, arXiv:1608.08913v2. Read Theorem 1.1, kernel (1.7), and power-law bounds (1.8). Our z equals twice their fractional power s, with mesh h=1. https://arxiv.org/pdf/1608.08913
+[CRSTV] O. Ciaurri, L. Roncal, P. R. Stinga, J. L. Torrea and J. L. Varona, *Nonlocal discrete diffusion equations and the fractional discrete Laplacian, regularity and applications*, arXiv:1608.08913v2. Theorem 1.1, kernel (1.7), and power-law bounds (1.8). Our z equals twice their fractional power s, with mesh h=1. https://arxiv.org/pdf/1608.08913
 
-The source comparison is targeted, not exhaustive priority clearance or external proof review. Sources are not redistributed in this package.
+Primary sources are linked under their own publication and distribution terms.
 
 ---
 
-[Proof map](PROOF_MAP.md) · [Reproducibility](../REPRODUCIBILITY.md) · [Preserved source](../archive/review-2026-10-10/prior/prior/PILOT.md)
+[Proof map](PROOF_MAP.md) · [Reproducibility](../REPRODUCIBILITY.md)

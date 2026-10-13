@@ -24,7 +24,7 @@ Two distinguishable particles on the infinite one-dimensional lattice have dispe
 
 The limiting coincidence-velocity measure is the pushforward of Z(P)^2 dP/(2 pi) by E_d'(P). Here Z is the contact probability in the normalized relative bound state. The conserved bound-sector population instead involves one Z. At resonance the coincidence tail exponent is (4z - 1)/(1 - z), equal to 8 at z = 3/4. At each fixed stronger attraction the limiting velocity support is bounded. Define delta = J (Uc^(-1) - U^(-1)) > 0, where Uc is the rest-binding threshold. Near resonance, the global cutoff scales as J/delta and its near-cutoff coincidence weight as delta^((4z - 1)/(1 - z)).
 
-The resonant tail takes the infinite lattice first, then long time at fixed velocity, then high velocity. Finite-time spatial tails and unbounded limiting velocity support are different statements. The separate observation-time theorem gives a sufficient simultaneous regime, not a necessary or optimal waiting time or an interval-certified operating window. The preparation-size statement concerns optimal relative-support overlap, not a loading protocol. Attribution is part of the scientific account.
+The resonant tail takes the infinite lattice first, then long time at fixed velocity, then high velocity. Finite-time spatial tails and unbounded limiting velocity support are different statements. The observation-time theorem gives a sufficient simultaneous regime for relative accuracy, with constants depending on the fixed exponent, cutoff fraction, and accuracy. The preparation-size statement concerns optimal fiberwise relative-support overlap rather than loading dynamics. Attribution is part of the scientific account.
 
 ## Authoritative reading route
 
@@ -42,7 +42,7 @@ The resonant tail takes the infinite lattice first, then long time at fixed velo
 - [Boundary resolvent](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/BOUNDARY_RESOLVENT.md): cusp, smooth-maximum, and principal-value estimates.
 - [Alternative time estimate](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/ALTERNATIVE_TIME_BOUND.md): independent conservative proof route.
 - [Proof map](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/PROOF_MAP.md): complete dependencies.
-- [Contribution assessment](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/CONTRIBUTION.md): inherited framework and scoped contribution.
+- [Contribution and attribution](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/research/CONTRIBUTION.md): established ingredients and measurement-specific results.
 - [Reproducibility](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/REPRODUCIBILITY.md): 42 scientific groups, eight infrastructure checks, and source/report integrity.
 
 ## Selected tutorial
@@ -52,7 +52,7 @@ E. N. Economou, Green's Functions in Quantum Physics, third edition, Springer Se
 ## Repository maintenance
 
 - [Agent instructions](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/AGENTS.md): repository scope, source preservation, and guarded changes.
-- [Current scope](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/CURRENT.md): ongoing scientific-record maintenance.
+- [Maintenance context](https://github.com/GoGoKo699/Resonant-Dimer-Transport/blob/main/CURRENT.md): scientific distinctions and repository authority.
 
 ## Purpose and contact
 

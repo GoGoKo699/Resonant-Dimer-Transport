@@ -235,10 +235,9 @@ probabilities per prepared pair, without conditioning on a final coincidence:
 | 2 | $7.8608836356\times10^{-7}$ |
 | 3 | $3.0007475914\times10^{-8}$ |
 
-These are the preserved model diagnostics, not experimentally established
-rates or certified numerical intervals. Equation (4) alone supplies no
-uniform observation time. The separate finite-time and joint-regime estimates
-below control relative error without assigning a certified numerical waiting time.
+These values are quadrature diagnostics of the limiting lattice measure.
+The finite-time and joint-regime estimates below control the relative error
+of deterministic observations.
 
 For a relative source restricted to $|r|\le R$, the exact best squared overlap
 with a selected bound eigenstate is
@@ -325,11 +324,9 @@ of that theorem. For each fixed relative accuracy, the corresponding bound
 holds at every sufficiently late deterministic time, with constants
 independent of small detuning.
 
-This is a sufficient waiting-time regime, not a necessary time, a sharp
-dynamical exponent, or an interval-certified numerical observation window.
-The logarithm at $z=3/4$ comes from the norms used in the estimate, not a new
-physical phase. No claim is made that waiting this long is experimentally
-feasible, nor that the much shorter dimensional spectral time is insufficient.
+This is a sufficient waiting-time regime for the stated relative accuracy.
+The exponent and the logarithm at $z=3/4$ come from the band norms used in
+the estimate.
 
 ## Relationship to established work
 

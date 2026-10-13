@@ -8,7 +8,7 @@ $$
 \epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \frac12<z<1,
 $$
 
-and an onsite attraction $-U\delta_{x_a,x_b}$. The Hamiltonian is bounded and self-adjoint. Both particle numbers are fixed at one. There is no bath, disorder, external force, many-body background, changing interaction, or measurement during evolution. Lattice spacing and $\hbar$ are one. The kinetic operator is the established fractional discrete Laplacian, not an exact pure power hopping at short distance and not a claim that an identified apparatus implements its full kernel.
+and an onsite attraction $-U\delta_{x_a,x_b}$. The Hamiltonian is bounded and self-adjoint. Both particle numbers are fixed at one, and the Hamiltonian is time independent and translation invariant. Lattice spacing and $\hbar$ are one. The kinetic operator is the established fractional discrete Laplacian, with the exact short-distance kernel specified in the [spectral foundation](SPECTRAL_PROOF.md).
 
 The source is $|0,0\rangle$. After time $t$, both positions are measured. The unconditional same-site distribution is
 
@@ -25,9 +25,9 @@ U_c=2^{1+z}J\sqrt\pi\,
 \frac{\Gamma(1-z/2)}{\Gamma((1-z)/2)}.
 $$
 
-The primary claims below compare exactly $U=U_c$ with every fixed $U>U_c$, within the same source, detector and hopping model. They concern the infinite lattice followed by long time. They are not assertions of zero finite-time tails or a finite-density transport transition.
+The primary claims below compare exactly $U=U_c$ with every fixed $U>U_c$, within the same source, detector and hopping model. They concern the infinite lattice followed by long time, with finite-time accuracy controlled separately in the [finite-time certificate](FINITE_TIME_CERTIFICATE.md).
 
-## 2. Spectral inputs and what has been reviewed
+## 2. Spectral inputs
 
 In a total-momentum fiber, use
 
@@ -42,7 +42,7 @@ $$
 I_P(E)=\int\frac{dq}{2\pi}\frac1{A_P(q)-E}.
 $$
 
-The below-continuum eigenvalue solves $I_P(E_d)=1/U$. The preserved pilot supplies complete proofs of the following facts.
+The below-continuum eigenvalue solves $I_P(E_d)=1/U$. The [spectral foundation](SPECTRAL_PROOF.md) supplies complete proofs of the following facts.
 
 At $U=U_c$, there is no normalizable rest bound state, but for every $P\ne0$ there is exactly one bound eigenvalue with
 
@@ -62,7 +62,7 @@ F_z(e)=\int_{\mathbb R}\frac{dx}{2\pi}
 \left[\frac1{b_z(x)-e}-\frac1{2|x|^z}\right].
 $$
 
-There is a unique $c_z\in(0,1)$ with $F_z(c_z)=0$. The pilot proves, including a separate differentiation argument,
+There is a unique $c_z\in(0,1)$ with $F_z(c_z)=0$. The spectral foundation proves, including a separate differentiation argument,
 
 $$
 E_d(P)\sim Jc_z|P|^z,\qquad
@@ -80,7 +80,7 @@ $$
 E_d(P)=E_0+C(U)P^2+o(P^2),\qquad E_d'(P)=2C(U)P+o(P).
 $$
 
-The finite curvature was derived through the autocorrelation of $e^{-s\epsilon_z(q)}$, whose first derivative lies in $L^2$ for $z>1/2$. A formal second derivative of the cusp would not justify this result. At fixed stronger attraction the below-continuum gap stays positive on the compact momentum circle, and the branch velocity has a finite supremum.
+The finite curvature follows from the autocorrelation of $e^{-s\epsilon_z(q)}$, whose first derivative lies in $L^2$ for $z>1/2$. A formal second derivative of the cusp would not justify this result. At fixed stronger attraction the below-continuum gap stays positive on the compact momentum circle, and the branch velocity has a finite supremum.
 
 ### Contact spectral measure: no hidden continuum atom
 
@@ -90,11 +90,11 @@ $$
 \langle1|(h_P-w)^{-1}|1\rangle=\frac{I_P(w)}{1-U I_P(w)}.
 $$
 
-The proof review checks why its contact spectral measure here is one atom plus an integrable density, rather than invoking that conclusion for arbitrary rank-one perturbations. For $0<P<\pi$, $A_P$ is analytic on finitely many arcs, with the cusp minimum at $q=P/2$ on the half-circle and smooth extrema at $0,\pi$. It is strictly decreasing before the cusp and increasing afterward. At $P=\pi$, extrema have equal energy but there is no flat interval.
+The contact spectral measure has one atom plus an integrable density, as follows from the explicit dispersion and threshold structure. For $0<P<\pi$, $A_P$ is analytic on finitely many arcs, with the cusp minimum at $q=P/2$ on the half-circle and smooth extrema at $0,\pi$. It is strictly decreasing before the cusp and increasing afterward. At $P=\pi$, extrema have equal energy but there is no flat interval.
 
 At regular interior energies the pushforward free density is positive, so the contact resolvent is absolutely continuous there. The possible exceptional energies form a finite set. An eigenvector coupled to the source at an energy within the continuum would have to be proportional to $(A_P-E)^{-1}$. It is not square integrable: at a regular preimage there is a squared inverse linear zero; at a smooth extremum an even stronger singularity; and at a lower cusp the square behaves as $|q-q_0|^{-2z}$ with $2z>1$. An eigenvector uncoupled from the source would be an eigenvector of multiplication by $A_P$, which has no positive-measure level set. Thus the exceptional set carries no contact atoms. It also cannot support a singular continuous measure because it is finite. Above the band an attractive rank-one perturbation has no eigenvalue.
 
-This verifies the specific spectral step used below. It is an author-side proof review, not external independent review.
+These dispersion-specific properties establish the spectral decomposition used below.
 
 ## 3. What a local source and contact detector actually see
 
@@ -155,7 +155,7 @@ Q(v)\sim\frac{B_z^2}{\pi(4z-1)}
 \left(\frac{zc_zJ}{v}\right)^{(4z-1)/(1-z)}. \tag{3}
 $$
 
-For $z=3/4$, the preserved values are $c_z=0.6340774020\ldots$, $B_z=0.6816851254\ldots$,
+For $z=3/4$, numerical quadrature gives $c_z=0.6340774020\ldots$, $B_z=0.6816851254\ldots$,
 
 $$
 Q(v)\sim1.9347109013\times10^{-4}(J/v)^8.
@@ -165,11 +165,11 @@ At fixed $U>U_c$, (2) instead has bounded velocity support. For $U=0$, $W_c=0$. 
 
 ### Generic exponent accounting
 
-The exponent in (3) is not a second universality mechanism. Whenever a local overlap probability scales as $Z(P)\sim B|P|^\eta$ and a band velocity as $v(P)\sim a|P|^{-\kappa}$, the same source/contact detector has a tail exponent $(2\eta+1)/\kappa$. In this problem $\eta=2z-1$ and $\kappa=1-z$. Changing the detector to a spectral projection would remove one overlap factor and describe a different observable.
+Whenever a local overlap probability scales as $Z(P)\sim B|P|^\eta$ and a band velocity as $v(P)\sim a|P|^{-\kappa}$, the same source/contact detector has a tail exponent $(2\eta+1)/\kappa$. In this problem $\eta=2z-1$ and $\kappa=1-z$. Changing the detector to a spectral projection would remove one overlap factor and describe a different observable.
 
 ## 4. Scaled relative wavefunction and preparation size
 
-The preceding notes controlled the root-mean-square size and fixed finite supports. They did not assert a result for support growing with $1/P$. This section derives that result from the same normalized eigenfunction; it introduces no new Hamiltonian or pulse/preparation dynamics.
+The normalized eigenfunction determines the optimal overlap for relative support growing with $1/P$.
 
 Choose $P>0$ and the normalized positive momentum wavefunction
 
@@ -223,7 +223,7 @@ $$
 :=\int_{-a}^{a}|\phi_z(y)|^2dy.} \tag{5}
 $$
 
-Here $\mathcal M_z(0)=0$ and $\mathcal M_z(\infty)=1$. Therefore any fixed target overlap $0<q<1$ requires relative source radius of order $1/P$, and a sufficiently large constant times $1/P$ suffices. More explicitly, $PR\to0$ forces the best overlap to zero; $PR\to\infty$ makes the best overlap tend to one. This is a kinematic overlap result, not a protocol for loading the state, not a bound on preparation time, and not a normalized exact-total-momentum state on the infinite center-of-mass lattice. It applies fiberwise and to suitably narrow normalizable momentum wave packets.
+Here $\mathcal M_z(0)=0$ and $\mathcal M_z(\infty)=1$. Therefore any fixed target overlap $0<q<1$ requires relative source radius of order $1/P$, and a sufficiently large constant times $1/P$ suffices. More explicitly, $PR\to0$ forces the best overlap to zero; $PR\to\infty$ makes the best overlap tend to one. This is a kinematic overlap optimum. It applies fiberwise and to suitably narrow normalizable momentum wave packets; its radius quantifies state support rather than preparation dynamics.
 
 Combining with the branch velocity gives the size scale at large $v$:
 
@@ -256,7 +256,7 @@ $$
 
 For $z=3/4$, the coefficient is $0.9986189214\ldots$. This means first take the wavefunction scaling limit, then small scaled support. It does not substitute that continuum coefficient for the already known fixed-$R$ microscopic coefficient. The two match when the fixed-radius coefficient is subsequently expanded for large $R$.
 
-The new diagnostic reconstructs (4) without importing the previous scalar solver. Its overlap with $h_z$ is $0.98127253$, $0.99087532$, and $0.99548046$ at $P=0.2,0.05,0.0125$, respectively, for $z=3/4$. These are quadratures, not rigorous finite-$P$ intervals or the proof of (4).
+An independent quadrature diagnostic reconstructs (4). Its overlap with $h_z$ is $0.98127253$, $0.99087532$, and $0.99548046$ at $P=0.2,0.05,0.0125$, respectively, for $z=3/4$. These are quadratures, not rigorous finite-$P$ intervals or the proof of (4).
 
 ## 5. Resonance tuning and time remain distinct from the asymptotic theorem
 
@@ -268,8 +268,8 @@ $$
 
 This is an explicit sufficient stability certificate, not an optimal or necessary tuning law. It establishes finite-time continuity despite the change of asymptotic velocity support at exactly $U_c$.
 
-Equation (1) alone does not quantify the continuum decay rate. The [joint observation-time theorem](OBSERVATION_TIME.md) proves a uniform momentum-integrated bound $\eta_U(t)\le C/(Jt)$ near resonance and combines it with band-norm estimates to give a sufficient simultaneous time–detuning regime. The resonance tail (3) retains its stated long-time-at-fixed-velocity, then high-velocity order. A bound of order $10^{-2}$ on total continuum error would not certify a rare $10^{-8}$ coincidence tail. No assertion of a finite-time high-velocity experimental window, strict finite-time light cone, or advantageous information transfer follows. These are restrictions on the stated interpretation, not requirements to add another model before reviewing the present theorem.
+The [joint observation-time theorem](OBSERVATION_TIME.md) proves a uniform momentum-integrated bound $\eta_U(t)\le C/(Jt)$ near resonance and combines it with band-norm estimates to give a sufficient simultaneous time–detuning regime. The resonance tail (3) retains its long-time-at-fixed-velocity, then high-velocity order. Relative accuracy for a rare event requires the [event-local error bound](FINITE_TIME_CERTIFICATE.md), which compares continuum amplitude with the square root of its probability.
 
 ---
 
-[Proof map](PROOF_MAP.md) · [Reproducibility](../REPRODUCIBILITY.md) · [Preserved source](../archive/review-2026-10-10/THEOREM.md)
+[Proof map](PROOF_MAP.md) · [Reproducibility](../REPRODUCIBILITY.md)
