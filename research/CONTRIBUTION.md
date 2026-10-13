@@ -44,9 +44,10 @@ The pole equation, local-pair observation, and motion-induced binding remain
 attributed to the sources above. The high-speed coincidence events are rare,
 and their internal preparation radius grows with velocity. The resonance
 velocity tail takes long time at fixed velocity before high velocity; the
-joint theorem states its own simultaneous sufficient regime. Fixed-support
-overlap and the sharp-event error bound concern the specified preparation
-and detector. The [proof map](PROOF_MAP.md) locates each complete derivation.
+joint theorem states its own simultaneous sufficient regime. The support
+result is a fiberwise overlap optimum; the sharp-event error bound retains
+the onsite source and same-site detector. The [proof map](PROOF_MAP.md)
+locates each complete derivation.
 
 ---
 
