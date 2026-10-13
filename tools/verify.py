@@ -5,9 +5,9 @@ import argparse,hashlib,json,os,re,subprocess,sys,math
 from pathlib import Path,PurePosixPath
 sys.dont_write_bytecode=True
 ROOT=Path(__file__).resolve().parents[1]
-ARCHIVE=ROOT/'archive/review-2026-10-10'
-sys.path.insert(0,str(ROOT/'tools'))
-import build_reading
+FOUNDATIONAL=(('spectral','tools/check_spectral.py','evidence/spectral.json'),
+              ('transport','tools/check_transport.py','evidence/transport.json'),
+              ('review','tools/check_review.py','evidence/review.json'))
 
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def inventory(root=ROOT):
@@ -27,35 +27,38 @@ def member(base,name):
  return p
 
 def static_checks():
- spec=json.loads((ROOT/'maintenance/SOURCE_IMPORT.json').read_text())
- if sha(ARCHIVE/'MANIFEST.json')!=spec['manifest_sha256']:raise ValueError('Changed root source manifest')
- manifest=json.loads((ARCHIVE/'MANIFEST.json').read_text())
- if set(inventory(ARCHIVE))!=set(manifest)|{'MANIFEST.json'}:raise ValueError('Archive membership mismatch')
- checked=[]
- for m in sorted(ARCHIVE.rglob('MANIFEST.json')):
-  data=json.loads(m.read_text())
-  for name,ref in data.items():
-   p=member(m.parent,name)
-   if sha(p)!=ref['sha256'] or p.stat().st_size!=ref['bytes']:raise ValueError('Archived bytes changed: '+str(p))
-  checked.append({'path':str(m.relative_to(ARCHIVE)),'members':len(data)})
- if len(inventory(ARCHIVE))!=77 or len(checked)!=3:raise ValueError('Source counts changed')
+ spec=json.loads((ROOT/'maintenance/SOURCE_INTEGRITY.json').read_text())
+ if spec['repository']!='GoGoKo699/Resonant-Dimer-Transport':raise ValueError('Unexpected source repository')
+ if (ROOT/'archive').exists():raise ValueError('Unexpected archive directory')
+ sources=spec['files']
+ required={p for _,script,reference in FOUNDATIONAL for p in (script,reference)}
+ required.update(('LICENSE','tools/dimer.py','tools/transport.py','tools/check_endpoint.py',
+                  'tools/check_detuning.py','tools/check_finite_time.py','tools/check_observation_time.py',
+                  'tools/alternative_time/finite_time.py','tools/alternative_time/check_finite_time.py',
+                  'research/ALTERNATIVE_TIME_PROOF.md'))
+ reading={str(p.relative_to(ROOT)) for p in (ROOT/'research').glob('*.md')}
+ if not (required|reading)<=sources.keys():raise ValueError('Missing scientific integrity record')
+ active={str(p.relative_to(ROOT)) for folder,pattern in (('tools','*.py'),('research','*.md'),('evidence','*.json'))
+         for p in (ROOT/folder).rglob(pattern)}
+ active.update(('LICENSE','requirements.txt','requirements-figures.txt',
+                'figures/coincidence_tail.json','figures/coincidence_tail.svg'))
+ if sources.keys()!=active:raise ValueError('Scientific integrity coverage mismatch: '+str(sorted(sources.keys()^active)))
+ for name,ref in sources.items():
+  p=member(ROOT,name)
+  if sha(p)!=ref['sha256'] or p.stat().st_size!=ref['bytes']:raise ValueError('Source bytes changed: '+name)
  if sha(ROOT/'LICENSE')!=spec['license_sha256']:raise ValueError('License changed')
- for name,data in build_reading.expected().items():
-  if (ROOT/name).read_bytes()!=data:raise ValueError('Generated reading mismatch: '+name)
  links=0
  for p in ROOT.rglob('*.md'):
-  if p.is_relative_to(ARCHIVE) or '.git' in p.parts:continue
+  if '.git' in p.parts:continue
   link_base=p.parent
-  if p==ROOT/'archive/coarse-time-2026-10-10/research/FINITE_TIME.md':
-   # Preserve original proof bytes; validate links in their original context.
-   link_base=ROOT/'research'
   for target in re.findall(r'\[[^\]\n]*\]\(([^\s)]+)\)',p.read_text()):
    target=target.split('#',1)[0]
    if not target or re.match(r'^[a-zA-Z][\w+.-]*:',target):continue
    link=(link_base/target).resolve()
    if not link.is_relative_to(ROOT) or not link.exists():raise ValueError('Broken reading link: '+str(p)+' '+target)
    links+=1
- return {'archive_files':77,'manifests':checked,'generated_pages':4,'local_links':links,'license_unchanged':True}
+ return {'integrity_files':len(sources),'research_pages':len(reading),'canonical_reports':3,
+         'local_links':links,'license_unchanged':True}
 
 def differences(a,b,path=''):
  out=[]
@@ -87,9 +90,15 @@ def main():
  with (out/'infrastructure.log').open('xb') as log:
   infra=subprocess.run([sys.executable,str(ROOT/'tools/check_repository.py'),'--output',str(out/'infrastructure.json')],
     cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT,timeout=120)
- with (out/'scientific.log').open('xb') as log:
-  science=subprocess.run([sys.executable,str(ARCHIVE/'verify.py'),'--output-dir',str(out/'scientific')],
-    cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT,timeout=900)
+ scientific=out/'scientific';scientific.mkdir();foundational=[]
+ for name,script,_ in FOUNDATIONAL:
+  report_path=scientific/(name+'.json')
+  with (scientific/(name+'.log')).open('xb') as log:
+   result=subprocess.run([sys.executable,str(ROOT/script),'--output',str(report_path)],
+     cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT,timeout=300)
+  data=json.loads(report_path.read_text()) if report_path.exists() else {}
+  foundational.append({'name':name,'returncode':result.returncode,'groups':data.get('test_groups',0),
+                       'assertions_pass':result.returncode==0 and data.get('status')=='PASS' and data.get('test_groups')==5})
  with (out/'endpoint.log').open('xb') as log:
   endpoint=subprocess.run([sys.executable,str(ROOT/'tools/check_endpoint.py'),'--output',str(out/'endpoint.json')],
     cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT,timeout=120)
@@ -114,10 +123,11 @@ def main():
  observation_path=out/'observation_time.json'
  observation_report=json.loads(observation_path.read_text()) if observation_path.exists() else {}
  observation_ok=observation_time.returncode==0 and observation_report.get('status')=='PASS' and observation_report.get('test_groups')==5
- path=out/'scientific/receipt.json';receipt=json.loads(path.read_text()) if path.exists() else {}
+ receipt={'all_assertions_pass':all(r['assertions_pass'] for r in foundational),
+          'scientific_groups':sum(r['groups'] for r in foundational)}
  comparisons=[]
- for name,reference,generated in [('review','evidence/final.json','review.json'),('transport','prior/evidence/final3.json','preserved/transport.json'),('pilot','prior/prior/evidence/first.json','preserved/pilot.json')]:
-  new=out/'scientific'/generated;ref=ARCHIVE/reference
+ for name,_,reference in FOUNDATIONAL:
+  generated=name+'.json';new=scientific/generated;ref=ROOT/reference
   diff=differences(json.loads(ref.read_text()),json.loads(new.read_text())) if new.exists() else [{'kind':'missing'}]
   comparisons.append({'suite':name,'reference':reference,'report':generated,'byte_identical':new.exists() and new.read_bytes()==ref.read_bytes(),'differences':diff})
  all_diff=[d for c in comparisons for d in c['differences']]
@@ -125,7 +135,7 @@ def main():
  numeric=bool(all_diff) and all(d.get('kind')=='numeric' for d in all_diff)
  preserved_assertions=receipt.get('all_assertions_pass') is True and receipt.get('scientific_groups')==15
  assertions=preserved_assertions and endpoint_ok and detuning_ok and finite_time_ok and observation_ok
- unchanged=before==inventory() and receipt.get('source_unchanged') is True
+ unchanged=before==inventory()
  report_ok=identical or (args.allow_numeric_report_differences and numeric)
  passed=infra.returncode==0 and assertions and unchanged and report_ok
  report={'status':('PASS' if identical else 'PASS_REQUIRES_NUMERIC_REVIEW') if passed else 'FAIL',
@@ -141,7 +151,7 @@ def main():
   'finite_time_returncode':finite_time.returncode,
   'observation_time_scientific_groups':observation_report.get('test_groups'),'observation_time_assertions_pass':observation_ok,
   'observation_time_returncode':observation_time.returncode,
-  'scientific_assertions_pass':assertions,'original_wrapper_returncode':science.returncode,
+  'scientific_assertions_pass':assertions,'foundational_runs':foundational,
   'all_canonical_reports_byte_identical':identical,'report_comparisons':comparisons,
   'numeric_report_review_required':not identical,'allow_numeric_report_differences':args.allow_numeric_report_differences,
   'source_unchanged':unchanged,'source_files':len(before),'source_sha256':before,

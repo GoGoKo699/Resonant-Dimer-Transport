@@ -11,8 +11,7 @@ import warnings
 
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'archive/review-2026-10-10/prior/prior'))
-import dimer  # Explicitly reused representation; no archived code is changed.
+import dimer
 import numpy as np
 from scipy.integrate import IntegrationWarning, quad
 warnings.simplefilter('error', IntegrationWarning)

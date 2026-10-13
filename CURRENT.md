@@ -1,7 +1,5 @@
 # Repository maintenance
 
-A separate workspace is not required. The repository is the persistent scientific record and can be maintained from the existing Chat.
-
 ## Repository scope
 
 Maintain the research account, proofs, attribution, numerical checks, and verification records. Keep editorial planning outside the scientific reading route.
@@ -19,4 +17,4 @@ Further changes should reconcile a specific scientific issue or incorporate an e
 
 The user authorizes modifications and merge only in `GoGoKo699/Resonant-Dimer-Transport`. This permission does not transfer to another repository. Before writing, inspect live main and open changes; preserve concurrent work. Use a feature branch, verify the actual proposed head, merge with an expected-head guard, and verify merged main separately.
 
-Follow `AGENTS.md` and `REPRODUCIBILITY.md`. Preserve the immutable source archives, scientific assertions, numerical tolerances, canonical reports, and license. These live instructions govern maintenance.
+Follow `AGENTS.md` and `REPRODUCIBILITY.md`. Preserve the scientific source integrity, assertions, numerical tolerances, canonical reports, and license. These live instructions govern maintenance.

@@ -1,0 +1,335 @@
+{
+  "canonical_reports": {
+    "review": "evidence/review.json",
+    "spectral": "evidence/spectral.json",
+    "transport": "evidence/transport.json"
+  },
+  "files": {
+    "LICENSE": {
+      "bytes": 1065,
+      "change": "none",
+      "sha256": "a92600540b1ab7a18301e2632a29334b3df227ad836e88df9967d69e3c86db66",
+      "source_path": "LICENSE",
+      "source_sha256": "a92600540b1ab7a18301e2632a29334b3df227ad836e88df9967d69e3c86db66"
+    },
+    "evidence/review.json": {
+      "bytes": 5916,
+      "change": "none",
+      "sha256": "cf506fee76d761884939cacce6fee7b1ead550efcf050e5c79ecca1af7645cb0",
+      "source_path": "archive/review-2026-10-10/evidence/final.json",
+      "source_sha256": "cf506fee76d761884939cacce6fee7b1ead550efcf050e5c79ecca1af7645cb0"
+    },
+    "evidence/spectral.json": {
+      "bytes": 7643,
+      "change": "none",
+      "sha256": "4f222922d100239b7645ce2d873b799667d025fc300961e87c4da48e22f45339",
+      "source_path": "archive/review-2026-10-10/prior/prior/evidence/first.json",
+      "source_sha256": "4f222922d100239b7645ce2d873b799667d025fc300961e87c4da48e22f45339"
+    },
+    "evidence/transport.json": {
+      "bytes": 7740,
+      "change": "none",
+      "sha256": "c7be807df6757046fca0506c608b9110c62a7636b75ae597b76fc1cdf23a2a19",
+      "source_path": "archive/review-2026-10-10/prior/evidence/final3.json",
+      "source_sha256": "c7be807df6757046fca0506c608b9110c62a7636b75ae597b76fc1cdf23a2a19"
+    },
+    "figures/coincidence_tail.json": {
+      "bytes": 58985,
+      "change": "source path and hash metadata",
+      "sha256": "639014a6baf6cb986c55a777f19c036015ac0eb211280043df113202ce4146a7",
+      "source_path": "figures/coincidence_tail.json",
+      "source_sha256": "559eb94c76d4750e282d2de1ab8298ec95f87a3722b6f1e826006c2080362a19"
+    },
+    "figures/coincidence_tail.svg": {
+      "bytes": 68378,
+      "change": "none",
+      "sha256": "2a628fa9c53f0adab67c2aab232644d04dea50f5965e9fa1efef662d9e53f523",
+      "source_path": "figures/coincidence_tail.svg",
+      "source_sha256": "2a628fa9c53f0adab67c2aab232644d04dea50f5965e9fa1efef662d9e53f523"
+    },
+    "requirements-figures.txt": {
+      "bytes": 116,
+      "change": "none",
+      "sha256": "4493ff9e31ec090804d7416149bed22d3d4365884f17b4f2183d02cd0d4a0748",
+      "source_path": "requirements-figures.txt",
+      "source_sha256": "4493ff9e31ec090804d7416149bed22d3d4365884f17b4f2183d02cd0d4a0748"
+    },
+    "requirements.txt": {
+      "bytes": 121,
+      "change": "none",
+      "sha256": "c6f6e6d3e1c9b1afe3705187c39ee448eea666269ef88b7036747ca7d6279f19",
+      "source_path": "requirements.txt",
+      "source_sha256": "c6f6e6d3e1c9b1afe3705187c39ee448eea666269ef88b7036747ca7d6279f19"
+    },
+    "research/ALTERNATIVE_TIME_BOUND.md": {
+      "bytes": 2631,
+      "change": "proof links",
+      "sha256": "63ce8e379651f428e5186004d93404779e31140d7345066a922164efa5ad246c",
+      "source_path": "research/ALTERNATIVE_TIME_BOUND.md",
+      "source_sha256": "f772ff72dd386b5495cf0bc5bada9d2a0469947cc44b0deac3f7968f686b8235"
+    },
+    "research/ALTERNATIVE_TIME_PROOF.md": {
+      "bytes": 18975,
+      "change": "rendering and links",
+      "sha256": "77d25e06c66293366c0b3733416c5509bf78f6d8cc3c142332035ea674b8868a",
+      "source_path": "archive/coarse-time-2026-10-10/research/FINITE_TIME.md",
+      "source_sha256": "eca48b286976e8b1e5863db76163bc99b60f3a0fcd864bafd812787668261cd5"
+    },
+    "research/AUTHOR_ACCOUNT.md": {
+      "bytes": 19114,
+      "change": "none",
+      "sha256": "8a075962c03b91c6c467e9523b973e85d6104f7721f567217cccd65b908e68fd",
+      "source_path": "research/AUTHOR_ACCOUNT.md",
+      "source_sha256": "8a075962c03b91c6c467e9523b973e85d6104f7721f567217cccd65b908e68fd"
+    },
+    "research/BOUNDARY_RESOLVENT.md": {
+      "bytes": 12478,
+      "change": "none",
+      "sha256": "ba1fdaa75b922133455fb0a42f532b4c1a217d9e5e95400e1f256e85f2af30a5",
+      "source_path": "research/BOUNDARY_RESOLVENT.md",
+      "source_sha256": "ba1fdaa75b922133455fb0a42f532b4c1a217d9e5e95400e1f256e85f2af30a5"
+    },
+    "research/CONTRIBUTION.md": {
+      "bytes": 4252,
+      "change": "predecessor source-provenance link",
+      "sha256": "91bbfb9a9c76c13eb20e0d58aad3b6f54389ddd733c443cc352505f788e78520",
+      "source_path": "research/CONTRIBUTION.md",
+      "source_sha256": "f9a98b846fdcbd0c652f61a7cb30b3a6064c4761a9abca7e466dd81d49f7733d"
+    },
+    "research/DETUNING_CROSSOVER.md": {
+      "bytes": 19206,
+      "change": "none",
+      "sha256": "99d43a90e330a120523c02fc60b4f50838abc09eb1b4a1e3738a28436faa8017",
+      "source_path": "research/DETUNING_CROSSOVER.md",
+      "source_sha256": "99d43a90e330a120523c02fc60b4f50838abc09eb1b4a1e3738a28436faa8017"
+    },
+    "research/FINITE_TIME_CERTIFICATE.md": {
+      "bytes": 17046,
+      "change": "none",
+      "sha256": "8d26d823adc1004f067e8ceba353a6577bd9a80a9d857246859ee00eae82febc",
+      "source_path": "research/FINITE_TIME_CERTIFICATE.md",
+      "source_sha256": "8d26d823adc1004f067e8ceba353a6577bd9a80a9d857246859ee00eae82febc"
+    },
+    "research/OBSERVATION_TIME.md": {
+      "bytes": 21555,
+      "change": "none",
+      "sha256": "63e081f7f668bc0dcfc321073b4d5b784df0a0a78a921d7f5cd37601e91c025c",
+      "source_path": "research/OBSERVATION_TIME.md",
+      "source_sha256": "63e081f7f668bc0dcfc321073b4d5b784df0a0a78a921d7f5cd37601e91c025c"
+    },
+    "research/PROOF_MAP.md": {
+      "bytes": 2842,
+      "change": "none",
+      "sha256": "8dc80d18019ef568e68cfb27c32fbf8b880ae0bc98731b41554c159e3534de0e",
+      "source_path": "research/PROOF_MAP.md",
+      "source_sha256": "8dc80d18019ef568e68cfb27c32fbf8b880ae0bc98731b41554c159e3534de0e"
+    },
+    "research/RESULTS.md": {
+      "bytes": 6597,
+      "change": "none",
+      "sha256": "18c75a764b5f7eb67f2a7d304c4ab71e80c0f5b0bcb46a1fdc3e004ead2f6e18",
+      "source_path": "research/RESULTS.md",
+      "source_sha256": "18c75a764b5f7eb67f2a7d304c4ab71e80c0f5b0bcb46a1fdc3e004ead2f6e18"
+    },
+    "research/SPECTRAL_PROOF.md": {
+      "bytes": 19817,
+      "change": "none",
+      "sha256": "4ae5916cca5f93f62e34e75363e8c0214113bd0872b78fe7e972568d3d8ace41",
+      "source_path": "research/SPECTRAL_PROOF.md",
+      "source_sha256": "4ae5916cca5f93f62e34e75363e8c0214113bd0872b78fe7e972568d3d8ace41"
+    },
+    "research/THEOREM.md": {
+      "bytes": 13446,
+      "change": "none",
+      "sha256": "b9e60113022448ed54401b4245a0dbecca6ae093ea04d4bad61b439e8dad995b",
+      "source_path": "research/THEOREM.md",
+      "source_sha256": "b9e60113022448ed54401b4245a0dbecca6ae093ea04d4bad61b439e8dad995b"
+    },
+    "research/THRESHOLD_ENDPOINT.md": {
+      "bytes": 4714,
+      "change": "none",
+      "sha256": "2a4c3bcc1dfde9230bdd25651808c39a89076fcda54c61708ddd685abf53081d",
+      "source_path": "research/THRESHOLD_ENDPOINT.md",
+      "source_sha256": "2a4c3bcc1dfde9230bdd25651808c39a89076fcda54c61708ddd685abf53081d"
+    },
+    "research/TRANSPORT_PROOF.md": {
+      "bytes": 15516,
+      "change": "none",
+      "sha256": "27d6215f77b2febf98cd44de26a3dbce21a548562b4f683fcec5bfb09bcecaff",
+      "source_path": "research/TRANSPORT_PROOF.md",
+      "source_sha256": "27d6215f77b2febf98cd44de26a3dbce21a548562b4f683fcec5bfb09bcecaff"
+    },
+    "research/TUTORIAL_BRIDGE.md": {
+      "bytes": 13882,
+      "change": "none",
+      "sha256": "4cd37ea834a909ff55d4a518dfb9c79b7cf64981c14d3ed40d5f42d045e1f29b",
+      "source_path": "research/TUTORIAL_BRIDGE.md",
+      "source_sha256": "4cd37ea834a909ff55d4a518dfb9c79b7cf64981c14d3ed40d5f42d045e1f29b"
+    },
+    "tools/alternative_time/check_finite_time.py": {
+      "bytes": 13301,
+      "change": "import paths and proof references",
+      "sha256": "e795c7eaf8f3467e3fd4e090b92db383136608d0794607bb11856104e236e131",
+      "source_path": "archive/coarse-time-2026-10-10/tools/check_finite_time.py",
+      "source_sha256": "1c940eac825fb63231fcfd33052e59d0e76e50d387ee8671cd5b192314535c6b"
+    },
+    "tools/alternative_time/finite_time.py": {
+      "bytes": 8465,
+      "change": "import paths and proof references",
+      "sha256": "3ed39e16585d1cb40d361c6f9927a4f143a5719d6456505d8b3127964eec480e",
+      "source_path": "archive/coarse-time-2026-10-10/tools/finite_time.py",
+      "source_sha256": "27802f36c1f76465c97a1873f84e80bded723236afc424e9d11afc579e12a2d2"
+    },
+    "tools/check_detuning.py": {
+      "bytes": 8641,
+      "change": "none",
+      "sha256": "59b0cbb9569cc0f83fd56bc8a661ec2f9d646cec544afa9228cf286142b9c9e0",
+      "source_path": "tools/check_detuning.py",
+      "source_sha256": "59b0cbb9569cc0f83fd56bc8a661ec2f9d646cec544afa9228cf286142b9c9e0"
+    },
+    "tools/check_endpoint.py": {
+      "bytes": 5536,
+      "change": "import paths and proof references",
+      "sha256": "c407bdf1fce2fd22765bfcb227a0b8c02339182c4ea7ee6b844a5209cfc50b7d",
+      "source_path": "tools/check_endpoint.py",
+      "source_sha256": "3392728abe74e4f7d6b2536945a0a1af5027b9782cdaeef37e2638442af8ac4b"
+    },
+    "tools/check_finite_time.py": {
+      "bytes": 10210,
+      "change": "none",
+      "sha256": "840008afab14fa0f81f32fc79c86417f64d66bcb7a1a7a198952953ffdd1a805",
+      "source_path": "tools/check_finite_time.py",
+      "source_sha256": "840008afab14fa0f81f32fc79c86417f64d66bcb7a1a7a198952953ffdd1a805"
+    },
+    "tools/check_observation_time.py": {
+      "bytes": 7621,
+      "change": "none",
+      "sha256": "35df341caac5b9f9fd0fa665e47f0c2b5bac5de305d914ddd8fae302f5f61417",
+      "source_path": "tools/check_observation_time.py",
+      "source_sha256": "35df341caac5b9f9fd0fa665e47f0c2b5bac5de305d914ddd8fae302f5f61417"
+    },
+    "tools/check_repository.py": {
+      "bytes": 3842,
+      "change": "verification orchestration",
+      "sha256": "e5da927ef65adf8dc7abf92745b67b967c5dc8a10b6f61911def92fe0fc746f9",
+      "source_path": "tools/check_repository.py",
+      "source_sha256": "a08965054092cebd53dc400db86984b0f4a0293c02973277122b03e302de3b5a"
+    },
+    "tools/check_rest_crossover.py": {
+      "bytes": 11653,
+      "change": "import paths and proof references",
+      "sha256": "0985124cb930b9aaa4ee80bfaa236aeb4a901d7d22a87a9830fd5ade431ae75f",
+      "source_path": "tools/check_rest_crossover.py",
+      "source_sha256": "7b6757ef41da8e76dbd0beb138f94dde68b4cf1d23c44f79562710740f153d3e"
+    },
+    "tools/check_review.py": {
+      "bytes": 12027,
+      "change": "none",
+      "sha256": "28b5a1978aa2e3773c1a83265d678fa6efde049694f0b42468753cf78a75657d",
+      "source_path": "archive/review-2026-10-10/check_review.py",
+      "source_sha256": "28b5a1978aa2e3773c1a83265d678fa6efde049694f0b42468753cf78a75657d"
+    },
+    "tools/check_spectral.py": {
+      "bytes": 10542,
+      "change": "import paths and proof references",
+      "sha256": "103d887081e3fa9b42e6672fcf52dd7731ee0161a44c0b8f10d0e563244be82c",
+      "source_path": "archive/review-2026-10-10/prior/prior/check_pilot.py",
+      "source_sha256": "635d626d72cc101d623c6e2502e2f3fa8b17cff1da8a8282592357f550cadc0b"
+    },
+    "tools/check_transport.py": {
+      "bytes": 11016,
+      "change": "import paths and proof references",
+      "sha256": "cd98a1271ef3bb59deaf0ea06b5f52d3d94ab1c5869ab502b5ce62e95ecefe5c",
+      "source_path": "archive/review-2026-10-10/prior/check_transport.py",
+      "source_sha256": "39f563b7306ccb7acfbb1d7282fdba6c5c4c781faa79b54a76a255478047deb9"
+    },
+    "tools/detuning.py": {
+      "bytes": 7714,
+      "change": "import paths and proof references",
+      "sha256": "fd7b9195e4639b9101fb4c8605f952bf1bef11ed3949ad3ac629a86eb6bea680",
+      "source_path": "tools/detuning.py",
+      "source_sha256": "32463e9035d8ea9a48ce24c1643bcc783280e2e095acb7687885f057cfae6ac1"
+    },
+    "tools/dimer.py": {
+      "bytes": 6420,
+      "change": "none",
+      "sha256": "c4892c9bd0508507043a07483cc05b146a9cb4f50b77015b3e60bced827bee49",
+      "source_path": "archive/review-2026-10-10/prior/prior/dimer.py",
+      "source_sha256": "c4892c9bd0508507043a07483cc05b146a9cb4f50b77015b3e60bced827bee49"
+    },
+    "tools/finite_time.py": {
+      "bytes": 8561,
+      "change": "none",
+      "sha256": "31cdbda39252d89336f6ad0ef32f9e0a631a0635259f7dd00b693a9492071adc",
+      "source_path": "tools/finite_time.py",
+      "source_sha256": "31cdbda39252d89336f6ad0ef32f9e0a631a0635259f7dd00b693a9492071adc"
+    },
+    "tools/observation_time.py": {
+      "bytes": 6800,
+      "change": "none",
+      "sha256": "6d2be965fb9953ac2e8d30b7eaf519b23c3c73dde989bae91991573eb5c07c68",
+      "source_path": "tools/observation_time.py",
+      "source_sha256": "6d2be965fb9953ac2e8d30b7eaf519b23c3c73dde989bae91991573eb5c07c68"
+    },
+    "tools/plot_coincidence.py": {
+      "bytes": 16225,
+      "change": "import paths and proof references",
+      "sha256": "8c400be8caa60f823764292b41427f2ae944a10dee4629ffcff2342ec6b40763",
+      "source_path": "tools/plot_coincidence.py",
+      "source_sha256": "028abe39794135f2cc054d16a577e7c7294a79731aa5f3b98873f41e0e31755e"
+    },
+    "tools/transport.py": {
+      "bytes": 4443,
+      "change": "import paths and proof references",
+      "sha256": "58066ed8e2ee162c2343d1a7b8333662888fa83a1e59ce449461592a50ef5799",
+      "source_path": "archive/review-2026-10-10/prior/transport.py",
+      "source_sha256": "05e3f765bfa6df17267a85361878be72c994a183deabce9c669f99d794bf2d6b"
+    },
+    "tools/verify.py": {
+      "bytes": 10950,
+      "change": "verification orchestration",
+      "sha256": "1594c878eed422cbc7d4b402750cb20007a7faa7adffb2af28463dba65014d9f",
+      "source_path": "tools/verify.py",
+      "source_sha256": "55c47ca3cab6fbd9caf6485b79765ac3ca01c4b56d9f49fbd6f43bd8d2a09fb1"
+    },
+    "tools/verify_alternative_time.py": {
+      "bytes": 3123,
+      "change": "verification orchestration",
+      "sha256": "8a364c04597cd4fee9b5daa6fec9548bd0c8a8178a6e32fe981211f983e45808",
+      "source_path": "tools/verify_alternative_time.py",
+      "source_sha256": "2db3acb3f752961bdc138315790e212427a52b42a1c8f4fdb8e3bde5e7696c09"
+    }
+  },
+  "license_sha256": "a92600540b1ab7a18301e2632a29334b3df227ad836e88df9967d69e3c86db66",
+  "preservation": {
+    "assertions_and_tolerances": "Unchanged in all 42 scientific groups.",
+    "canonical_report_bytes": "Unchanged.",
+    "existing_research_math": "Unchanged; the complete alternative proof has rendering-only changes.",
+    "figure_payload": "All scientific data and SVG bytes unchanged; only JSON source paths/hashes updated.",
+    "scientific_function_bodies": "Unchanged; only import paths, proof references, and source inventory paths move."
+  },
+  "report_provenance": "Historical source-path strings inside canonical reports are retained verbatim; active file paths are recorded here.",
+  "repository": "GoGoKo699/Resonant-Dimer-Transport",
+  "scientific_reconciliations": {
+    "research/SPECTRAL_PROOF.md": "research/THRESHOLD_ENDPOINT.md: exact lattice-edge threshold",
+    "research/THEOREM.md": "research/OBSERVATION_TIME.md: momentum-integrated continuum rate",
+    "research/TRANSPORT_PROOF.md": "research/OBSERVATION_TIME.md: momentum-integrated continuum rate"
+  },
+  "source_packages": {
+    "alternative_time": {
+      "snapshot_path": "archive/coarse-time-2026-10-10",
+      "source_commit": "aa27c02fdb694fa8effbac3b670be50ee8b323fd"
+    },
+    "spectral_transport_review": {
+      "files": 77,
+      "manifest_sha256": "d2c5ecf83e50b1f21e51aa6b4883659240944fc385257368b003811fe7a7b201",
+      "package_sha256": "fc1b5f2a9d4b28602ac43bc2f7c0b7ece7b4b53d28156fda36ae2c860e511e4f",
+      "snapshot_path": "archive/review-2026-10-10"
+    }
+  },
+  "source_snapshot": {
+    "commit": "93f61c3b6e38c8fffd6b7d3f2b66fea54749d88b",
+    "tree": "f3c19af2b5f2178ce410f3766ea8512e0f2f825a",
+    "url": "https://github.com/GoGoKo699/Resonant-Dimer-Transport/tree/93f61c3b6e38c8fffd6b7d3f2b66fea54749d88b"
+  }
+}

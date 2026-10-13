@@ -1,0 +1,36 @@
+{
+  "repository": "GoGoKo699/Resonant-Dimer-Transport",
+  "description": "Versions and locations used for the predecessor comparison in research/CONTRIBUTION.md. Hashes and sizes identify downloaded source documents where recorded.",
+  "sources": [
+    {
+      "locator": "Published two-magnon Eqs. (6)–(8), accompanying finite-total-momentum renormalization discussion",
+      "sha256": "674122e9963e0314876e57cd3e58e1329daefc0c1d19cda7efc0218b4071baa8",
+      "size_bytes": 441756,
+      "url": "https://www.nature.com/articles/s42005-026-02580-0"
+    },
+    {
+      "locator": "Supplementary Note 1, Eqs. (S5)–(S13); Note 3",
+      "sha256": "79646caab8839275ad6b6f612cba3e8a4ae21c13a0c9fd7e4347fde708ae3935",
+      "size_bytes": 183417,
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42005-026-02580-0/MediaObjects/42005_2026_2580_MOESM1_ESM.pdf"
+    },
+    {
+      "locator": "Public peer-review file, author response to Referee 2, printed pp. 6–7, Eqs. (R5)–(R7)",
+      "sha256": "70d8605a299855bdce0bbbcf42c98f1a52a19747857164b726e05ca9a3aee4f2",
+      "size_bytes": 135885,
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42005-026-02580-0/MediaObjects/42005_2026_2580_MOESM2_ESM.pdf"
+    },
+    {
+      "locator": "Macrì et al., Section IV and Figure 3",
+      "url": "https://arxiv.org/html/2110.01760v1"
+    },
+    {
+      "locator": "Kranzl et al., Sections III–IV; Appendix D Eq. (8)",
+      "url": "https://arxiv.org/html/2212.03899v2"
+    },
+    {
+      "locator": "Domínguez-Castro author preprint v1, Section 4 Eqs. (5)–(6), Figure 2 P=0 caption",
+      "url": "https://www.preprints.org/manuscript/202305.0384"
+    }
+  ]
+}

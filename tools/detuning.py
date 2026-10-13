@@ -12,7 +12,6 @@ from typing import Callable
 
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'archive/review-2026-10-10/prior'))
 from transport import dimer, pole, state_pole  # Declared same-project reuse.
 import numpy as np
 from scipy.integrate import quad

@@ -26,6 +26,8 @@ deterministic observation time.
 The [author account](AUTHOR_ACCOUNT.md#relationship-to-established-work)
 gives the claim-by-claim comparison, including the published supplements,
 public author response, and the local-pair dynamics of Macrì and collaborators.
+The exact predecessor documents used for the comparison have
+[source locators and checksums](../maintenance/LITERATURE_SOURCES.json).
 The exact loop specialization is in
 [the spectral foundation](SPECTRAL_PROOF.md#9-relationship-to-established-work).
 
