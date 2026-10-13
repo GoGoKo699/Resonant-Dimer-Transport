@@ -67,8 +67,8 @@ logs.
 The rest suite independently integrates the defining continuum normalization
 and curvature numerator using reciprocal tails and algebraic endpoint
 weights. It checks lattice rest integrals at decreasing momentum scales for
-$z=0.6,0.75,0.9$, and compares curvature with a separate velocity calculation
-at $z=0.75$. The report retains quadrature errors, finite-scale corrections,
+$`z=0.6,0.75,0.9`$, and compares curvature with a separate velocity calculation
+at $`z=0.75`$. The report retains quadrature errors, finite-scale corrections,
 refinement comparisons, and source hashes. The convergence proof is the
 [dominated-convergence argument](research/DETUNING_CROSSOVER.md#explicit-rest-residue-and-curvature).
 
@@ -80,8 +80,8 @@ a waiting-time prescription requires rigorous bounds on its constants.
 ## Coincidence-tail figure
 
 The [figure](figures/coincidence_tail.svg) evaluates the actual lattice
-limiting measure at $z=3/4$, with resonance and detunings
-$\delta=0.06,0.09,0.135$. Its [data](figures/coincidence_tail.json) retain
+limiting measure at $`z=3/4`$, with resonance and detunings
+$`\delta=0.06,0.09,0.135`$. Its [data](figures/coincidence_tail.json) retain
 absolute probabilities, momentum intervals, located cutoffs, quadrature
 errors, refinement comparisons, and source hashes.
 
@@ -92,14 +92,14 @@ python -m pip install -r requirements-figures.txt
 python tools/plot_coincidence.py --output /absolute/new/path/coincidence_tail.svg --data /absolute/new/path/coincidence_tail.json
 ```
 
-The generator integrates $Z(P)^2dP/\pi$ over scan-detected positive-momentum
+The generator integrates $`Z(P)^2dP/\pi`$ over scan-detected positive-momentum
 velocity intervals. It compares 72- and 144-cell crossing scans and refined
 quadratures at three thresholds per coupling. A cusp-split quadrature checks
 the pole, normalized relative wavefunction, and source/contact overlap.
 Numerical scans locate cutoffs; the global support theorem is analytical.
 Zero probabilities above a cutoff are retained separately on the logarithmic
 plot. The right panel uses the absolute probability
-$Q_U(0.9v_{\max})$.
+$`Q_U(0.9v_{\max})`$.
 
 To render the saved data:
 
@@ -143,7 +143,9 @@ sections. It verifies source equation content before applying the recorded
 presentation transforms, and records source
 hashes, output hashes, selections, and literal substitutions in the transform
 ledger. Displays use fenced math, upright operator names, and equation labels
-outside TeX to support GitHub's native renderer. Edit the generator,
+outside TeX to support GitHub's native renderer. Inline expressions use
+protected dollar-backtick delimiters; symbolic shorthand in the foundational
+prose is typeset through recorded replacements. Edit the generator,
 regenerate, and run `--check`. Scientific
 reconciliations link the [exact-threshold proof](research/THRESHOLD_ENDPOINT.md)
 and [observation-time theorem](research/OBSERVATION_TIME.md).
