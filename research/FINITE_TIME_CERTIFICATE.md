@@ -10,8 +10,8 @@ All momentum norms below use $dP/(2\pi)$. Set
 ```math
 \begin{aligned}
 \delta&=J(U_c^{-1}-U^{-1}),\qquad a=\delta/J,\\
-p_t(s)&=\sum_{|aj/t|>s}C_j(t),\\
-q(s)&=\int\frac{dP}{2\pi}Z(P)^2\mathbf{1}_{\{|aE'(P)|>s\}}.
+p_t(s)&=\sum_{|aj/t| > s}C_j(t),\\
+q(s)&=\int\frac{dP}{2\pi}Z(P)^2\mathbf{1}_{\{|aE'(P)| > s\}}.
 \end{aligned}
 ```
 
@@ -102,8 +102,8 @@ There is an explicit sufficient-time prescription. Fix a relative accuracy
 $0<\varepsilon\le1$ and write $q=q(s)>0$. Choose
 
 ```math
-0<r\le\frac{\pi\varepsilon^2q}{288},\qquad
-0<h<s/2\ \text{such that}\ S(s,h)\le\frac{\varepsilon q}{6}.
+0 < r\le\frac{\pi\varepsilon^2q}{288},\qquad
+0 < h < s/2\ \text{such that}\ S(s,h)\le\frac{\varepsilon q}{6}.
 ```
 
 **(F5)**
@@ -136,7 +136,7 @@ of (F4), divided by $q$, is at most
 
 ```math
 \varepsilon\left[\frac13+\frac13\sqrt{1+\varepsilon/3}
-+\frac{\varepsilon}{36}\right]<\varepsilon.
++\frac{\varepsilon}{36}\right] < \varepsilon.
 ```
 
 **(F7)**
@@ -168,7 +168,7 @@ Let
 
 ```math
 A_j^d(t)=\int\frac{dP}{2\pi}Z(P)e^{iPj-itE(P)},\qquad
-p_t^d(s)=\sum_{|aj/t|>s}|A_j^d(t)|^2.
+p_t^d(s)=\sum_{|aj/t| > s}|A_j^d(t)|^2.
 ```
 
 In the momentum representation, position is $X=i\partial_P$ on its periodic
@@ -260,7 +260,7 @@ $A(P,k)-\epsilon(P)\le2\epsilon(k)$. The min--max principle, with the
 unchanged contact attraction, implies
 
 ```math
-E(P)-\epsilon(P)\le E(0)<0.
+E(P)-\epsilon(P)\le E(0) < 0.
 ```
 
 Hence $g=-E(0)>0$ is a **global lower bound** on the below-band gap. Also
@@ -347,7 +347,7 @@ Their energies are
 
 ```math
 T=\epsilon(P),\qquad m=2\epsilon(P/2),\qquad
-M_P=2\epsilon(\pi-P/2),\qquad T<m<M_P.
+M_P=2\epsilon(\pi-P/2),\qquad T < m < M_P.
 ```
 
 All three values remain separated on this compact momentum interval.

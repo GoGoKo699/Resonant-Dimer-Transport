@@ -5,7 +5,7 @@
 Two distinguishable particles on the infinite lattice have
 
 ```math
-\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad 1/2<z<1,
+\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad 1/2 < z < 1,
 ```
 
 and onsite attraction $-U\delta_{x_a,x_b}$. Set $U=U_c$, with the exact value in [the spectral foundation](SPECTRAL_PROOF.md). Prepare
@@ -139,8 +139,8 @@ The phase tends to $e^{i\xi E'_d(P)}$ at almost every P. The translation of Z co
 In particular, at continuity points v>0,
 
 ```math
-Q(v):=\lim_{t\to\infty}\Pr(x_a=x_b,\ |X|>vt)
-=\int_{|E'_d(P)|>v}\frac{dP}{2\pi}Z(P)^2.
+Q(v):=\lim_{t\to\infty}\Pr(x_a=x_b,\ |X| > vt)
+=\int_{|E'_d(P)| > v}\frac{dP}{2\pi}Z(P)^2.
 ```
 
 **(10)**
@@ -187,7 +187,7 @@ These are quadrature diagnostics, not interval certificates. The tabulation uses
 Equation (9), together with convergence of the total coincidence mass, implies tightness of the conditional velocity distributions. Hence, for every L(t)/t tending to infinity,
 
 ```math
-\boxed{\sum_{|j|>L(t)}C_j(t)\longrightarrow0.}
+\boxed{\sum_{|j| > L(t)}C_j(t)\longrightarrow0.}
 ```
 
 **(13)**
@@ -199,13 +199,13 @@ Thus unbounded velocity support and a nonvanishing fraction moving faster than e
 For every fixed U>Uc, the unique branch is below the continuum for all P. At P=0 it has E0<0 and the spectral expansion $E_d(P)=E_0+C(U)P^2+o(P^2)$, with the separately justified derivative $2C(U)P+o(P)$. The branch remains separated from its continuum by a positive minimum gap on the compact momentum circle. Away from zero the differentiated resolvent is finite and continuous. Therefore
 
 ```math
-v_{\max}(U):=\sup_P|E'_d(P)|<\infty.
+v_{\max}(U):=\sup_P|E'_d(P)| < \infty.
 ```
 
 The same local-source spectral argument yields
 
 ```math
-\lim_{t\to\infty}\Pr(x_a=x_b,\ |X|>vt)=0\qquad(v>v_{\max}(U)).
+\lim_{t\to\infty}\Pr(x_a=x_b,\ |X| > vt)=0\qquad(v > v_{\max}(U)).
 ```
 
 **(14)**

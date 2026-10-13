@@ -7,7 +7,7 @@ of the [author account](AUTHOR_ACCOUNT.md). Fix $J>0$ and $1/2<z<1$ throughout.
 Approach the rest-binding resonance from the stronger-attraction side and set
 
 ```math
-\delta=J\left(\frac1{U_c}-\frac1U\right)>0,\qquad
+\delta=J\left(\frac1{U_c}-\frac1U\right) > 0,\qquad
 \rho=\delta^{1/(1-z)},\qquad U=U_\delta\downarrow U_c.
 ```
 
@@ -36,7 +36,7 @@ a_z(k,x)=|x+k/2|^z+|x-k/2|^z,
 ```
 ```math
 G_z(k,e)=\int_{\mathbb{R}}\frac{dx}{2\pi}
-\left[\frac1{a_z(k,x)-e}-\frac1{2|x|^z}\right],\qquad e<k^z.
+\left[\frac1{a_z(k,x)-e}-\frac1{2|x|^z}\right],\qquad e < k^z.
 ```
 
 At each $k\ge0$ there is a unique solution $e_z(k)<k^z$ of
@@ -105,7 +105,7 @@ There is no uniform claim as $z$ approaches either endpoint of its window.
 For the actual local-source measurement, define as before
 
 ```math
-Q_U(v)=\lim_{t\to\infty}\Pr_U(x_a=x_b,\ |X|>vt),\qquad
+Q_U(v)=\lim_{t\to\infty}\Pr_U(x_a=x_b,\ |X| > vt),\qquad
 \alpha_z=\frac{4z-1}{1-z}.
 ```
 
@@ -119,7 +119,7 @@ For each fixed $s>0$, the corresponding probability crossover is
 **(D6)**
 ```math
 \mathcal H_z(s)=\frac1\pi\int_0^\infty
-\frac{\mathbf{1}_{\{|V_z(k)|>s\}}}{D_z(k)^2}\,dk.
+\frac{\mathbf{1}_{\{|V_z(k)| > s\}}}{D_z(k)^2}\,dk.
 ```
 
 This function is finite and continuous for $s>0$, positive for $0<s<K_z$,
@@ -157,7 +157,7 @@ $F_z(e)\sim-A_z(-e)^{\beta_z}$, where
 
 ```math
 \beta_z=\frac{1-z}{z}\in(0,1),\qquad
-A_z=\frac{2^{-1/z}}{z\sin(\pi\beta_z)}>0.
+A_z=\frac{2^{-1/z}}{z\sin(\pi\beta_z)} > 0.
 ```
 
 These properties prove unique solvability of (D8). At $k=0$ a beta integral
@@ -193,7 +193,7 @@ C_z^*=
 \frac{\displaystyle\int\frac{dx}{2\pi}
  \frac{z^2|x|^{2z-2}}{(2|x|^z+a_z^*)^3}}
  {\displaystyle\int\frac{dx}{2\pi}
- \frac1{(2|x|^z+a_z^*)^2}}>0.
+ \frac1{(2|x|^z+a_z^*)^2}} > 0.
 ```
 
 The differentiated autocorrelation, not differentiation of the little-o
@@ -206,7 +206,7 @@ $a=a_z^*$ and $\beta=\beta_z$, one has
 
 ```math
 D_z(0)=\frac\beta a,\qquad
-C_z^*=z\,2^{2/z-3}a^{1-2/z}>0.
+C_z^*=z\,2^{2/z-3}a^{1-2/z} > 0.
 ```
 
 **(R1)**
@@ -454,7 +454,7 @@ The already proved local-quench theorem gives
 ```math
 Q_{U_\delta}(Js/\delta)
 =\frac\rho\pi\int_0^{\pi/\rho}
-Z(\rho k;U_\delta)^2\mathbf{1}_{\{|V_\rho(k)|>s\}}\,dk.
+Z(\rho k;U_\delta)^2\mathbf{1}_{\{|V_\rho(k)| > s\}}\,dk.
 ```
 
 For fixed $s>0$, (D12)–(D14) confine the superlevel region to a fixed compact

@@ -5,7 +5,7 @@
 Two distinguishable particles move on the infinite one-dimensional lattice with dispersion
 
 ```math
-\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \frac12<z<1,
+\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J > 0,\quad \frac12 < z < 1,
 ```
 
 and contact attraction $-U\delta_{x_a,x_b}$. The preparation is $|0,0\rangle$. The measured probability is $C_j(t)=|\langle j,j|e^{-itH}|0,0\rangle|^2$, per initially prepared pair. Unequal final positions remain in the normalization. There is no band-prepared source, energy filtering, or time-averaged detector.
@@ -45,7 +45,7 @@ where $d_t$ is the band-event error budget and $e_t$ is the contact-continuum am
 The [uniform theorem](OBSERVATION_TIME.md) then controls those budgets as the detuning vanishes. With fixed $0<\theta<1$, set
 
 ```math
-p_{\delta,t}=\Pr_U(x_a=x_b,|X|>\theta v_{\max}(U)t),\qquad
+p_{\delta,t}=\Pr_U(x_a=x_b,|X| > \theta v_{\max}(U)t),\qquad
 q_\delta=Q_U(\theta v_{\max}(U))\sim C_{z,\theta}\delta^{(4z-1)/(1-z)}.
 ```
 
@@ -54,9 +54,9 @@ For each fixed relative accuracy there are detuning-independent constants such t
 ```math
 \mathcal T_z(\delta)=
 \begin{cases}
-\delta^{-(3z-1/2)/(1-z)},&1/2<z<3/4,\\
+\delta^{-(3z-1/2)/(1-z)},&1/2 < z < 3/4,\\
 \delta^{-7}\sqrt{\log(2/\delta)},&z=3/4,\\
-\delta^{-(5z-2)/(1-z)},&3/4<z<1.
+\delta^{-(5z-2)/(1-z)},&3/4 < z < 1.
 \end{cases}
 ```
 

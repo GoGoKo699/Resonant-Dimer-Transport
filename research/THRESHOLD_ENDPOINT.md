@@ -37,7 +37,7 @@ In contrast, the fixed-energy-ratio expansion in Section 4 of the
 **fixed $e<1$**. It must not be evaluated at $e=1$ on the lattice:
 
 ```math
-T_P=J|P|^z\left[1-\frac{zP^2}{24}+O(P^4)\right]<J|P|^z.
+T_P=J|P|^z\left[1-\frac{zP^2}{24}+O(P^4)\right] < J|P|^z.
 ```
 
 For sufficiently small nonzero $P$, the latter energy is inside the continuum.

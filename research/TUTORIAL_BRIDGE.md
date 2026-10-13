@@ -76,7 +76,7 @@ Translation invariance conserves total momentum $`P`$. Write the individual
 momenta as $`P/2+q`$ and $`P/2-q`$. Their free energies add:
 
 ```math
-\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \frac12<z<1,
+\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J > 0,\quad \frac12 < z < 1,
 \qquad
 A_P(q)=\epsilon_z(q+P/2)+\epsilon_z(q-P/2).
 ```
@@ -151,7 +151,7 @@ For $`-\pi\le P\le\pi`$, put $`a_P=4J\cos(P/2)\ge0`$. Then
 ```math
 A_P^{\rm nn}(q)=4J-a_P\cos q,\qquad
 I_P^{\rm nn}(E)=\frac1{\sqrt{(4J-E)^2-a_P^2}},
-\qquad E<4J-a_P.
+\qquad E < 4J-a_P.
 ```
 
 The integral follows from $`\tan(q/2)`$ substitution. Its pole condition and
@@ -244,7 +244,7 @@ At $`U=U_c`$, subtract the rest loop and scale $`q=|P|x`$:
 ```math
 F_z(e)=\int_{\mathbb{R}}\frac{dx}{2\pi}
 \left[\frac1{|x+1/2|^z+|x-1/2|^z-e}-\frac1{2|x|^z}\right],
-\qquad F_z(c_z)=0,\quad 0<c_z<1.
+\qquad F_z(c_z)=0,\quad 0 < c_z < 1.
 ```
 
 The [spectral proof](SPECTRAL_PROOF.md) justifies the lattice limit and a

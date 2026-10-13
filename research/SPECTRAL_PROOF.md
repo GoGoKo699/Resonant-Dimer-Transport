@@ -5,7 +5,7 @@
 Use two distinguishable particles, one of each species, on the infinite lattice Z. Lattice spacing and hbar are one. Both have the dispersion
 
 ```math
-\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \tfrac12<z<1.
+\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J > 0,\quad \tfrac12 < z < 1.
 ```
 
 They interact only on the same site, with attractive potential -U delta_(x_a,x_b), U>0. The complete Hamiltonian is bounded and self-adjoint in the two-particle sector. The Hamiltonian is time independent and translation invariant.
@@ -80,7 +80,7 @@ For a,b>0,
 Apply this pointwise to the two shifted dispersions and use translation invariance of the integral. For P not zero modulo 2pi the inequality is strict on a set of positive measure, so
 
 ```math
-I_P(0)<I_0(0).
+I_P(0) < I_0(0).
 ```
 
 **(4)**
@@ -88,13 +88,13 @@ I_P(0)<I_0(0).
 For the other endpoint, use uncentered momentum p=q+P/2. Subadditivity gives
 
 ```math
-0<\epsilon_z(p)+\epsilon_z(P-p)-\epsilon_z(P)\le2\epsilon_z(p)
+0 < \epsilon_z(p)+\epsilon_z(P-p)-\epsilon_z(P)\le2\epsilon_z(p)
 ```
 
 almost everywhere, with strict inequality on a set of positive measure. The zeros of the denominator are integrable cusps of order |p|^z or |p-P|^z. Thus
 
 ```math
-I_P(E_{\rm th}(P))>I_0(0).
+I_P(E_{\rm th}(P)) > I_0(0).
 ```
 
 **(5)**
@@ -102,7 +102,7 @@ I_P(E_{\rm th}(P))>I_0(0).
 Since I_P(E) is continuous and strictly increasing below the edge, (4)–(5) bracket exactly one eigenvalue at U=Uc:
 
 ```math
-\boxed{0<E_d(P)<\epsilon_z(P)\quad\text{for every}\quad P\ne0.}
+\boxed{0 < E_d(P) < \epsilon_z(P)\quad\text{for every}\quad P\ne0.}
 ```
 
 **(6)**
@@ -135,7 +135,7 @@ with a=|x+1/2|^z and b=|x-1/2|^z. Hence F_z(0)<0. At e=1, shift to p=x+1/2 and u
 
 ```math
 F'_z(e)=\int_{\mathbb{R}}\frac{dx}{2\pi}
-\frac1{(|x+1/2|^z+|x-1/2|^z-e)^2}>0\quad(e<1).
+\frac1{(|x+1/2|^z+|x-1/2|^z-e)^2} > 0\quad(e < 1).
 ```
 
 There is a unique c_z in (0,1) with F_z(c_z)=0.
@@ -163,7 +163,7 @@ Monotonicity and two fixed energies bracketing c_z transfer (8) to the exact eig
 
 ```math
 \boxed{E_d(P)=c_zJ|P|^z+o(|P|^z),\quad
-\frac{E_{\rm th}(P)-E_d(P)}{E_{\rm th}(P)}\to1-c_z>0.}
+\frac{E_{\rm th}(P)-E_d(P)}{E_{\rm th}(P)}\to1-c_z > 0.}
 ```
 
 **(9)**
@@ -216,7 +216,7 @@ Fix U>Uc, so that E0=E_d(0)<0. Then
 ```math
 E_d(P)=E_0+C(U)P^2+o(P^2),\qquad
 C(U)=\frac{\int dq/(2\pi)\,[\epsilon'_z(q)]^2/[2\epsilon_z(q)-E_0]^3}
-{\int dq/(2\pi)\,1/[2\epsilon_z(q)-E_0]^2}>0.
+{\int dq/(2\pi)\,1/[2\epsilon_z(q)-E_0]^2} > 0.
 ```
 
 **(12)**
@@ -298,7 +298,7 @@ For z=.75, Vc/J=1.4411355579.... The ratios E_hc/(J P^z) are 0.5949493530,0.6195
 For the contact model define Uc(P)=1/I_P(E_th(P)). Equations (5) and (8) imply
 
 ```math
-U_c(P)<U_c\ (P\ne0),\qquad
+U_c(P) < U_c\ (P\ne0),\qquad
 \frac1{U_c(P)}-\frac1{U_c}
 =\frac{|P|^{1-z}}J[F_z(1)+o(1)].
 ```

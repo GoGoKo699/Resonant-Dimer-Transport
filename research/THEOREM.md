@@ -5,7 +5,7 @@
 Two distinguishable particles on the infinite lattice have dispersion
 
 ```math
-\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \frac12<z<1,
+\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J > 0,\quad \frac12 < z < 1,
 ```
 
 and an onsite attraction $-U\delta_{x_a,x_b}$. The Hamiltonian is bounded and self-adjoint. Both particle numbers are fixed at one, and the Hamiltonian is time independent and translation invariant. Lattice spacing and $\hbar$ are one. The kinetic operator is the established fractional discrete Laplacian, with the exact short-distance kernel specified in the [spectral foundation](SPECTRAL_PROOF.md).
@@ -47,7 +47,7 @@ The below-continuum eigenvalue solves $I_P(E_d)=1/U$. The [spectral foundation](
 At $U=U_c$, there is no normalizable rest bound state, but for every $P\ne0$ there is exactly one bound eigenvalue with
 
 ```math
-0<E_d(P)<\epsilon_z(P)=E_{\rm th}(P).
+0 < E_d(P) < \epsilon_z(P)=E_{\rm th}(P).
 ```
 
 The continuum edge follows from subadditivity of the chord dispersion. The pole is bracketed by $I_P(0)<I_0(0)$ and $I_P(E_{\rm th})>I_0(0)$. The rest threshold state behaves as $|q|^{-z}$; its norm diverges since $2z>1$.
@@ -152,7 +152,7 @@ whereas the conserved bound-sector population is $W_b=\int Z(P)dP/(2\pi)$. The s
 At continuity points $v>0$, let $Q(v)$ be the long-time probability of a coincidence outside $|X|\le vt$. Then
 
 ```math
-Q(v)=\int_{|E_d'(P)|>v}\frac{dP}{2\pi}Z(P)^2,
+Q(v)=\int_{|E_d'(P)| > v}\frac{dP}{2\pi}Z(P)^2,
 ```
 ```math
 Q(v)\sim\frac{B_z^2}{\pi(4z-1)}
@@ -204,7 +204,7 @@ Let $\phi_z(y)=\int e^{ixy}h_z(x)dx/(2\pi)$, understood initially in $L^2$. Thus
 
 ```math
 s_P(y)=P^{-1/2}\psi_P(r),\quad
-P(r-\tfrac12)\le y<P(r+\tfrac12).
+P(r-\tfrac12)\le y < P(r+\tfrac12).
 ```
 
 Then $s_P\to\phi_z$ in $L^2(\mathbb{R},dy)$. To check that lattice sampling has not been silently replaced by interpolation, the inverse Fourier transform of $h_P$ is the normalized band-limited interpolation. Its inner product with $s_P$ is exactly

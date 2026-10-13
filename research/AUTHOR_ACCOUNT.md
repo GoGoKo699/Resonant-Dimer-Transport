@@ -25,7 +25,7 @@ one-dimensional lattice. In units of lattice spacing and Planck's constant
 equal to one, both particles have dispersion
 
 ```math
-\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J>0,\quad \frac12<z<1.
+\epsilon_z(k)=J[2-2\cos k]^{z/2},\qquad J > 0,\quad \frac12 < z < 1.
 ```
 
 They attract only when their positions coincide, with potential
@@ -96,7 +96,7 @@ B_z=\frac{J^2}{U_c^2F'_z(c_z)}.
 For continuity points $v>0$, write
 
 ```math
-Q(v)=\lim_{t\to\infty}\Pr(x_a=x_b,\ |X|>vt).
+Q(v)=\lim_{t\to\infty}\Pr(x_a=x_b,\ |X| > vt).
 ```
 
 Equation (1) and the spectral asymptotics imply
@@ -114,8 +114,8 @@ energy and a finite quadratic curvature. The full bound branch has a positive
 minimum gap and
 
 ```math
-v_{\max}(U)=\sup_P|\partial_P E_d(P;U)|<\infty,
-\qquad Q_U(v)=0\quad(v>v_{\max}(U)).
+v_{\max}(U)=\sup_P|\partial_P E_d(P;U)| < \infty,
+\qquad Q_U(v)=0\quad(v > v_{\max}(U)).
 ```
 
 **(3)**
@@ -140,7 +140,7 @@ and very large scaled momentum, proves
 
 ```math
 v_{\max}(U)=\frac{J}{\delta}[K_z+o(1)],\qquad
-K_z=\max_{k\ge0}|e_z'(k)|>0,\qquad |P_{\max}(U)|=\Theta(\rho).
+K_z=\max_{k\ge0}|e_z'(k)| > 0,\qquad |P_{\max}(U)|=\Theta(\rho).
 ```
 
 Thus the maximum velocity diverges inversely with $U-U_c$ for every fixed
@@ -220,7 +220,7 @@ source and coincidence detection of the resulting relative state. Consequently,
 
 ```math
 W_b=\int\frac{dP}{2\pi}Z(P),\qquad
-\lim_{t\to\infty}\sum_j C_j(t)=W_c<W_b.
+\lim_{t\to\infty}\sum_j C_j(t)=W_c < W_b.
 ```
 
 The asymptotic coincidence mass is not the probability of occupying the bound

@@ -50,7 +50,7 @@ derivative bounds. Summing its positive inverse Jacobians gives, on a
 sufficiently small energy interval,
 
 ```math
-\rho_{0,P}(T_P+y)=c_Py^\beta+r_P(y),\qquad c_P>0,
+\rho_{0,P}(T_P+y)=c_Py^\beta+r_P(y),\qquad c_P > 0,
 ```
 ```math
 |r_P^{(j)}(y)|\le C y^{\beta+\lambda-j},\qquad j=0,1,2,
@@ -101,9 +101,9 @@ $|r-y|\ge r/2$. The bounds for the remainder difference and derivative are
 respectively
 
 ```math
-\begin{cases}O(y^\gamma),\ O(y^{\gamma-1}),&\gamma<1,\\
+\begin{cases}O(y^\gamma),\ O(y^{\gamma-1}),&\gamma < 1,\\
 O(y\log(2/y)),\ O(\log(2/y)),&\gamma=1,\\
-O(y),\ O(1),&\gamma>1.
+O(y),\ O(1),&\gamma > 1.
 \end{cases}
 ```
 

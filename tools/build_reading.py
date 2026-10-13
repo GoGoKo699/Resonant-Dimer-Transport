@@ -176,6 +176,7 @@ def format_math(text):
   body=match.group(1) if match.group(1) is not None else match.group(2)
   labels=re.findall(r'\\tag\{([^{}]+)\}',body)
   body=re.sub(r'\s*\\tag\{[^{}]+\}', '',body).strip()
+  body=re.sub(r'[ \t]*([<>])[ \t]*',r' \1 ',body)
   result='```math\n'+body+'\n```'
   if labels:result+='\n\n**('+', '.join(labels)+')**'
   return result
@@ -212,7 +213,7 @@ def expected():
    'literal_replacements':replacements,'display_equations':len(equations(selected)),
    'equations_sha256':sha(json.dumps(equations(selected)).encode()),'output_sha256':sha(data),
    'footer_links':['research/PROOF_MAP.md','REPRODUCIBILITY.md'],
-   'math_rendering':{'display':'fenced math','equation_labels':'Markdown outside TeX','operator_macro':'mathrm','single_token_arguments':'explicit braces'},
+   'math_rendering':{'display':'fenced math','equation_labels':'Markdown outside TeX','operator_macro':'mathrm','single_token_arguments':'explicit braces','relation_spacing':'Protect less-than and greater-than signs from HTML parsing'},
    'formatting':'Preserve mathematical expressions; use fenced math, external equation labels, upright operator names, and explicit single-token macro arguments.'})
  output['maintenance/READING_TRANSFORMS.json']=(json.dumps(ledger,indent=2,sort_keys=True)+'\n').encode()
  return output

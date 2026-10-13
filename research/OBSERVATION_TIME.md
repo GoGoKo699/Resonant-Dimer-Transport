@@ -7,10 +7,10 @@ onsite pair source, and unconditional same-site position detector are those
 in [the author account](AUTHOR_ACCOUNT.md). Set
 
 ```math
-\delta=J(U_c^{-1}-U^{-1}),\qquad \rho=\delta^{1/(1-z)},\qquad U=U_\delta>U_c,
+\delta=J(U_c^{-1}-U^{-1}),\qquad \rho=\delta^{1/(1-z)},\qquad U=U_\delta > U_c,
 ```
 ```math
-p_{\delta,t}=\sum_{|j|>\theta v_{\max}(U_\delta)t} C_j(t),\qquad
+p_{\delta,t}=\sum_{|j| > \theta v_{\max}(U_\delta)t} C_j(t),\qquad
 q_\delta=Q_{U_\delta}(\theta v_{\max}(U_\delta)).
 ```
 
@@ -24,9 +24,9 @@ Define
 
 ```math
 \nu_z=\begin{cases}
-(3z-\tfrac12)/(1-z),&\tfrac12<z<\tfrac34,\\
+(3z-\tfrac12)/(1-z),&\tfrac12 < z < \tfrac34,\\
 7,&z=\tfrac34,\\
-(5z-2)/(1-z),&\tfrac34<z<1,
+(5z-2)/(1-z),&\tfrac34 < z < 1,
 \end{cases}
 \qquad
 \ell_z(\delta)=\begin{cases}\sqrt{\log(2/\delta)},&z=\tfrac34,\\1,&z\ne\tfrac34.
@@ -40,7 +40,7 @@ $\delta_0>0$ and $C<\infty$, depending on $z,\theta,\varepsilon$ but
 not on $J,\delta,t$, such that
 
 ```math
-\boxed{0<\delta<\delta_0,\quad
+\boxed{0 < \delta < \delta_0,\quad
 Jt\ge C\delta^{-\nu_z}\ell_z(\delta)
 \quad\Longrightarrow\quad
 |p_{\delta,t}-q_\delta|\le\varepsilon q_\delta.}
@@ -76,7 +76,7 @@ there is $C_0<\infty$, depending only on $z,U_1/J$, such that
 
 ```math
 \mathrm{TV}_{\omega}(w_{P,U})
-\le\frac{C_0}{J}(1+|P|^{z-1})\quad(0<|P|\le\pi).
+\le\frac{C_0}{J}(1+|P|^{z-1})\quad(0 < |P|\le\pi).
 ```
 
 **(O4)**
@@ -420,16 +420,16 @@ Integrating the squares in (O12) gives
 
 ```math
 \|Z'\|_2\le C\begin{cases}
-\rho^{2z-3/2},&z<3/4,\\
+\rho^{2z-3/2},&z < 3/4,\\
 \sqrt{\log(2/\rho)},&z=3/4,\\
-1,&z>3/4,
+1,&z > 3/4,
 \end{cases}
 ```
 ```math
 J^{-1}\|E''Z\|_2\le C\begin{cases}
-\rho^{3z-5/2},&z<5/6,\\
+\rho^{3z-5/2},&z < 5/6,\\
 \sqrt{\log(2/\rho)},&z=5/6,\\
-1,&z>5/6.
+1,&z > 5/6.
 \end{cases}
 ```
 
@@ -440,9 +440,9 @@ For a fixed auxiliary velocity margin $h>0$, the coefficient $A(h)$ in
 
 ```math
 A(h)\le\frac{C_h}{J}\begin{cases}
-\rho^{z-1/2},&z<3/4,\\
+\rho^{z-1/2},&z < 3/4,\\
 \rho^{1/4}\sqrt{\log(2/\rho)},&z=3/4,\\
-\rho^{1-z},&z>3/4.
+\rho^{1-z},&z > 3/4.
 \end{cases}
 ```
 
